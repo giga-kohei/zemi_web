@@ -26,11 +26,7 @@ header {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
 }
 
-.logo img {
-  height: 60px;   /* 好きな高さに調整 */
-  width: auto;
-  display: block;
-}
+
 
 nav a {
   margin-left: 22px;
