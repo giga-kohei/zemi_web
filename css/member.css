@@ -31,6 +31,12 @@ body{
     line-height:1.8;
 }
 
+.logo img {
+  height: 60px;   /* 好きな高さに調整 */
+  width: auto;
+  display: block;
+}
+
 .members{
     max-width:1200px;
     margin:auto;
@@ -170,13 +176,16 @@ body{
     }
 }
 
+/*
 img{
     max-width:600px !important;
     height:auto !important;
 }
+*/
 
 .member-hero{
     text-align:center;
+    margin: top 10px;
     padding:60px 20px;
 }
 
@@ -197,8 +206,9 @@ img{
 }
 
 .department-chart img{
-    width:60%;
-    max-width:500px;
+    margin-top:40pt;
+    width:80%;
+    max-width:700px;
     height:auto;
 }
 
@@ -231,4 +241,57 @@ img{
 .ta1 th,
 .ta1 td{
     border:1px solid #ddd;
+}
+
+
+/*まとめたページ用*/
+.grade-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:40px 0;
+}
+
+.grade-buttons button{
+    padding:12px 30px;
+    border:none;
+    border-radius:999px;
+    background:#e0e0e0;
+    color:#333;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.grade-buttons button:hover{
+    background:#1267d8;
+    color:#fff;
+}
+
+.grade-buttons button.active{
+    background:#1267d8;
+    color:#fff;
+}
+
+.grade-content{
+    display:none;
+}
+
+.grade-content.active{
+    display:block;
+}
+
+/*ここまで*/
+
+.member-photo{
+    text-align:center;
+    margin:30px 0 50px;
+}
+
+.member-photo img{
+    width:100%;
+    max-width:800px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
