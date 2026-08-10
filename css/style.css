@@ -2161,3 +2161,156 @@ footer {
 }
 
 /*ここまで*/
+
+
+
+
+/* ================================
+   プロジェクト研究ページ
+   ================================ */
+
+.list {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 35px 45px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* 文字部分 */
+.list .text {
+    flex: 1;
+}
+
+.list .text h1 {
+    font-size: 25px;
+    margin: 0 0 25px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.list .text p {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+    margin: 0 0 18px;
+}
+
+/* 画像部分 */
+.list .image-r {
+    width: 38%;
+    flex-shrink: 0;
+}
+
+.list .image-r figure {
+    margin: 0;
+    text-align: center;
+}
+
+.list .image-r img {
+    width: 100%;
+    max-width: 380px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 発表資料ボタン */
+.list .c {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.list .c p {
+    margin: 0;
+}
+
+.list .btn1 {
+    display: inline-block;
+    padding: 11px 28px;
+    background-color: #2496d1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.list .btn1:hover {
+    background-color: #197bb0;
+}
+
+
+/* ================================
+   スマホ
+   ================================ */
+
+@media screen and (max-width: 768px) {
+
+    .list {
+        width: 94%;
+        margin: 35px auto;
+        padding: 25px 20px;
+        display: block;
+    }
+
+    .list .text h1 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .list .text p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .list .image-r {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .list .image-r img {
+        width: 90%;
+        max-width: 350px;
+        height: 220px;
+    }
+
+    .list .btn1 {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================================
+   かなり小さいスマホ
+   ================================ */
+
+@media screen and (max-width: 480px) {
+
+    .list {
+        width: 94%;
+        padding: 20px 15px;
+    }
+
+    .list .text h1 {
+        font-size: 19px;
+    }
+
+    .list .text p {
+        font-size: 14px;
+    }
+
+    .list .image-r img {
+        width: 95%;
+        height: 190px;
+    }
+}
