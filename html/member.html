@@ -11,30 +11,74 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../images/logo-5.png" alt="吉田ゼミナール">
-            </a>
-        </div>
-
-        <nav>
+   <header class="site-header">
+    <!-- ロゴ -->
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo-5.png" alt="愛知学院大学 吉田ゼミナール">
+        </a>
+    </div>
+    <!-- ナビゲーション -->
+    <nav class="header-nav">
+        <!-- ゼミ紹介 -->
         <div class="nav-dropdown">
-        <a href="#about">ゼミ紹介</a>
-
+            <a href="#" class="nav-main">
+                ゼミ紹介
+                <span class="nav-arrow">⌄</span>
+            </a>
             <ul class="dropdown-menu">
-            <li><a href="activity.html">活動内容</a></li>
-            <li><a href="yearly_schedule.html">年間予定</a></li>
+                <li>
+                    <a href="activity.html">活動内容</a>
+                </li>
+                <li>
+                    <a href="yearly_schedule.html">年間予定</a>
+                </li>
+                <li>
+                    <a href="message.html">在校生・卒業生の声</a>
+                </li>
             </ul>
         </div>
-
-            <a href="#theme">研究テーマ</a>
-            <a href="member.html">メンバー</a>
-            <a href="#hope">ゼミ希望者へ</a>
-            <a href="album.html">アルバム</a>
-            <a href="company.html">企業の皆様へ</a>
-        </nav>
-    </header>
+        <!-- 研究テーマ -->
+        <div class="nav-dropdown">
+            <a href="#" class="nav-main">
+                研究テーマ
+                <span class="nav-arrow">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="theme.html">研究テーマ</a>
+                </li>
+            </ul>
+        </div>
+        <!-- メンバー -->
+        <a href="member.html">メンバー</a>
+        <!-- ゼミ希望者へ -->
+        <div class="nav-dropdown">
+            <a href="#" class="nav-main">
+                ゼミ希望者へ
+                <span class="nav-arrow">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="qualification.html">資格・検定</a>
+                </li>
+                <li>
+                    <a href="career_path.html">卒業後の進路</a>
+                </li>
+            </ul>
+        </div>
+        <!-- アルバム -->
+        <a href="album.html">アルバム</a>
+        <!-- 企業 -->
+        <a href="company.html">企業の皆様へ</a>
+        <!-- Q&A -->
+        <a href="qa.html">Q&A</a>
+        <!-- 質問ボタン -->
+        <a href="contact.html" class="question-btn">
+            質問する
+        </a>
+    </nav>
+</header>
 
     <main>
 
