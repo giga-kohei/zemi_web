@@ -47,3 +47,42 @@ qaItems.forEach(item => {
     item.classList.toggle("active");
   });
 });
+/* graduation.htmlここから */
+document.addEventListener("DOMContentLoaded", function () {
+
+  const tabs = document.querySelectorAll(".year-tab");
+  const contents = document.querySelectorAll(".year-content");
+
+  tabs.forEach(function (tab) {
+
+    tab.addEventListener("click", function () {
+
+      // すべてのボタンからactiveを外す
+      tabs.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      // すべての年度を非表示
+      contents.forEach(function (content) {
+        content.classList.remove("active");
+      });
+
+      // 押したボタンを選択状態にする
+      tab.classList.add("active");
+
+      // 表示する年度を取得
+      const target = tab.getAttribute("data-year");
+
+      // 対応する年度を表示
+      const targetContent = document.getElementById(target);
+
+      if (targetContent) {
+        targetContent.classList.add("active");
+      }
+
+    });
+
+  });
+
+});
+/* graduation.htmlここまで */

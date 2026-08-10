@@ -356,3 +356,145 @@ footer {
   }
 }
 
+/* graduation.htmlここから */
+
+.research-tabs {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+/* 年度切り替えボタン */
+.year-tabs {
+  display: flex;
+  width: 100%;
+  background-color: #eaf2f8;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.year-tab {
+  flex: 1;
+  padding: 20px 10px;
+  border: none;
+  background-color: #eaf2f8;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* マウスを乗せたとき */
+.year-tab:hover {
+  background-color: #dcecf7;
+}
+
+/* 選択中の年度 */
+.year-tab.active {
+  background-color: #ffffff;
+  color: #333;
+  border-top: 5px solid #2496d1;
+}
+
+/* 研究テーマを表示する白い部分 */
+.year-content {
+  display: none;
+  background-color: #ffffff;
+  padding: 45px 50px;
+  min-height: 400px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* 選択された年度だけ表示 */
+.year-content.active {
+  display: block;
+}
+
+/* 年度タイトル */
+.year-content h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.year-content .graduation {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* 研究テーマ */
+.year-content ul {
+  margin: 0 auto;
+  padding-left: 25px;
+  max-width: 850px;
+}
+
+.year-content li {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+
+/* ===== スマホ表示 ===== */
+
+@media screen and (max-width: 768px) {
+
+  .research-tabs {
+    width: 94%;
+    margin-top: 25px;
+  }
+
+  /* 年度ボタン */
+  .year-tab {
+    padding: 14px 5px;
+    font-size: 14px;
+  }
+
+  .year-tab.active {
+    border-top: 4px solid #2496d1;
+  }
+
+  /* 内容 */
+  .year-content {
+    padding: 30px 20px;
+    min-height: 350px;
+  }
+
+  .year-content h3 {
+    font-size: 18px;
+  }
+
+  .year-content .graduation {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .year-content li {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+
+
+/* かなり小さいスマホ用 */
+@media screen and (max-width: 480px) {
+
+  .year-tab {
+    font-size: 12px;
+    padding: 12px 3px;
+  }
+
+  .year-content {
+    padding: 25px 15px;
+  }
+
+  .year-content li {
+    font-size: 14px;
+  }
+}
+/*graduation.htmlここまで*/
