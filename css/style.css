@@ -3439,16 +3439,6 @@ footer {
     }
 
 }
-/*message.htmlここまで*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3879,3 +3869,289 @@ footer {
         font-size: 14px;
     }
 }
+
+/*qualification.htmlここから*/
+/* ==================================================
+   shikaku.html
+   資格・検定ページ
+================================================== */
+
+.qualification-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px 100px;
+}
+
+
+/* ==============================
+   ページタイトル
+============================== */
+
+.qualification-intro {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.qualification-title {
+    margin: 0 0 18px;
+
+    color: #0755b5;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+}
+
+.qualification-lead {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   資格一覧
+============================== */
+
+.qualification-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ==============================
+   資格カード
+============================== */
+
+.qualification-card {
+    position: relative;
+
+    min-height: 210px;
+
+    padding: 30px 32px;
+
+    background: #ffffff;
+
+    border:
+        1px solid #dce8f7;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.10);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* 上の青ライン */
+
+.qualification-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #1267d8;
+}
+
+
+/* マウスを乗せたとき */
+
+.qualification-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #bcd6f6;
+
+    box-shadow:
+        0 14px 32px rgba(18, 103, 216, 0.16);
+}
+
+
+/* ==============================
+   カード上部
+============================== */
+
+.qualification-card-top {
+    margin-bottom: 18px;
+}
+
+
+/* 01・02など */
+
+.qualification-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+    height: 27px;
+
+    margin-bottom: 13px;
+
+    padding: 0 10px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* 資格名 */
+
+.qualification-card h2 {
+    margin: 0;
+
+    color: #1267d8;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   説明文
+============================== */
+
+.qualification-card > p {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* ==============================
+   MOSの英語表記
+============================== */
+
+.qualification-card-top
+.qualification-subtitle {
+    margin: 4px 0 0;
+
+    color: #777;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   最後のMOSカード
+   7個なので最後だけ中央
+============================== */
+
+.qualification-card:last-child {
+    grid-column: 1 / -1;
+
+    width: calc(50% - 13px);
+
+    justify-self: center;
+}
+
+
+/* ==============================
+   スクロール用
+============================== */
+
+.qualification-scroll {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+}
+
+.qualification-scroll.qualification-show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ==============================
+   スマホ
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    .qualification-page {
+        padding: 55px 20px 70px;
+    }
+
+    .qualification-intro {
+        margin-bottom: 40px;
+    }
+
+    .qualification-title {
+        font-size: 30px;
+    }
+
+    .qualification-lead {
+        font-size: 14px;
+    }
+
+
+    /* 1列にする */
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .qualification-card {
+        min-height: auto;
+
+        padding: 26px 25px;
+    }
+
+    .qualification-card:last-child {
+        grid-column: auto;
+
+        width: auto;
+    }
+
+    .qualification-card h2 {
+        font-size: 19px;
+    }
+
+    .qualification-card > p {
+        font-size: 14px;
+    }
+
+}
+/*qualification.htmlここまで*/

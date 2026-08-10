@@ -905,3 +905,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 /*career_path.htmlここまで*/
+
+/*qualification.htmlここから*/
+/* =========================================
+   資格・検定ページ
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const qualificationCards =
+        document.querySelectorAll(".qualification-card");
+
+    if (qualificationCards.length === 0) {
+        return;
+    }
+
+
+    /* 最初は非表示状態にする */
+
+    qualificationCards.forEach(function (card) {
+
+        card.classList.add("qualification-scroll");
+
+    });
+
+
+    /* スクロール監視 */
+
+    const qualificationObserver =
+        new IntersectionObserver(
+
+            function (entries, observer) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "qualification-show"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.15
+            }
+
+        );
+
+
+    /* カードを順番に監視 */
+
+    qualificationCards.forEach(function (card, index) {
+
+        card.style.transitionDelay =
+            `${index * 0.08}s`;
+
+        qualificationObserver.observe(card);
+
+    });
+
+});
+/*qualification.htmlここまで*/
