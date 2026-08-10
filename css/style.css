@@ -498,3 +498,383 @@ footer {
   }
 }
 /*graduation.htmlここまで*/
+
+
+/*album.htmlここから*/
+
+/* =========================
+   アルバムページ
+========================= */
+
+#contents {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+#contents h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #173f70;
+    margin-bottom: 45px;
+}
+
+
+/* 年度ごとのまとまり */
+.list {
+    margin-bottom: 70px;
+}
+
+.slider-outer-container {
+    width: 100%;
+}
+
+
+/* =========================
+   年度タイトル
+========================= */
+
+.title-header {
+    position: relative;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 25px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #164981,
+        #4d99df,
+        #164981
+    );
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(31, 89, 150, 0.18);
+
+    overflow: hidden;
+}
+
+
+/* タイトルに光が流れる */
+.title-header::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 45%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+
+    animation: albumShine 5s infinite;
+}
+
+
+@keyframes albumShine {
+
+    0% {
+        left: -100%;
+    }
+
+    40% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+
+}
+
+
+/* =========================
+   スライダー本体
+========================= */
+
+.slider-container {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding:
+        10px
+        55px
+        25px;
+}
+
+
+/* 横に写真を並べる */
+.slider {
+    display: flex;
+
+    width: 100%;
+
+    transition:
+        transform 0.55s
+        cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    will-change: transform;
+}
+
+
+/* 写真1枚分 */
+.slide {
+    flex: 0 0 calc(100% / 3);
+
+    box-sizing: border-box;
+
+    padding: 0 10px;
+
+    text-align: center;
+}
+
+
+/* 写真 */
+.slide img {
+    display: block;
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(40, 80, 130, 0.14);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        filter 0.35s ease;
+}
+
+
+/* 写真にカーソルを置いた時 */
+.slide:hover img {
+    transform:
+        translateY(-7px)
+        scale(1.025);
+
+    box-shadow:
+        0 15px 30px
+        rgba(35, 100, 175, 0.22);
+
+    filter: brightness(1.04);
+}
+
+
+/* 写真下の文字 */
+.caption {
+    margin-top: 13px;
+
+    font-size: 15px;
+    color: #48515b;
+
+    transition: 0.3s;
+}
+
+
+.slide:hover .caption {
+    color: #247bd1;
+
+    transform:
+        translateY(2px);
+}
+
+
+/* =========================
+   左右の矢印
+========================= */
+
+.slideshow-arrow {
+    position: absolute;
+
+    top: 43%;
+
+    z-index: 10;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    fill: #2176c7;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px
+        rgba(20, 75, 140, 0.18);
+
+    transition:
+        background 0.25s,
+        fill 0.25s,
+        transform 0.25s;
+}
+
+
+/* 左 */
+.slideshow-arrow.prev {
+    left: 3px;
+
+    transform:
+        translateY(-50%)
+        rotate(180deg);
+}
+
+
+/* 右 */
+.slideshow-arrow.next {
+    right: 3px;
+
+    transform:
+        translateY(-50%);
+}
+
+
+/* ホバー */
+.slideshow-arrow.next:hover {
+    background: #247bd1;
+    fill: white;
+
+    transform:
+        translateY(-50%)
+        scale(1.1);
+}
+
+
+.slideshow-arrow.prev:hover {
+    background: #247bd1;
+    fill: white;
+
+    transform:
+        translateY(-50%)
+        rotate(180deg)
+        scale(1.1);
+}
+
+
+/* =========================
+   下のドット
+========================= */
+
+.slider-indicator {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 20px;
+}
+
+
+.slider-indicator span {
+    display: block;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #d2dae3;
+
+    transition:
+        0.3s ease;
+}
+
+
+/* 表示中の3枚 */
+.slider-indicator span.active {
+    background: #247bd1;
+
+    transform:
+        scale(1.25);
+}
+
+
+/* =========================
+   スマホ
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    #contents {
+        padding:
+            35px
+            15px;
+    }
+
+    #contents h2 {
+        font-size: 27px;
+    }
+
+
+    .title-header {
+        font-size: 17px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .slider-container {
+        padding:
+            10px
+            43px
+            20px;
+    }
+
+
+    /* スマホは1枚表示 */
+    .slide {
+        flex:
+            0 0 100%;
+
+        padding:
+            0 5px;
+    }
+
+
+    .slide img {
+        height: 240px;
+    }
+
+
+    .caption {
+        font-size: 14px;
+    }
+
+
+    .slideshow-arrow {
+        width: 36px;
+        height: 36px;
+
+        padding: 10px;
+    }
+
+}
+/*album.htmlここまで*/
