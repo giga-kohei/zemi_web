@@ -2083,3 +2083,63 @@ footer {
 
 }
 /*yearly_schedule.htmlここまで*/
+
+/*qualification.html.html ここから*/
+.qualification {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.qualification > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.qualification-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 28px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+.qualification-card h3 {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.qualification-card p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+}
+
+.qualification-subtitle {
+    text-align: center;
+    font-size: 14px !important;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 900px) {
+    .qualification-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .qualification-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*ここまで*/
