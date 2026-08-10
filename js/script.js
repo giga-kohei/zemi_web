@@ -975,3 +975,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 /*qualification.htmlここまで*/
+
+/* =========================================
+   共通フッター
+   ページ上部へ戻る
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const topButton =
+        document.querySelector(".footer-top-button");
+
+    if (!topButton) {
+        return;
+    }
+
+
+    /* 上へ戻るボタンをクリック */
+
+    topButton.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+});
