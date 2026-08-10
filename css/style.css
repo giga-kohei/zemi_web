@@ -1491,3 +1491,595 @@ footer {
 
 }
 /*activity.htmlここまで*/
+
+/*yearly_schedule.htmlここから*/
+/* ======================================
+   年間予定表ページ
+====================================== */
+
+.schedule-page {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 60px 0 90px;
+}
+
+
+/* ======================================
+   ページタイトル
+====================================== */
+
+.schedule-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.schedule-title {
+    margin: 0 0 18px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    color: #1267d8;
+}
+
+.schedule-subtitle {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    color: #555;
+}
+
+
+/* ======================================
+   吉田ゼミの年間行事
+====================================== */
+
+.schedule-main-card {
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+
+    margin-bottom: 80px;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    overflow: hidden;
+
+    position: relative;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* 左上の淡い飾り */
+
+.schedule-main-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -110px;
+    left: -110px;
+
+    background:
+        rgba(18, 103, 216, 0.05);
+
+    border-radius: 50%;
+}
+
+
+.schedule-main-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 13px 30px rgba(18, 103, 216, 0.17);
+}
+
+
+/* ======================================
+   紹介文
+====================================== */
+
+.schedule-main-text {
+    flex: 1;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.schedule-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 6px 14px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-radius: 20px;
+}
+
+
+.schedule-main-text h2 {
+    margin: 0 0 20px;
+
+    font-size: 27px;
+
+    color: #1267d8;
+}
+
+
+.schedule-main-text p {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* ======================================
+   紹介写真
+====================================== */
+
+.schedule-main-image {
+    flex: 1;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+
+.schedule-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 310px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+.schedule-main-card:hover
+.schedule-main-image img {
+
+    transform: scale(1.05);
+
+    filter: brightness(1.04);
+}
+
+
+/* ======================================
+   年間予定表 見出し
+====================================== */
+
+.schedule-table-section {
+    margin-top: 30px;
+}
+
+
+.schedule-table-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.schedule-table-en {
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.schedule-table-heading h2 {
+    margin: 0;
+
+    color: #1267d8;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* ======================================
+   表を囲むカード
+====================================== */
+
+.schedule-table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    border:
+        1px solid rgba(18, 103, 216, 0.08);
+}
+
+
+/* ======================================
+   年間予定表
+====================================== */
+
+.schedule-table {
+    width: 100%;
+
+    min-width: 800px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    table-layout: fixed;
+}
+
+
+/* ======================================
+   2年生・3年生・4年生
+====================================== */
+
+.schedule-table thead th {
+    padding: 20px 15px;
+
+    background: #1267d8;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-align: center;
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* 左上 */
+
+.schedule-table thead th:first-child {
+    width: 90px;
+
+    background: #0b5fc8;
+}
+
+
+/* 最後だけ線なし */
+
+.schedule-table thead th:last-child {
+    border-right: none;
+}
+
+
+/* ======================================
+   月
+====================================== */
+
+.schedule-table tbody th {
+    width: 90px;
+
+    padding: 22px 10px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    border-right:
+        1px solid #d9e9fb;
+
+    border-bottom:
+        1px solid #e3edf7;
+}
+
+
+/* ======================================
+   各予定セル
+====================================== */
+
+.schedule-table tbody td {
+    position: relative;
+
+    padding: 22px 18px;
+
+    color: #444;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    background: #ffffff;
+
+    border-right:
+        1px solid #e3edf7;
+
+    border-bottom:
+        1px solid #e3edf7;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* 4年生列の右線を消す */
+
+.schedule-table tbody td:last-child {
+    border-right: none;
+}
+
+
+/* 最終行の下線を消す */
+
+.schedule-table tbody tr:last-child th,
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ======================================
+   行を交互にほんのり変える
+====================================== */
+
+.schedule-table tbody tr:nth-child(even) td {
+    background: #fbfdff;
+}
+
+
+/* ======================================
+   予定が入っているセル
+   マウスを乗せた時
+====================================== */
+
+.schedule-table tbody td:not(:empty):hover {
+    background: #f0f7ff;
+
+    color: #1267d8;
+
+    font-weight: 500;
+
+    box-shadow:
+        inset 0 0 0 2px
+        rgba(18, 103, 216, 0.12);
+}
+
+
+/* ======================================
+   月にも少し動き
+====================================== */
+
+.schedule-table tbody th {
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.schedule-table tbody tr:hover th {
+    background: #1267d8;
+
+    color: #ffffff;
+}
+
+
+/* ======================================
+   行全体を見やすく
+====================================== */
+
+.schedule-table tbody tr {
+    transition:
+        background 0.25s ease;
+}
+
+
+.schedule-table tbody tr:hover td {
+    background: #f7fbff;
+}
+
+
+/* ======================================
+   予定があるセルに小さいアクセント
+====================================== */
+
+.schedule-table tbody td:not(:empty)::before {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    width: 5px;
+    height: 5px;
+
+    background: #ffe15d;
+
+    border-radius: 50%;
+
+    opacity: 0;
+
+    transform: scale(0);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.schedule-table tbody td:not(:empty):hover::before {
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+/* ======================================
+   スクロール表示用
+====================================== */
+
+.schedule-fade {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+.schedule-fade.schedule-show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ======================================
+   スマホ
+====================================== */
+
+@media screen and (max-width: 767px) {
+
+    .schedule-page {
+        width: 92%;
+
+        padding:
+            40px 0 65px;
+    }
+
+
+    .schedule-title {
+        font-size: 32px;
+    }
+
+
+    .schedule-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* 紹介カード */
+
+    .schedule-main-card {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 25px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .schedule-main-text h2 {
+        font-size: 23px;
+    }
+
+
+    .schedule-main-image {
+        width: 100%;
+    }
+
+
+    .schedule-main-image img {
+        height: 230px;
+    }
+
+
+    /* 年間予定表 */
+
+    .schedule-table-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .schedule-table-wrap {
+        border-radius: 15px;
+    }
+
+
+    .schedule-table {
+        min-width: 750px;
+    }
+
+
+    .schedule-table thead th {
+        padding: 16px 10px;
+
+        font-size: 15px;
+    }
+
+
+    .schedule-table tbody th {
+        width: 75px;
+
+        padding: 18px 8px;
+
+        font-size: 14px;
+    }
+
+
+    .schedule-table tbody td {
+        padding: 18px 12px;
+
+        font-size: 13px;
+    }
+
+}
+/*yearly_schedule.htmlここまで*/

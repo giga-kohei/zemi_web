@@ -521,3 +521,179 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 /*activity.htmlここまで*/
+
+/*yearly_schedule.htmlここから*/
+/* ======================================
+   年間予定表ページ
+====================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ==============================
+       対象取得
+    ============================== */
+
+    const scheduleMainCard =
+        document.querySelector(".schedule-main-card");
+
+    const scheduleTable =
+        document.querySelector(".schedule-table-wrap");
+
+    const scheduleRows =
+        document.querySelectorAll(".schedule-table tbody tr");
+
+
+    /* ==============================
+       初期状態
+    ============================== */
+
+    if (scheduleMainCard) {
+        scheduleMainCard.classList.add("schedule-fade");
+    }
+
+    if (scheduleTable) {
+        scheduleTable.classList.add("schedule-fade");
+    }
+
+
+    /* ==============================
+       スクロールでふわっと表示
+    ============================== */
+
+    const scheduleObserver =
+        new IntersectionObserver(
+
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "schedule-show"
+                        );
+
+                        scheduleObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.15
+            }
+
+        );
+
+
+    if (scheduleMainCard) {
+        scheduleObserver.observe(scheduleMainCard);
+    }
+
+    if (scheduleTable) {
+        scheduleObserver.observe(scheduleTable);
+    }
+
+
+    /* ==============================
+       行にマウスを乗せた時
+       少しだけ横に動かす
+    ============================== */
+
+    scheduleRows.forEach(function (row) {
+
+        row.addEventListener("mouseenter", function () {
+
+            this.style.transform =
+                "translateX(3px)";
+
+        });
+
+        row.addEventListener("mouseleave", function () {
+
+            this.style.transform =
+                "translateX(0)";
+
+        });
+
+    });
+
+
+    /* ==============================
+       表示時に少しずつ行を見せる
+    ============================== */
+
+    if (scheduleTable) {
+
+        scheduleObserver.unobserve(scheduleTable);
+
+        const tableObserver =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            scheduleTable.classList.add(
+                                "schedule-show"
+                            );
+
+                            scheduleRows.forEach(
+                                function (row, index) {
+
+                                    row.animate(
+
+                                        [
+                                            {
+                                                opacity: 0,
+                                                transform:
+                                                    "translateY(10px)"
+                                            },
+
+                                            {
+                                                opacity: 1,
+                                                transform:
+                                                    "translateY(0)"
+                                            }
+                                        ],
+
+                                        {
+                                            duration: 350,
+                                            delay: index * 35,
+                                            easing: "ease-out",
+                                            fill: "both"
+                                        }
+
+                                    );
+
+                                }
+                            );
+
+                            tableObserver.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.08
+                }
+
+            );
+
+        tableObserver.observe(scheduleTable);
+
+    }
+
+});
+/*yearly_schedule.htmlここまで*/
