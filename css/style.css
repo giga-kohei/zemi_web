@@ -882,3 +882,612 @@ footer {
 
 }
 /*album.htmlここまで*/
+
+/*activity.htmlここから*/
+/* ======================================
+   ゼミ活動ページ
+====================================== */
+
+.activity-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0 90px;
+}
+
+
+/* ======================================
+   ページタイトル
+====================================== */
+
+.activity-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.activity-title {
+    margin: 0 0 18px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    color: #1267d8;
+}
+
+.activity-subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* ======================================
+   吉田ゼミの活動について
+====================================== */
+
+.activity-main-card {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    margin-bottom: 80px;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.activity-main-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -110px;
+    left: -110px;
+
+    border-radius: 50%;
+
+    background: rgba(18, 103, 216, 0.05);
+}
+
+.activity-main-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.activity-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 6px 14px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 20px;
+}
+
+.activity-main-text h2 {
+    margin: 0 0 20px;
+
+    font-size: 27px;
+
+    color: #1267d8;
+}
+
+.activity-main-text p {
+    margin: 0 0 15px;
+
+    line-height: 1.9;
+
+    color: #444;
+}
+
+.activity-main-image {
+    flex: 1;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.activity-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.activity-main-card:hover .activity-main-image img {
+    transform: scale(1.05);
+    filter: brightness(1.04);
+}
+
+
+/* ======================================
+   年間予定表ボタン
+====================================== */
+
+.activity-button {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 15px;
+    padding: 13px 25px;
+
+    background: #1267d8;
+
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 5px 14px rgba(18, 103, 216, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.activity-button:hover {
+    transform: translateY(-3px);
+
+    background: #0e59bd;
+
+    box-shadow:
+        0 9px 20px rgba(18, 103, 216, 0.25);
+}
+
+.activity-button span {
+    transition: transform 0.3s ease;
+}
+
+.activity-button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ======================================
+   活動内容 見出し
+====================================== */
+
+.activity-detail {
+    margin-top: 30px;
+}
+
+.activity-detail-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.activity-detail-en {
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.activity-detail-heading h2 {
+    margin: 0 0 12px;
+
+    font-size: 30px;
+
+    color: #1267d8;
+}
+
+.activity-detail-heading p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* ======================================
+   活動カード
+====================================== */
+
+.activity-step {
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    gap: 0;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    position: relative;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.activity-step:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 14px 32px rgba(18, 103, 216, 0.18);
+}
+
+
+/* ======================================
+   左側：学年・学期
+====================================== */
+
+.activity-step-side {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 300px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            160deg,
+            #1267d8 0%,
+            #4a91e2 100%
+        );
+
+    color: white;
+}
+
+.activity-step-number {
+    position: absolute;
+
+    top: 17px;
+    left: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.activity-step-grade {
+    margin-bottom: 5px;
+
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.activity-step-term {
+    padding: 5px 15px;
+
+    background: white;
+
+    color: #1267d8;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+
+/* 左側の薄い丸 */
+
+.activity-step-side::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -55px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ======================================
+   右側：活動内容
+====================================== */
+
+.activity-step-content {
+    padding: 35px 40px;
+
+    position: relative;
+}
+
+.activity-step-top {
+    margin-bottom: 20px;
+}
+
+.activity-step-tag {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 6px 13px;
+
+    background: #ffe15d;
+
+    color: #0b2f66;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+.activity-step-content h3 {
+    margin: 0;
+
+    font-size: 23px;
+
+    color: #1267d8;
+}
+
+.activity-step-content p {
+    margin: 0 0 12px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+}
+
+
+/* ======================================
+   キーワード
+====================================== */
+
+.activity-keywords {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 22px;
+}
+
+.activity-keywords span {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.activity-keywords span:hover {
+    transform: translateY(-2px);
+
+    background: #dceeff;
+}
+
+
+/* ======================================
+   カード間の矢印
+====================================== */
+
+.activity-flow-arrow {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 16px auto;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 4px 12px rgba(18, 103, 216, 0.1);
+
+    transition:
+        transform 0.3s ease;
+}
+
+.activity-flow-arrow:hover {
+    transform: translateY(4px);
+}
+
+
+/* ======================================
+   スクロールアニメーション
+====================================== */
+
+.activity-fade {
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.75s ease,
+        transform 0.75s ease;
+}
+
+.activity-fade.activity-show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ======================================
+   スマホ
+====================================== */
+
+@media screen and (max-width: 767px) {
+
+    .activity-page {
+        width: 92%;
+
+        padding:
+            40px 0 65px;
+    }
+
+    .activity-title {
+        font-size: 32px;
+    }
+
+    .activity-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* 上の紹介 */
+
+    .activity-main-card {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 25px;
+
+        margin-bottom: 60px;
+    }
+
+    .activity-main-text h2 {
+        font-size: 23px;
+    }
+
+    .activity-main-image {
+        width: 100%;
+    }
+
+    .activity-main-image img {
+        height: 230px;
+    }
+
+
+    /* 活動内容 */
+
+    .activity-detail-heading h2 {
+        font-size: 25px;
+    }
+
+    .activity-detail-heading p {
+        font-size: 13px;
+    }
+
+
+    /* カードを縦型に */
+
+    .activity-step {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-step-side {
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+    .activity-step-number {
+        top: 12px;
+        left: 15px;
+    }
+
+    .activity-step-grade {
+        font-size: 24px;
+    }
+
+    .activity-step-content {
+        padding: 27px 23px;
+    }
+
+    .activity-step-content h3 {
+        font-size: 20px;
+    }
+
+    .activity-step-content p {
+        font-size: 14px;
+    }
+
+    .activity-flow-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 18px;
+    }
+
+}
+/*activity.htmlここまで*/
