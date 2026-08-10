@@ -697,3 +697,211 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 /*yearly_schedule.htmlここまで*/
+
+/*career_path.htmlここから*/
+/* =========================================
+   卒業後の進路ページ
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================
+       年度切り替え
+    ===================================== */
+
+    const careerTabs =
+        document.querySelectorAll(".career-year-tab");
+
+    const careerContents =
+        document.querySelectorAll(".career-year-content");
+
+
+    careerTabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const targetYear =
+                this.getAttribute("data-career-year");
+
+
+            /* すべての年度ボタンを解除 */
+            careerTabs.forEach(function (button) {
+
+                button.classList.remove("active");
+
+            });
+
+
+            /* すべての年度内容を非表示 */
+            careerContents.forEach(function (content) {
+
+                content.classList.remove("active");
+
+            });
+
+
+            /* 押した年度ボタンを選択状態にする */
+            this.classList.add("active");
+
+
+            /* 対応する年度を取得 */
+            const targetContent =
+                document.getElementById(targetYear);
+
+
+            /* 対応する年度を表示 */
+            if (targetContent) {
+
+                targetContent.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+
+    /* =====================================
+       最初の表示を確認
+    ===================================== */
+
+    if (careerTabs.length > 0 && careerContents.length > 0) {
+
+        const activeTab =
+            document.querySelector(".career-year-tab.active");
+
+        const activeContent =
+            document.querySelector(".career-year-content.active");
+
+
+        /* activeが無い場合は2024年度を表示 */
+        if (!activeTab || !activeContent) {
+
+            careerTabs.forEach(function (button) {
+                button.classList.remove("active");
+            });
+
+            careerContents.forEach(function (content) {
+                content.classList.remove("active");
+            });
+
+
+            careerTabs[0].classList.add("active");
+
+            careerContents[0].classList.add("active");
+
+        }
+
+    }
+
+
+    /* =====================================
+       スクロールアニメーション
+    ===================================== */
+
+    const fadeTargets =
+        document.querySelectorAll(
+            ".career-main-card, .career-results"
+        );
+
+
+    fadeTargets.forEach(function (target) {
+
+        target.classList.add("career-fade");
+
+    });
+
+
+    if ("IntersectionObserver" in window) {
+
+        const careerObserver =
+            new IntersectionObserver(
+
+                function (entries, observer) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add(
+                                "career-show"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.1
+                }
+
+            );
+
+
+        fadeTargets.forEach(function (target) {
+
+            careerObserver.observe(target);
+
+        });
+
+    } else {
+
+        /* IntersectionObserver非対応の場合 */
+
+        fadeTargets.forEach(function (target) {
+
+            target.classList.add(
+                "career-show"
+            );
+
+        });
+
+    }
+
+
+    /* =====================================
+       年度切り替え時の軽い動き
+    ===================================== */
+
+    careerTabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            this.animate(
+
+                [
+                    {
+                        transform:
+                            "translateY(-2px) scale(1)"
+                    },
+
+                    {
+                        transform:
+                            "translateY(-2px) scale(0.96)"
+                    },
+
+                    {
+                        transform:
+                            "translateY(-2px) scale(1)"
+                    }
+                ],
+
+                {
+                    duration: 220,
+                    easing: "ease-out"
+                }
+
+            );
+
+        });
+
+    });
+
+});
+/*career_path.htmlここまで*/

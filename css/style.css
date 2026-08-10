@@ -2083,3 +2083,852 @@ footer {
 
 }
 /*yearly_schedule.htmlここまで*/
+
+/*career_path.htmlここから*/
+/* =========================================
+   卒業後の進路ページ
+========================================= */
+
+.career-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 70px 30px 35px;
+}
+
+
+/* =========================================
+   ページタイトル
+========================================= */
+
+.career-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.career-title {
+    margin: 0 0 15px;
+
+    color: #1267d8;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.career-subtitle {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   吉田ゼミの卒業後の進路
+========================================= */
+
+.career-main-card {
+    display: grid;
+
+    grid-template-columns:
+        1.15fr 0.85fr;
+
+    align-items: center;
+
+    max-width: 1050px;
+
+    margin: 0 auto 90px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.career-main-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 35px rgba(18, 103, 216, 0.17);
+}
+
+
+/* 左側文章 */
+
+.career-main-text {
+    padding: 45px 50px;
+}
+
+.career-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+    padding: 6px 14px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-radius: 20px;
+}
+
+.career-main-text h2 {
+    margin: 0 0 22px;
+
+    color: #1267d8;
+
+    font-size: 27px;
+}
+
+.career-main-text p {
+    margin: 0 0 14px;
+
+    color: #444;
+
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* 画像 */
+
+.career-main-image {
+    height: 100%;
+
+    min-height: 390px;
+
+    overflow: hidden;
+}
+
+.career-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.career-main-card:hover
+.career-main-image img {
+    transform: scale(1.05);
+
+    filter: brightness(1.04);
+}
+
+
+/* =========================================
+   卒業生の就職先
+========================================= */
+
+.career-results {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.career-results-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.career-results-en {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.career-results-heading h2 {
+    margin: 0 0 12px;
+
+    color: #1267d8;
+
+    font-size: 30px;
+}
+
+.career-results-heading p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   年度切り替えボタン
+========================================= */
+
+.career-year-tabs {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.career-year-tab {
+    min-width: 125px;
+
+    padding: 14px 20px;
+
+    border:
+        1px solid #dce8f8;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(18, 103, 216, 0.08);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.career-year-tab span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.career-year-tab:hover {
+    color: #1267d8;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(18, 103, 216, 0.14);
+}
+
+.career-year-tab.active {
+    background: #1267d8;
+
+    color: #ffffff;
+
+    border-color: #1267d8;
+
+    box-shadow:
+        0 8px 20px rgba(18, 103, 216, 0.22);
+}
+
+
+/* =========================================
+   年度別コンテンツ
+========================================= */
+
+.career-year-content {
+    display: none;
+}
+
+.career-year-content.active {
+    display: block;
+
+    animation:
+        careerChange 0.45s ease;
+}
+
+@keyframes careerChange {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   年度見出し
+========================================= */
+
+.career-year-header {
+    margin-bottom: 20px;
+}
+
+.career-year-header > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #1267d8;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.career-year-header h3 {
+    margin: 0;
+
+    color: #1267d8;
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   就職先＋業界別
+========================================= */
+
+.career-result-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   共通カード
+========================================= */
+
+.career-company-card,
+.career-industry-card {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    border:
+        1px solid rgba(18, 103, 216, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.career-company-card:hover,
+.career-industry-card:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 13px 30px rgba(18, 103, 216, 0.17);
+}
+
+.career-company-card h4,
+.career-industry-card h4 {
+    margin: 0;
+
+    padding:
+        20px 25px;
+
+    color: #1267d8;
+
+    font-size: 19px;
+
+    border-bottom:
+        1px solid #edf2f7;
+}
+
+
+/* =========================================
+   就職先一覧
+========================================= */
+
+.career-company-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 25px;
+
+    padding:
+        20px 25px 28px;
+}
+
+.career-company-list p {
+    position: relative;
+
+    margin: 0;
+
+    padding:
+        11px 4px 11px 17px;
+
+    color: #444;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    border-bottom:
+        1px solid #edf2f7;
+}
+
+
+/* 青い小さい丸 */
+
+.career-company-list p::before {
+    content: "";
+
+    position: absolute;
+
+    left: 2px;
+    top: 19px;
+
+    width: 6px;
+    height: 6px;
+
+    background: #1267d8;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   円グラフ部分
+========================================= */
+
+.career-chart-area {
+    padding:
+        30px 25px 35px;
+}
+
+
+/* 円グラフ共通 */
+
+.career-pie {
+    width: 260px;
+    height: 260px;
+
+    margin:
+        0 auto 35px;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 22px rgba(18, 103, 216, 0.10);
+
+    transition:
+        transform 0.35s ease;
+}
+
+.career-industry-card:hover
+.career-pie {
+    transform:
+        scale(1.03);
+}
+
+
+/* =========================================
+   2024年度 円グラフ
+   40 / 20 / 13 / 13 / 7 / 7
+========================================= */
+
+.career-pie-2024 {
+    background:
+        conic-gradient(
+            #1267d8 0% 40%,
+            #ffb53d 40% 60%,
+            #6f7b87 60% 73%,
+            #ffe15d 73% 86%,
+            #63c6e8 86% 93%,
+            #55c94b 93% 100%
+        );
+}
+
+
+/* =========================================
+   2023年度
+   65 / 7 / 14 / 7 / 7
+========================================= */
+
+.career-pie-2023 {
+    background:
+        conic-gradient(
+            #1267d8 0% 65%,
+            #ffb53d 65% 72%,
+            #6f7b87 72% 86%,
+            #ffe15d 86% 93%,
+            #63c6e8 93% 100%
+        );
+}
+
+
+/* =========================================
+   2022年度
+   23 / 12 / 29 / 18 / 6 / 12
+========================================= */
+
+.career-pie-2022 {
+    background:
+        conic-gradient(
+            #1267d8 0% 23%,
+            #ffb53d 23% 35%,
+            #6f7b87 35% 64%,
+            #ffe15d 64% 82%,
+            #63c6e8 82% 88%,
+            #55c94b 88% 100%
+        );
+}
+
+
+/* =========================================
+   2021年度
+   53 / 13 / 7 / 20 / 7
+========================================= */
+
+.career-pie-2021 {
+    background:
+        conic-gradient(
+            #1267d8 0% 53%,
+            #ffb53d 53% 66%,
+            #6f7b87 66% 73%,
+            #ffe15d 73% 93%,
+            #63c6e8 93% 100%
+        );
+}
+
+
+/* =========================================
+   2020年度
+   53 / 29 / 12 / 6
+========================================= */
+
+.career-pie-2020 {
+    background:
+        conic-gradient(
+            #1267d8 0% 53%,
+            #ffb53d 53% 82%,
+            #6f7b87 82% 94%,
+            #ffe15d 94% 100%
+        );
+}
+
+
+/* =========================================
+   円グラフ凡例
+========================================= */
+
+.career-chart-legend {
+    max-width: 330px;
+
+    margin: 0 auto;
+}
+
+.career-chart-legend > div {
+    display: grid;
+
+    grid-template-columns:
+        15px 1fr auto;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        9px 0;
+
+    border-bottom:
+        1px solid #edf2f7;
+}
+
+.career-chart-legend > div:last-child {
+    border-bottom: none;
+}
+
+
+/* 色の四角 */
+
+.legend-color {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 3px;
+}
+
+
+/* 円グラフと同じ色 */
+
+.color1 {
+    background: #1267d8;
+}
+
+.color2 {
+    background: #ffb53d;
+}
+
+.color3 {
+    background: #6f7b87;
+}
+
+.color4 {
+    background: #ffe15d;
+}
+
+.color5 {
+    background: #63c6e8;
+}
+
+.color6 {
+    background: #55c94b;
+}
+
+
+/* 業種名 */
+
+.legend-name {
+    color: #444;
+
+    font-size: 14px;
+}
+
+
+/* 割合 */
+
+.career-chart-legend strong {
+    color: #1267d8;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   内定者インタビュー
+========================================= */
+
+.interview-section {
+    width: 90%;
+    max-width: 1050px;
+
+    margin:
+        35px auto 0;
+
+    clear: both;
+}
+
+.interview-title {
+    width: 100%;
+
+    margin:
+        0 0 25px;
+
+    text-align: center;
+
+    color: #1267d8;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* 既存の説明 */
+
+.interview-section .setsumei {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin:
+        0 auto 35px;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+.interview-section .setsumei ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.interview-section .setsumei li {
+    display: block;
+
+    width: 100%;
+
+    margin: 5px 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #444;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   スクロール表示
+========================================= */
+
+.career-fade {
+    opacity: 0;
+
+    transform:
+        translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.career-fade.career-show {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================
+   スマホ
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .career-page {
+        padding:
+            45px 18px 70px;
+    }
+
+
+    .career-title {
+        font-size: 32px;
+    }
+
+
+    /* メイン */
+
+    .career-main-card {
+        grid-template-columns: 1fr;
+
+        margin-bottom: 65px;
+    }
+
+    .career-main-text {
+        padding:
+            30px 25px;
+    }
+
+    .career-main-image {
+        min-height: 240px;
+    }
+
+
+    /* 年度ボタン */
+
+    .career-year-tabs {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding-bottom: 12px;
+    }
+
+    .career-year-tab {
+        flex:
+            0 0 115px;
+
+        min-width: 115px;
+    }
+
+
+    /* 就職先 */
+
+    .career-result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-company-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 円グラフ */
+
+    .career-pie {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    /* インタビュー */
+
+    .interview-section {
+        width: 92%;
+
+        margin-top: 65px;
+    }
+
+    .interview-title {
+        font-size: 25px;
+    }
+
+}
+.career-results {
+    margin-bottom: 0;
+}
+
+.career-year-content {
+    margin-bottom: 0;
+}
+
+.career-result-grid {
+    margin-bottom: 0;
+}
+/*career_path.htmlここまで*/
