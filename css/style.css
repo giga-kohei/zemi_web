@@ -3164,3 +3164,16 @@ footer {
     }
 }
 
+
+
+/*sns.htmlここから*/
+.sns-title {
+    text-align: center;
+}
+
+.sns-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*sns.htmlここまで*/
