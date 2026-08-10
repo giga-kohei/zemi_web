@@ -74,5 +74,5 @@ function showGrade(id){
 }
 
 window.onload=function(){
-    showGrade("grade2");
+    showGrade("grade4");
 };
