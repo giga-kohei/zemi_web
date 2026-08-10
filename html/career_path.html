@@ -11,23 +11,81 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="../images/logo-5.png">
+    <header class="site-header">
+    <!-- ロゴ -->
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo-5.png" alt="愛知学院大学 吉田ゼミナール">
+        </a>
+    </div>
+    <!-- ナビゲーション -->
+    <nav class="header-nav">
+        <!-- ゼミ紹介 -->
+        <div class="nav-dropdown">
+            <a href="#" class="nav-main">
+                ゼミ紹介
+                <span class="nav-arrow">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="activity.html">活動内容</a>
+                </li>
+                <li>
+                    <a href="yearly_schedule.html">年間予定</a>
+                </li>
+                <li>
+                    <a href="teacher.html">教員紹介</a>
+                </li>
+                
+            </ul>
         </div>
+        <!-- 研究テーマ -->
+        <div class="nav-dropdown">
+            <a href="#" class="nav-main">
+                研究テーマ
+                <span class="nav-arrow">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="group_research.html">グループ研究</a>
+                </li>
+                <li>
+                    <a href="graduation_thesis.html">卒業論文</a>
+                </li>
+            </ul>
+        </div>
+        <!-- メンバー -->
+        <a href="member.html">メンバー</a>
+        <!-- ゼミ希望者へ -->
+        <div class="nav-dropdown">
+            <a href="#" class="nav-main">
+                ゼミ希望者へ
+                <span class="nav-arrow">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="career_path.html">卒業後の進路</a>
+                </li>
+                <li>
+                    <a href="qualification.html">資格・検定</a>
+                </li>
+                <li>
+                    <a href="faq.html">Q&A</a>
+                </li>
+                <li>
+                    <a href="message.html">在校生・卒業生からのメッセージ</a>
+                </li>
+            </ul>
+        </div>
+        <!-- アルバム -->
+        <a href="album.html">アルバム</a>
+        <!-- 企業 -->
+        <a href="company.html">企業の皆様へ</a>
 
-        <nav>
-            <a href="#news">お知らせ</a>
-            <a href="#about">ゼミ紹介</a>
-            <a href="#theme">研究テーマ</a>
-            <a href="#member">メンバー</a>
-            <a href="#hope">ゼミ希望者へ</a>
-            <a href="#album">アルバム</a>
-            <a href="#company">企業の皆様へ</a>
-            <a href="#qa">Q&A</a>
-            <a href="#contact" class="question-btn">質問する</a>
-        </nav>
-    </header>
+        <a href="sns.html">SNS</a>
+       
+    </nav>
+</header>
 
 <main>
 
@@ -861,9 +919,86 @@
 <!--/#contents-->
 </main>
 
-<footer>
-        © Yoshida Seminar, Aichi Gakuin University
-    </footer>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <!-- 左：ゼミ情報 -->
+        <div class="footer-about">
+            <h2 class="footer-logo">
+                吉田ゼミナール
+            </h2>
+            <p>
+                愛知学院大学 商学部 商学科
+            </p>
+            <p>
+                ビジネス情報コース
+            </p>
+            <p class="footer-message">
+                <br>一緒に学び、成長できる仲間を待っています！
+            </p>
+        </div>
+<!-- メニュー -->
+<div class="footer-column footer-menu">
+    <h3>メニュー</h3>
+    <span class="footer-line"></span>
+
+    <div class="footer-nav">
+        <a href="activity.html">ゼミ紹介</a>
+        <a href="group_research.html">研究テーマ</a>
+        <a href="member.html">メンバー</a>
+        <a href="faq.html">ゼミ希望者へ</a>
+        <a href="album.html">アルバム</a>
+        <a href="company.html">企業の皆様へ</a>
+        <a href="sns.html">SNS</a>
+    </div>
+</div>
+<!-- 関連リンク -->
+<div class="footer-column footer-links">
+    <h3>関連リンク</h3>
+    <span class="footer-line"></span>
+
+    <div class="footer-nav">
+        <a href="https://www.agu.ac.jp">愛知学院大学</a>
+        <a href="https://comm.agu.ac.jp">商学部</a>
+        <a href="https://comm.agu.ac.jp/course3/">ビジネス情報コース</a>
+    </div>
+</div>
+        <!-- SNS -->
+        <div class="footer-column footer-sns">
+            <h3>SNS</h3>
+            <a href="https://www.instagram.com/yoshida_zemi_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer-sns-link">
+                <span class="footer-sns-icon">
+                    ◎
+                </span>
+                Instagram
+            </a>
+            <a href="https://x.com/ysd_zemi?s=20" class="footer-sns-link">
+                <span class="footer-sns-icon">
+                    X
+                </span>
+                X（旧Twitter）
+            </a>
+        </div>
+        <!-- 上へ戻る -->
+        <div class="footer-pagetop">
+            <a href="#"
+               class="footer-top-button"
+               aria-label="ページ上部へ戻る">
+                ↑
+            </a>
+        </div>
+    </div>
+
+
+    <!-- コピーライト -->
+    <div class="footer-bottom">
+
+        <p>
+            © Yoshida Seminar, Aichi Gakuin University
+        </p>
+
+    </div>
+
+</footer>
 
 <!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
