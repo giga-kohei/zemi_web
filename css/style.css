@@ -443,6 +443,20 @@ footer {
   margin-bottom: 5px;
 }
 
+#contents > p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+#contents > p:last-of-type {
+    margin-bottom: 60px;
+}
+
+
 
 /* ===== スマホ表示 ===== */
 
