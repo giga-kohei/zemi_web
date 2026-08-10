@@ -338,3 +338,186 @@ albumLists.forEach(list => {
     albumObserver.observe(list);
 });
 /*album.htmlここまで*/
+
+/*activity.htmlここから*/
+/* ======================================
+   ゼミ活動ページ
+====================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ==============================
+       対象を取得
+    ============================== */
+
+    const mainCard =
+        document.querySelector(".activity-main-card");
+
+    const activitySteps =
+        document.querySelectorAll(".activity-step");
+
+    const flowArrows =
+        document.querySelectorAll(".activity-flow-arrow");
+
+
+    /* ==============================
+       最初は非表示状態にする
+    ============================== */
+
+    if (mainCard) {
+        mainCard.classList.add("activity-fade");
+    }
+
+    activitySteps.forEach(function (step) {
+        step.classList.add("activity-fade");
+    });
+
+
+    /* ==============================
+       スクロールで表示
+    ============================== */
+
+    const activityObserver =
+        new IntersectionObserver(
+
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "activity-show"
+                        );
+
+                        activityObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.15
+            }
+
+        );
+
+
+    /* メインカード */
+    if (mainCard) {
+
+        activityObserver.observe(
+            mainCard
+        );
+
+    }
+
+
+    /* 活動内容カード */
+    activitySteps.forEach(function (step) {
+
+        activityObserver.observe(
+            step
+        );
+
+    });
+
+
+    /* ==============================
+       カードごとに少し表示をずらす
+    ============================== */
+
+    activitySteps.forEach(
+        function (step, index) {
+
+            step.style.transitionDelay =
+                `${index * 0.08}s`;
+
+        }
+    );
+
+
+    /* ==============================
+       矢印のやさしい動き
+    ============================== */
+
+    flowArrows.forEach(function (arrow) {
+
+        arrow.animate(
+
+            [
+                {
+                    transform: "translateY(0)"
+                },
+
+                {
+                    transform: "translateY(6px)"
+                },
+
+                {
+                    transform: "translateY(0)"
+                }
+            ],
+
+            {
+                duration: 1800,
+                iterations: Infinity,
+                easing: "ease-in-out"
+            }
+
+        );
+
+    });
+
+
+    /* ==============================
+       年間予定表ボタン
+       クリック時の軽いアニメーション
+    ============================== */
+
+    const activityButton =
+        document.querySelector(
+            ".activity-button"
+        );
+
+
+    if (activityButton) {
+
+        activityButton.addEventListener(
+            "mousedown",
+            function () {
+
+                this.style.transform =
+                    "translateY(-1px) scale(0.97)";
+
+            }
+        );
+
+
+        activityButton.addEventListener(
+            "mouseup",
+            function () {
+
+                this.style.transform = "";
+
+            }
+        );
+
+
+        activityButton.addEventListener(
+            "mouseleave",
+            function () {
+
+                this.style.transform = "";
+
+            }
+        );
+
+    }
+
+});
+/*activity.htmlここまで*/
