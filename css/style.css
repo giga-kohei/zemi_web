@@ -692,9 +692,10 @@ footer {
 
 #contents h2 {
     text-align: center;
+    margin: 50px 0 20px;
     font-size: 32px;
+    font-weight: bold;
     color: #173f70;
-    margin-bottom: 45px;
 }
 
 
@@ -751,26 +752,12 @@ footer {
 
 /* アルバムページタイトル */
 
-#contents h2 {
-    text-align: center;
 
-    margin: 50px 0 20px;
-
-    font-size: 36px;
-    font-weight: bold;
-
-    color: #1267d8;
-}
 
 
 /* スマホ */
 
 @media screen and (max-width: 767px) {
-
-    #contents h2 {
-        font-size: 30px;
-        margin-top: 35px;
-    }
 
     .title-header {
         margin: 30px auto 20px;
@@ -1013,7 +1000,9 @@ footer {
 
     #contents h2 {
         font-size: 27px;
+        margin-top: 35px;
     }
+}
 
 
     .title-header {
