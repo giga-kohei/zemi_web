@@ -3440,3 +3440,442 @@ footer {
 
 }
 /*message.htmlここまで*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   企業の皆様へページ デザイン
+========================================= */
+
+/* ページ全体 */
+#contents {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 25px 100px;
+}
+
+/* =========================================
+   最初の「企業の皆様へ」
+========================================= */
+
+#contents > .kigyou-text:first-child {
+    max-width: 900px;
+    margin: 30px auto 70px;
+    padding: 45px 55px;
+
+    background: #ffffff;
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* 左上の飾り */
+#contents > .kigyou-text:first-child::before {
+    content: "";
+
+    position: absolute;
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    left: -100px;
+
+    border-radius: 50%;
+    background: rgba(18, 103, 216, 0.06);
+}
+
+/* 見出し */
+#contents > .kigyou-text:first-child h2 {
+    margin: 0 0 25px;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    color: #1267d8;
+}
+
+/* 説明文 */
+#contents > .kigyou-text:first-child p {
+    max-width: 780px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 2;
+
+    color: #555;
+}
+
+
+/* =========================================
+   吉田ゼミナール紹介
+========================================= */
+
+#contents > .list {
+    display: block;
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 50px 60px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    box-sizing: border-box;
+}
+
+/* 大見出し */
+#contents > .list > .kigyou-text > h1 {
+    margin: 0 0 45px;
+
+    font-size: 32px;
+    color: #1267d8;
+}
+
+/* =========================================
+   各項目のタイトル
+========================================= */
+
+#contents .title-header {
+    max-width: 850px;
+
+    margin: 40px auto 0;
+    padding: 15px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #1267d8;
+
+    background: #eaf4ff;
+
+    border-left: 5px solid #1267d8;
+    border-radius: 10px;
+
+    box-shadow: none;
+}
+
+/* =========================================
+   各項目の本文
+========================================= */
+
+#contents .title-header + div {
+    max-width: 850px;
+    margin: 0 auto;
+
+    padding: 22px 10px 10px;
+
+    box-sizing: border-box;
+}
+
+#contents .title-header + div p {
+    margin: 0 0 18px;
+
+    font-size: 15px;
+    line-height: 2;
+
+    color: #555;
+}
+
+/* =========================================
+   表
+========================================= */
+
+#contents table.ta4 {
+    width: 100%;
+
+    margin: 25px 0;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #dce9f5;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(18, 103, 216, 0.06);
+}
+
+#contents table.ta4 th {
+    width: 30%;
+
+    padding: 15px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom: 1px solid #dce9f5;
+}
+
+#contents table.ta4 td {
+    padding: 15px;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    border-bottom: 1px solid #e8eef5;
+}
+
+#contents table.ta4 tr:last-child th,
+#contents table.ta4 tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   卒業論文・就職先
+========================================= */
+
+.Graduation-thesis-theme,
+.company_name {
+    margin: 20px 0;
+
+    padding: 18px 25px;
+
+    background: #f7fbff;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #2496d1;
+}
+
+.Graduation-thesis-theme p,
+.company_name p {
+    margin: 0 !important;
+    line-height: 2 !important;
+}
+
+
+/* =========================================
+   「詳しくはこちら」
+========================================= */
+
+.right-text {
+    text-align: right !important;
+
+    margin-top: 15px !important;
+}
+
+.right-text a {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    color: #1267d8;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border-bottom: 2px solid #1267d8;
+
+    transition: 0.25s;
+}
+
+.right-text a:hover {
+    color: #0b5fc8;
+    border-color: #0b5fc8;
+}
+
+
+/* =========================================
+   お問い合わせ
+========================================= */
+
+#contents .kigyou-text:last-of-type {
+    max-width: 850px;
+
+    margin: 70px auto 25px;
+    padding: 40px 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf4ff,
+            #ffffff
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.10);
+}
+
+#contents .kigyou-text:last-of-type h1 {
+    margin: 0 0 25px;
+
+    font-size: 30px;
+
+    color: #1267d8;
+}
+
+#contents .kigyou-text:last-of-type p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+/* =========================================
+   お問い合わせボタン
+========================================= */
+
+#contents .c {
+    text-align: center;
+
+    margin: 30px 0 10px;
+}
+
+#contents .btn1 {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 30px;
+
+    background: #1267d8;
+
+    color: #ffffff !important;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 15px rgba(18, 103, 216, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#contents .btn1:hover {
+    background: #0e59bd;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(18, 103, 216, 0.28);
+}
+
+
+/* =========================================
+   スマホ
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    #contents {
+        padding: 40px 15px 70px;
+    }
+
+    /* 最初の説明 */
+    #contents > .kigyou-text:first-child {
+        margin: 20px auto 45px;
+        padding: 35px 25px;
+    }
+
+    #contents > .kigyou-text:first-child h2 {
+        font-size: 28px;
+    }
+
+    #contents > .kigyou-text:first-child p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    /* メインカード */
+    #contents > .list {
+        padding: 35px 20px;
+        border-radius: 18px;
+    }
+
+    #contents > .list > .kigyou-text > h1 {
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+
+    /* 項目タイトル */
+    #contents .title-header {
+        margin-top: 30px;
+        padding: 13px 12px;
+
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    #contents .title-header + div {
+        padding: 18px 5px 5px;
+    }
+
+    #contents .title-header + div p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    /* 表 */
+    #contents table.ta4 {
+        font-size: 13px;
+    }
+
+    #contents table.ta4 th,
+    #contents table.ta4 td {
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+
+    /* 問い合わせ */
+    #contents .kigyou-text:last-of-type {
+        margin-top: 45px;
+        padding: 30px 25px;
+    }
+
+    #contents .kigyou-text:last-of-type h1 {
+        font-size: 25px;
+    }
+
+    #contents .kigyou-text:last-of-type p {
+        font-size: 14px;
+    }
+}
