@@ -530,76 +530,80 @@ footer {
 }
 
 
-/* =========================
-   年度タイトル
-========================= */
+/* アルバム 年度タイトル */
 
 .title-header {
-    position: relative;
-    width: 100%;
-    padding: 12px 0;
-    margin-bottom: 25px;
+    max-width: 1100px;
+    margin: 40px auto 25px;
+    padding: 15px 20px;
 
-    color: white;
-    font-size: 20px;
+    text-align: center;
+
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
 
-    background: linear-gradient(
-        90deg,
-        #164981,
-        #4d99df,
-        #164981
-    );
+    color: #1267d8;
 
-    border-radius: 12px;
+    background: white;
+
+    border-radius: 18px;
 
     box-shadow:
-        0 5px 15px rgba(31, 89, 150, 0.18);
+        0 8px 25px rgba(18, 103, 216, 0.12);
 
-    overflow: hidden;
+    transition: 0.3s;
+}
+
+.title-header:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(18, 103, 216, 0.18);
 }
 
 
-/* タイトルに光が流れる */
-.title-header::after {
-    content: "";
-    position: absolute;
+/* 年度ブロック全体 */
 
-    top: 0;
-    left: -100%;
-
-    width: 45%;
-    height: 100%;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.35),
-        transparent
-    );
-
-    animation: albumShine 5s infinite;
+.slider-outer-container {
+    max-width: 1100px;
+    margin: 0 auto 65px;
 }
 
 
-@keyframes albumShine {
+/* アルバムページタイトル */
 
-    0% {
-        left: -100%;
-    }
+#contents h2 {
+    text-align: center;
 
-    40% {
-        left: 150%;
-    }
+    margin: 50px 0 20px;
 
-    100% {
-        left: 150%;
-    }
+    font-size: 36px;
+    font-weight: bold;
 
+    color: #1267d8;
 }
 
 
+/* スマホ */
+
+@media screen and (max-width: 767px) {
+
+    #contents h2 {
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+    .title-header {
+        margin: 30px auto 20px;
+        padding: 13px 15px;
+
+        font-size: 18px;
+        letter-spacing: 4px;
+
+        border-radius: 16px;
+    }
+}
 /* =========================
    スライダー本体
 ========================= */
