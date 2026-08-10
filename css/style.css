@@ -3443,42 +3443,52 @@ footer {
 
 
 /* =========================================
-   企業の皆様へページ デザイン
+企業の皆様へページ
 ========================================= */
 
-/* ページ全体 */
+/* =========================================
+ページ全体
+========================================= */
+
 .company-page #contents {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 25px 100px;
+    padding: 50px 25px 90px;
+    box-sizing: border-box;
 }
 
+
 /* =========================================
-   最初の「企業の皆様へ」
+最初の「企業の皆様へ」
 ========================================= */
 
 .company-page #contents > .kigyou-text:first-child {
     max-width: 900px;
-    margin: 30px auto 70px;
+    margin: 20px auto 65px;
     padding: 45px 55px;
 
     background: #ffffff;
-    border-radius: 22px;
+
+    border-radius: 20px;
 
     box-shadow:
         0 8px 25px rgba(18, 103, 216, 0.12);
 
     text-align: center;
 
+    box-sizing: border-box;
+
     position: relative;
     overflow: hidden;
 }
 
-/* 左上の飾り */
+/* 左上のアクセント */
+
 .company-page #contents > .kigyou-text:first-child::before {
     content: "";
 
     position: absolute;
+
     width: 180px;
     height: 180px;
 
@@ -3486,10 +3496,13 @@ footer {
     left: -100px;
 
     border-radius: 50%;
+
     background: rgba(18, 103, 216, 0.06);
 }
 
+
 /* 見出し */
+
 .company-page #contents > .kigyou-text:first-child h2 {
     margin: 0 0 25px;
 
@@ -3497,27 +3510,32 @@ footer {
     font-weight: bold;
 
     color: #1267d8;
+
+    position: relative;
 }
 
+
 /* 説明文 */
+
 .company-page #contents > .kigyou-text:first-child p {
     max-width: 780px;
+
     margin: 0 auto;
+
+    color: #555;
 
     font-size: 16px;
     line-height: 2;
 
-    color: #555;
+    text-align: left;
 }
 
 
 /* =========================================
-   吉田ゼミナール紹介
+メインカード
 ========================================= */
 
 .company-page #contents > .list {
-    display: block;
-
     width: 100%;
     max-width: 1050px;
 
@@ -3527,7 +3545,7 @@ footer {
 
     background: #ffffff;
 
-    border-radius: 22px;
+    border-radius: 20px;
 
     box-shadow:
         0 8px 25px rgba(18, 103, 216, 0.12);
@@ -3535,23 +3553,34 @@ footer {
     box-sizing: border-box;
 }
 
-/* 大見出し */
+
+/* =========================================
+「吉田ゼミナール紹介」
+========================================= */
+
 .company-page #contents > .list > .kigyou-text > h1 {
     margin: 0 0 45px;
 
+    text-align: center;
+
     font-size: 32px;
+
     color: #1267d8;
+
+    letter-spacing: 2px;
 }
 
+
 /* =========================================
-   各項目のタイトル
+各項目タイトル
 ========================================= */
 
 .company-page #contents .title-header {
     max-width: 850px;
 
-    margin: 40px auto 0;
-    padding: 15px 20px;
+    margin: 45px auto 0;
+
+    padding: 14px 20px;
 
     box-sizing: border-box;
 
@@ -3559,24 +3588,37 @@ footer {
 
     font-size: 21px;
     font-weight: bold;
+
     letter-spacing: 2px;
 
     color: #1267d8;
 
     background: #eaf4ff;
 
-    border-left: 5px solid #1267d8;
-    border-radius: 10px;
+    border-radius: 12px;
 
-    box-shadow: none;
+    border-left: 5px solid #1267d8;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
+.company-page #contents .title-header:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(18, 103, 216, 0.10);
+}
+
+
 /* =========================================
-   各項目の本文
+各項目本文
 ========================================= */
 
 .company-page #contents .title-header + div {
     max-width: 850px;
+
     margin: 0 auto;
 
     padding: 22px 10px 10px;
@@ -3587,91 +3629,16 @@ footer {
 .company-page #contents .title-header + div p {
     margin: 0 0 18px;
 
+    color: #555;
+
     font-size: 15px;
+
     line-height: 2;
-
-    color: #555;
-}
-
-/* =========================================
-   表
-========================================= */
-
-.company-page #contents table.ta4 {
-    width: 100%;
-
-    margin: 25px 0;
-
-    border-collapse: separate;
-    border-spacing: 0;
-
-    overflow: hidden;
-
-    border: 1px solid #dce9f5;
-    border-radius: 12px;
-
-    box-shadow: 0 4px 12px rgba(18, 103, 216, 0.06);
-}
-
-.company-page #contents table.ta4 th {
-    width: 30%;
-
-    padding: 15px;
-
-    background: #eaf4ff;
-
-    color: #1267d8;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    border-bottom: 1px solid #dce9f5;
-}
-
-.company-page #contents table.ta4 td {
-    padding: 15px;
-
-    background: #ffffff;
-
-    color: #555;
-
-    font-size: 14px;
-    line-height: 1.7;
-
-    border-bottom: 1px solid #e8eef5;
-}
-
-.company-page #contents table.ta4 tr:last-child th,
-.company-page #contents table.ta4 tr:last-child td {
-    border-bottom: none;
-}
-
-/* =========================================
-卒業論文・就職先
-========================================= */
-
-.company-page .Graduation-thesis-theme,
-.company-page .company_name {
-    margin: 20px 0;
-
-    padding: 18px 25px;
-
-    background: #f7fbff;
-
-    border-radius: 12px;
-
-    border-left: 4px solid #2496d1;
-}
-
-.company-page .Graduation-thesis-theme p,
-.company-page .company_name p {
-    margin: 0 !important;
-    line-height: 2 !important;
 }
 
 
 /* =========================================
-「詳しくはこちら」
+詳しくはこちら
 ========================================= */
 
 .company-page .right-text {
@@ -3688,6 +3655,7 @@ footer {
     color: #1267d8;
 
     font-weight: bold;
+
     text-decoration: none;
 
     border-bottom: 2px solid #1267d8;
@@ -3697,7 +3665,99 @@ footer {
 
 .company-page .right-text a:hover {
     color: #0b5fc8;
+
     border-color: #0b5fc8;
+}
+
+
+/* =========================================
+表
+========================================= */
+
+.company-page #contents table.ta4 {
+    width: 100%;
+
+    margin: 25px 0;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #dce9f5;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(18, 103, 216, 0.06);
+}
+
+
+/* 左側 */
+
+.company-page #contents table.ta4 th {
+    width: 30%;
+
+    padding: 15px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    border-bottom: 1px solid #dce9f5;
+}
+
+
+/* 右側 */
+
+.company-page #contents table.ta4 td {
+    padding: 15px;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    border-bottom: 1px solid #e8eef5;
+}
+
+.company-page #contents table.ta4 tr:last-child th,
+.company-page #contents table.ta4 tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+卒業論文・就職先
+========================================= */
+
+.company-page .Graduation-thesis-theme,
+.company-page .company_name {
+    margin: 20px 0;
+
+    padding: 18px 25px;
+
+    background: #f7fbff;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #2496d1;
+
+    box-sizing: border-box;
+}
+
+.company-page .Graduation-thesis-theme p,
+.company-page .company_name p {
+    margin: 0 !important;
+
+    line-height: 2 !important;
 }
 
 
@@ -3709,6 +3769,7 @@ footer {
     max-width: 850px;
 
     margin: 70px auto 25px;
+
     padding: 40px 45px;
 
     background:
@@ -3722,10 +3783,14 @@ footer {
 
     box-shadow:
         0 8px 25px rgba(18, 103, 216, 0.10);
+
+    box-sizing: border-box;
 }
 
 .company-page #contents .kigyou-text:last-of-type h1 {
     margin: 0 0 25px;
+
+    text-align: center;
 
     font-size: 30px;
 
@@ -3738,6 +3803,7 @@ footer {
     color: #555;
 
     font-size: 15px;
+
     line-height: 2;
 }
 
@@ -3756,6 +3822,7 @@ footer {
     display: inline-flex;
 
     align-items: center;
+
     gap: 10px;
 
     padding: 14px 30px;
@@ -3769,6 +3836,7 @@ footer {
     text-decoration: none;
 
     font-size: 15px;
+
     font-weight: bold;
 
     box-shadow:
@@ -3797,43 +3865,67 @@ footer {
 @media screen and (max-width: 768px) {
 
     .company-page #contents {
-        padding: 40px 15px 70px;
+        padding: 35px 15px 70px;
     }
 
+
     /* 最初の説明 */
+
     .company-page #contents > .kigyou-text:first-child {
-        margin: 20px auto 45px;
+        margin: 15px auto 45px;
+
         padding: 35px 25px;
+
+        border-radius: 18px;
     }
 
     .company-page #contents > .kigyou-text:first-child h2 {
         font-size: 28px;
+
+        margin-bottom: 20px;
     }
 
     .company-page #contents > .kigyou-text:first-child p {
         font-size: 14px;
+
         line-height: 1.9;
     }
 
+
     /* メインカード */
+
     .company-page #contents > .list {
         padding: 35px 20px;
+
         border-radius: 18px;
     }
 
+
     .company-page #contents > .list > .kigyou-text > h1 {
         font-size: 26px;
+
         margin-bottom: 35px;
+
+        letter-spacing: 1px;
     }
 
+
     /* 項目タイトル */
+
     .company-page #contents .title-header {
         margin-top: 30px;
+
         padding: 13px 12px;
 
         font-size: 18px;
+
         letter-spacing: 1px;
+
+        border-left-width: 4px;
     }
+
+
+    /* 本文 */
 
     .company-page #contents .title-header + div {
         padding: 18px 5px 5px;
@@ -3841,24 +3933,54 @@ footer {
 
     .company-page #contents .title-header + div p {
         font-size: 14px;
+
         line-height: 1.9;
     }
 
+
     /* 表 */
+
     .company-page #contents table.ta4 {
-        font-size: 13px;
+        margin: 20px 0;
     }
 
     .company-page #contents table.ta4 th,
     .company-page #contents table.ta4 td {
         padding: 11px 8px;
+
         font-size: 12px;
     }
 
-    /* 問い合わせ */
+    .company-page #contents table.ta4 th {
+        width: 35%;
+    }
+
+
+    /* 卒論・就職先 */
+
+    .company-page .Graduation-thesis-theme,
+    .company-page .company_name {
+        padding: 15px 18px;
+
+        margin: 15px 0;
+    }
+
+
+    /* 詳しくはこちら */
+
+    .company-page .right-text {
+        margin-top: 12px !important;
+    }
+
+
+    /* お問い合わせ */
+
     .company-page #contents .kigyou-text:last-of-type {
         margin-top: 45px;
+
         padding: 30px 25px;
+
+        border-radius: 18px;
     }
 
     .company-page #contents .kigyou-text:last-of-type h1 {
@@ -3867,8 +3989,21 @@ footer {
 
     .company-page #contents .kigyou-text:last-of-type p {
         font-size: 14px;
+
+        line-height: 1.9;
+    }
+
+
+    /* ボタン */
+
+    .company-page #contents .btn1 {
+        padding: 13px 25px;
+
+        font-size: 14px;
     }
 }
+
+
 
 /*qualification.htmlここから*/
 /* ==================================================
