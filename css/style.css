@@ -985,7 +985,6 @@ footer {
         scale(1.25);
 }
 
-
 /* =========================
    スマホ
 ========================= */
@@ -1002,15 +1001,11 @@ footer {
         font-size: 27px;
         margin-top: 35px;
     }
-}
-
 
     .title-header {
         font-size: 17px;
-
         letter-spacing: 5px;
     }
-
 
     .slider-container {
         padding:
@@ -1019,31 +1014,23 @@ footer {
             20px;
     }
 
-
     /* スマホは1枚表示 */
     .slide {
-        flex:
-            0 0 100%;
-
-        padding:
-            0 5px;
+        flex: 0 0 100%;
+        padding: 0 5px;
     }
-
 
     .slide img {
         height: 240px;
     }
 
-
     .caption {
         font-size: 14px;
     }
 
-
     .slideshow-arrow {
         width: 36px;
         height: 36px;
-
         padding: 10px;
     }
 
