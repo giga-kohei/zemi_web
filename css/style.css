@@ -204,8 +204,6 @@ body {
     padding: 10px 7px;
     font-size: 12px;
   }
-
-  /* .question-btn は実ページで未使用のため省略 */
 }
 
 
@@ -305,16 +303,14 @@ section {
 }
 
 .icon-grid,
-.card-grid,
-.count-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
 
 .icon-card,
-.card,
-.count-card {
+.card {
   background: #ffffff;
   border-radius: 24px;
   padding: 28px;
@@ -378,68 +374,6 @@ section {
 .card:hover img {
   transform: scale(1.04);
 }
-
-.count-card h3 {
-  font-size: 46px;
-  color: #1267d8;
-}
-
-/* 未使用（旧デザインのQ&A / お問い合わせ / footerタグ直指定。
-   .qa-box系・.site-footer に置き換え済みのため使用箇所なし） */
-/*
-.qa-item {
-  max-width: 850px;
-  margin: 15px auto;
-  background: #f4f9ff;
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-.qa-question {
-  padding: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-}
-
-.qa-answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  transition: 0.4s;
-}
-
-.qa-item.active .qa-answer {
-  max-height: 160px;
-  padding: 0 20px 20px;
-}
-
-.contact {
-  background: linear-gradient(135deg, #dceeff, #ffffff);
-  text-align: center;
-  border-radius: 35px;
-  margin: 60px 8%;
-}
-
-.contact a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 35px;
-  background: #1267d8;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #0b2f66;
-  color: white;
-}
-*/
 
 /*faq.htmlここから*/
 
@@ -2929,25 +2863,6 @@ footer {
     clear: both;
 }
 
-/* 未使用（実際の見出しは .career-title を流用しており
-   .interview-title を使う要素は存在しない） */
-/*
-.interview-title {
-    width: 100%;
-
-    margin:
-        0 0 25px;
-
-    text-align: center;
-
-    color: #1267d8;
-
-    font-size: 30px;
-    font-weight: bold;
-}
-*/
-
-
 /* 既存の説明 */
 
 .interview-section .setsumei {
@@ -3090,8 +3005,6 @@ footer {
         margin-top: 65px;
     }
 
-    /* .interview-title は未使用のため省略 */
-
 }
 .career-results {
     margin-bottom: 0;
@@ -3106,80 +3019,12 @@ footer {
 }
 /*career_path.htmlここまで*/
 
-/*qualification.html.html ここから*/
-/* 未使用（qualification.htmlの旧デザイン。実際のページは
-   .qualification-page / h2 / .qualification-number を使う後方の
-   「qualification.htmlここから」ブロックに置き換え済み。
-   .qualification-card p が実ページの .qualification-card > p と
-   意図せず衝突していたため無効化） */
-/*
-.qualification {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 0 30px;
-}
-
-.qualification > h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 45px;
-}
-
-.qualification-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.qualification-card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 28px 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border: 1px solid #eee;
-}
-
-.qualification-card h3 {
-    text-align: center;
-    font-size: 21px;
-    line-height: 1.5;
-    margin-bottom: 18px;
-}
-
-.qualification-card p {
-    font-size: 15px;
-    line-height: 1.9;
-    color: #555;
-}
-
-.qualification-subtitle {
-    text-align: center;
-    font-size: 14px !important;
-    margin-top: -10px;
-}
-
-@media screen and (max-width: 900px) {
-    .qualification-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .qualification-grid {
-        grid-template-columns: 1fr;
-    }
-}
-*/
-/*ここまで*/
-
-
-
 
 /* ================================
    プロジェクト研究ページ
    ================================ */
 
-.list {
+.intro-card {
     width: 90%;
     max-width: 1100px;
     margin: 60px auto;
@@ -3195,18 +3040,18 @@ footer {
 }
 
 /* 文字部分 */
-.list .text {
+.intro-card .text {
     flex: 1;
 }
 
-.list .text h1 {
+.intro-card .text h1 {
     font-size: 25px;
     margin: 0 0 25px;
     color: #333;
     line-height: 1.5;
 }
 
-.list .text p {
+.intro-card .text p {
     font-size: 16px;
     line-height: 2;
     color: #555;
@@ -3214,17 +3059,17 @@ footer {
 }
 
 /* 画像部分 */
-.list .image-r {
+.intro-card .image-r {
     width: 38%;
     flex-shrink: 0;
 }
 
-.list .image-r figure {
+.intro-card .image-r figure {
     margin: 0;
     text-align: center;
 }
 
-.list .image-r img {
+.intro-card .image-r img {
     width: 100%;
     max-width: 380px;
     height: 250px;
@@ -3234,16 +3079,16 @@ footer {
 }
 
 /* 発表資料ボタン */
-.list .c {
+.intro-card .c {
     text-align: center;
     margin-top: 25px;
 }
 
-.list .c p {
+.intro-card .c p {
     margin: 0;
 }
 
-.list .btn1 {
+.intro-card .btn1 {
     display: inline-block;
     padding: 11px 28px;
     background-color: #2496d1;
@@ -3254,7 +3099,7 @@ footer {
     transition: 0.3s;
 }
 
-.list .btn1:hover {
+.intro-card .btn1:hover {
     background-color: #197bb0;
 }
 
@@ -3265,35 +3110,35 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .list {
+    .intro-card {
         width: 94%;
         margin: 35px auto;
         padding: 25px 20px;
         display: block;
     }
 
-    .list .text h1 {
+    .intro-card .text h1 {
         font-size: 21px;
         margin-bottom: 20px;
     }
 
-    .list .text p {
+    .intro-card .text p {
         font-size: 15px;
         line-height: 1.9;
     }
 
-    .list .image-r {
+    .intro-card .image-r {
         width: 100%;
         margin-top: 25px;
     }
 
-    .list .image-r img {
+    .intro-card .image-r img {
         width: 90%;
         max-width: 350px;
         height: 220px;
     }
 
-    .list .btn1 {
+    .intro-card .btn1 {
         padding: 10px 24px;
         font-size: 14px;
     }
@@ -3306,20 +3151,20 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    .list {
+    .intro-card {
         width: 94%;
         padding: 20px 15px;
     }
 
-    .list .text h1 {
+    .intro-card .text h1 {
         font-size: 19px;
     }
 
-    .list .text p {
+    .intro-card .text p {
         font-size: 14px;
     }
 
-    .list .image-r img {
+    .intro-card .image-r img {
         width: 95%;
         height: 190px;
     }
