@@ -414,7 +414,7 @@ body {
   padding: 130px 8% 20px;
   background:
     linear-gradient(to bottom, rgba(11, 47, 102, 0.32) 0%, rgba(11, 47, 102, 0.48) 55%, rgba(11, 47, 102, 0.72) 100%),
-    url("../images/index.jpg") center / cover;
+    url("../images/index/index.jpg") center / cover;
   color: white;
   display: flex;
   align-items: center;
