@@ -66,6 +66,24 @@ body{
     border:1px solid #ddd;
 }
 
+@media screen and (max-width: 600px){
+    .ta1{
+        table-layout:fixed;
+    }
+
+    .ta1 th{
+        width:72px;
+        padding:8px 4px;
+        font-size:13px;
+        word-break:break-word;
+    }
+
+    .ta1 td{
+        padding:10px;
+        font-size:13px;
+    }
+}
+
 
 /*まとめたページ用*/
 .grade-buttons{
