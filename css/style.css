@@ -1168,7 +1168,7 @@ section {
 @media screen and (max-width: 767px) {
 
     #contents {
-        padding: 90px 4px 35px;
+        padding: 90px 0 35px;
     }
 
     #contents h2 {
