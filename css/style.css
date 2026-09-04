@@ -1168,7 +1168,7 @@ section {
 @media screen and (max-width: 767px) {
 
     #contents {
-        padding: 90px 0 35px;
+        padding: 90px 14px 35px;
     }
 
     #contents h2 {
@@ -1779,6 +1779,14 @@ section {
 
     /* 活動内容 */
 
+    .activity-detail {
+        padding: 0;
+    }
+
+    .activity-detail-heading {
+        padding: 0 16px;
+    }
+
     .activity-detail-heading h2 {
         font-size: 25px;
     }
@@ -2025,6 +2033,7 @@ section {
 
 .schedule-table-section {
     margin-top: 30px;
+    padding: 0;
 }
 
 
@@ -2403,7 +2412,7 @@ section {
 
 
     .schedule-table {
-        min-width: 1050px;
+        min-width: 850px;
     }
 
 
@@ -2594,6 +2603,7 @@ section {
 .career-results {
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .career-results-heading {
@@ -3108,6 +3118,7 @@ section {
         35px auto 0;
 
     clear: both;
+    padding: 0;
 }
 
 /* 既存の説明 */
