@@ -205,9 +205,7 @@ body {
     font-size: 12px;
   }
 
-  .header-nav .question-btn {
-    padding: 10px 13px;
-  }
+  /* .question-btn は実ページで未使用のため省略 */
 }
 
 
@@ -386,6 +384,9 @@ section {
   color: #1267d8;
 }
 
+/* 未使用（旧デザインのQ&A / お問い合わせ / footerタグ直指定。
+   .qa-box系・.site-footer に置き換え済みのため使用箇所なし） */
+/*
 .qa-item {
   max-width: 850px;
   margin: 15px auto;
@@ -438,6 +439,7 @@ footer {
   background: #0b2f66;
   color: white;
 }
+*/
 
 /*faq.htmlここから*/
 
@@ -2927,6 +2929,9 @@ footer {
     clear: both;
 }
 
+/* 未使用（実際の見出しは .career-title を流用しており
+   .interview-title を使う要素は存在しない） */
+/*
 .interview-title {
     width: 100%;
 
@@ -2940,6 +2945,7 @@ footer {
     font-size: 30px;
     font-weight: bold;
 }
+*/
 
 
 /* 既存の説明 */
@@ -3084,9 +3090,7 @@ footer {
         margin-top: 65px;
     }
 
-    .interview-title {
-        font-size: 25px;
-    }
+    /* .interview-title は未使用のため省略 */
 
 }
 .career-results {
@@ -3103,6 +3107,12 @@ footer {
 /*career_path.htmlここまで*/
 
 /*qualification.html.html ここから*/
+/* 未使用（qualification.htmlの旧デザイン。実際のページは
+   .qualification-page / h2 / .qualification-number を使う後方の
+   「qualification.htmlここから」ブロックに置き換え済み。
+   .qualification-card p が実ページの .qualification-card > p と
+   意図せず衝突していたため無効化） */
+/*
 .qualification {
     max-width: 1100px;
     margin: 80px auto;
@@ -3159,7 +3169,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
+*/
 /*ここまで*/
 
 
