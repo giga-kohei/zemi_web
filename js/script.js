@@ -1,3 +1,63 @@
+/* =========================================
+   スマホ用ハンバーガーメニュー
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerNav = document.querySelector(".header-nav");
+
+  if (!menuToggle || !headerNav) {
+    return;
+  }
+
+  menuToggle.addEventListener("click", function () {
+    const isOpen = headerNav.classList.toggle("open");
+    menuToggle.classList.toggle("open", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  document.querySelectorAll(".nav-dropdown > .nav-main").forEach(function (toggle) {
+
+    toggle.addEventListener("click", function (event) {
+
+      if (window.innerWidth > 900) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const parent = toggle.closest(".nav-dropdown");
+
+      document.querySelectorAll(".nav-dropdown.open").forEach(function (openDropdown) {
+        if (openDropdown !== parent) {
+          openDropdown.classList.remove("open");
+        }
+      });
+
+      parent.classList.toggle("open");
+
+    });
+
+  });
+
+  window.addEventListener("resize", function () {
+
+    if (window.innerWidth > 900) {
+      headerNav.classList.remove("open");
+      menuToggle.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+
+      document.querySelectorAll(".nav-dropdown.open").forEach(function (openDropdown) {
+        openDropdown.classList.remove("open");
+      });
+    }
+
+  });
+
+});
+
+
 const fadeElements = document.querySelectorAll(".fade");
 
 window.addEventListener("scroll", () => {
