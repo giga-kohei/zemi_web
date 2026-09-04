@@ -1,102 +1,102 @@
-.member-hero{
-    text-align:center;
-    padding:160px 20px 60px;
+.member-hero {
+    text-align: center;
+    padding: 160px 20px 60px;
 }
 
-.member-list{
-    max-width:1000px;
-    margin:0 auto;
-    padding:40px 20px;
+.member-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-.member-list h4{
-    text-align:center;
-    margin-bottom:30px;
+.member-list h4 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.department-chart{
-    text-align:center;
-    margin-bottom:40px;
+.department-chart {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.department-chart img{
-    margin-top:40pt;
-    width:80%;
-    max-width:700px;
-    height:auto;
+.department-chart img {
+    margin-top: 40pt;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
 }
 
 /* .ta1 の基本スタイルは style.css へ移動
    （teacher.htmlでも共通利用するため）。
    ここには「氏名」列を1行に収めるための
    メンバー紹介ページ専用の調整だけ残す */
-@media screen and (max-width: 600px){
-    .ta1{
-        table-layout:fixed;
+@media screen and (max-width: 600px) {
+    .ta1 {
+        table-layout: fixed;
     }
 
-    .ta1 th{
-        width:84px;
-        padding:8px 3px;
-        font-size:12px;
-        white-space:nowrap;
+    .ta1 th {
+        width: 84px;
+        padding: 8px 3px;
+        font-size: 12px;
+        white-space: nowrap;
     }
 
-    .ta1 td{
-        padding:10px;
-        font-size:13px;
+    .ta1 td {
+        padding: 10px;
+        font-size: 13px;
     }
 }
 
 
-/*まとめたページ用*/
-.grade-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin:40px 0;
+/* まとめたページ用 */
+.grade-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
 }
 
-.grade-buttons button{
-    padding:12px 30px;
-    border:none;
-    border-radius:999px;
-    background:#e0e0e0;
-    color:#333;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
+.grade-buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 999px;
+    background: #e0e0e0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.grade-buttons button:hover{
-    background:#1267d8;
-    color:#fff;
+.grade-buttons button:hover {
+    background: #1267d8;
+    color: #fff;
 }
 
-.grade-buttons button.active{
-    background:#1267d8;
-    color:#fff;
+.grade-buttons button.active {
+    background: #1267d8;
+    color: #fff;
 }
 
-.grade-content{
-    display:none;
+.grade-content {
+    display: none;
 }
 
-.grade-content.active{
-    display:block;
+.grade-content.active {
+    display: block;
 }
 
-/*ここまで*/
+/* ここまで */
 
-.member-photo{
-    text-align:center;
-    margin:30px 0 50px;
+.member-photo {
+    text-align: center;
+    margin: 30px 0 50px;
 }
 
-.member-photo img{
-    width:100%;
-    max-width:800px;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+.member-photo img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }

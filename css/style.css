@@ -1,321 +1,321 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
-  color: #0b2f66;
-  background: #f4f9ff;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: #0b2f66;
+    background: #f4f9ff;
 }
 
 
 /* =========================================
-   ヘッダー
+ヘッダー
 ========================================= */
 
 .site-header {
-  width: 100%;
-  min-height: 80px;
-  padding: 10px 4%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  border-bottom: 1px solid #e8eef7;
-  box-shadow: 0 3px 15px rgba(18,103,216,.07);
-  position: relative;
-  z-index: 1000;
-  box-sizing: border-box;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #e8eef7;
+    box-shadow: 0 3px 15px rgba(18,103,216,.07);
+    position: relative;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 /* ロゴ */
 .logo {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .logo a {
-  display: block;
+    display: block;
 }
 
 .logo img {
-  display: block;
-  width: 190px;
-  height: auto;
+    display: block;
+    width: 190px;
+    height: auto;
 }
 
 /* ハンバーガーメニュー（スマホのみ表示） */
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 42px;
-  height: 42px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  flex-shrink: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
 .menu-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: #0b2f66;
-  border-radius: 2px;
-  transition: transform .3s ease, opacity .3s ease;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #0b2f66;
+    border-radius: 2px;
+    transition: transform .3s ease, opacity .3s ease;
 }
 
 .menu-toggle.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
 }
 
 .menu-toggle.open span:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 
 .menu-toggle.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* 閉じた状態のヘッダーにも表示するSNSアイコン（スマホのみ） */
 .header-sns-mobile {
-  display: none;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
+    display: none;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 @media screen and (max-width: 900px) {
-  .header-sns-mobile {
-    display: flex;
-    margin-left: auto;
-    margin-right: 12px;
-  }
+    .header-sns-mobile {
+        display: flex;
+        margin-left: auto;
+        margin-right: 12px;
+    }
 }
 
 .header-sns-mobile a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  transition: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: .25s;
 }
 
 .header-sns-mobile a:hover {
-  background: rgba(18, 103, 216, .08);
+    background: rgba(18, 103, 216, .08);
 }
 
 .header-sns-mobile img {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
 }
 
 /* =========================================
-   ナビゲーション
+ナビゲーション
 ========================================= */
 
 .header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
 }
 
 .header-nav > a:not(.header-sns-link),
 .nav-main {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 11px;
-  color: #0b2f66;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  border-radius: 10px;
-  transition: .25s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 11px;
+    color: #0b2f66;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 10px;
+    transition: .25s;
 }
 
 /* SNSアイコン */
 .header-sns-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  margin-left: 4px;
-  border-radius: 50%;
-  transition: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 4px;
+    border-radius: 50%;
+    transition: .25s;
 }
 
 .header-sns-link:hover {
-  background: rgba(18, 103, 216, .08);
-  transform: translateY(-2px);
+    background: rgba(18, 103, 216, .08);
+    transform: translateY(-2px);
 }
 
 .header-sns-link img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  display: block;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
 }
 
 .header-nav > a:not(.question-btn):not(.header-sns-link):hover,
 .nav-dropdown:hover .nav-main {
-  color: #1267d8;
-  background: rgba(18,103,216,.05);
+    color: #1267d8;
+    background: rgba(18,103,216,.05);
 }
 
 /* =========================================
-   ドロップダウン
+ドロップダウン
 ========================================= */
 
 .nav-dropdown {
-  position: relative;
+    position: relative;
 }
 
 /* 黄色線：触れた時だけ表示 */
 .nav-main::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 2px;
-  width: 0;
-  height: 3px;
-  background: #ffe15d;
-  border-radius: 10px;
-  transform: translateX(-50%);
-  transition: width .25s ease;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 3px;
+    background: #ffe15d;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width .25s ease;
 }
 
 .nav-dropdown:hover .nav-main::after,
 .nav-dropdown:focus-within .nav-main::after {
-  width: 45px;
+    width: 45px;
 }
 
 /* 矢印 */
 .nav-arrow {
-  display: inline-block;
-  margin-left: 5px;
-  color: #1267d8;
-  font-size: 13px;
-  transition: transform .25s ease;
+    display: inline-block;
+    margin-left: 5px;
+    color: #1267d8;
+    font-size: 13px;
+    transition: transform .25s ease;
 }
 
 .nav-dropdown:hover .nav-arrow,
 .nav-dropdown:focus-within .nav-arrow {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* 白い飛び出し部分 */
 .dropdown-menu {
-  position: absolute;
-  top: calc(100% + 7px);
-  left: 50%;
-  width: 220px;
-  margin: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  list-style: none;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 50%;
+    width: 220px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    list-style: none;
 
-  background: rgba(255,255,255,.72);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+    background: rgba(255,255,255,.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-  border: 1px solid rgba(255,255,255,.7);
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(11,47,102,.12);
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(11,47,102,.12);
 
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-50%) translateY(-6px);
-  transition: opacity .25s ease, transform .25s ease, visibility .25s;
-  z-index: 1100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-6px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s;
+    z-index: 1100;
 }
 
 /* ドロップダウン表示 */
 .nav-dropdown:hover .dropdown-menu,
 .nav-dropdown:focus-within .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* 中身 */
 .dropdown-menu li {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .dropdown-menu li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 8px;
-  color: #0b2f66;
-  font-size: 13px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  border-radius: 9px;
-  transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 8px;
+    color: #0b2f66;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 9px;
+    transition: .2s;
 }
 
 .dropdown-menu li a:hover {
-  color: #1267d8;
-  background: rgba(18,103,216,.10);
+    color: #1267d8;
+    background: rgba(18,103,216,.10);
 }
 
 
 /* =========================================
-   小さいPC・タブレット
+小さいPC・タブレット
 ========================================= */
 
 @media screen and (max-width: 1100px) {
-  .site-header {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
+    .site-header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
-  .logo img {
+.logo img {
     width: 160px;
-  }
+}
 
-  .header-nav > a,
-  .nav-main {
+.header-nav > a,
+.nav-main {
     padding: 10px 7px;
     font-size: 12px;
-  }
+}
 }
 
 
 /* =========================================
-   スマホ ナビゲーション
+スマホ ナビゲーション
 ========================================= */
 
 @media screen and (max-width: 900px) {
 
-  .menu-toggle {
-    display: flex;
-  }
+    .menu-toggle {
+        display: flex;
+    }
 
-  .header-nav {
+.header-nav {
     position: absolute;
     top: 100%;
     left: 0;
@@ -331,41 +331,41 @@ body {
     background: #ffffff;
     border-top: 1px solid #e8eef7;
     box-shadow: 0 12px 25px rgba(11,47,102,.14);
-  }
+}
 
-  .header-nav.open {
+.header-nav.open {
     display: flex;
-  }
+}
 
-  .header-nav > .nav-dropdown,
-  .header-nav > a:not(.header-sns-link) {
+.header-nav > .nav-dropdown,
+.header-nav > a:not(.header-sns-link) {
     flex: 1 1 100%;
-  }
+}
 
-  .header-nav > a:not(.header-sns-link),
-  .nav-main {
+.header-nav > a:not(.header-sns-link),
+.nav-main {
     width: 100%;
     justify-content: flex-start;
     padding: 14px 8px;
     font-size: 15px;
     border-radius: 0;
     border-bottom: 1px solid #f0f4fa;
-  }
+}
 
-  .nav-main::after {
+.nav-main::after {
     display: none;
-  }
+}
 
-  .nav-arrow {
+.nav-arrow {
     margin-left: auto;
-  }
+}
 
-  .nav-dropdown.open .nav-arrow {
+.nav-dropdown.open .nav-arrow {
     transform: rotate(180deg);
-  }
+}
 
-  /* ドロップダウンをアコーディオン化 */
-  .dropdown-menu {
+/* ドロップダウンをアコーディオン化 */
+.dropdown-menu {
     position: static;
     width: 100%;
     max-height: 0;
@@ -381,403 +381,403 @@ body {
     visibility: visible;
     transform: none;
     transition: max-height .3s ease;
-  }
+}
 
-  .nav-dropdown.open .dropdown-menu {
+.nav-dropdown.open .dropdown-menu {
     max-height: 400px;
-  }
+}
 
-  /* デスクトップ用のホバー/フォーカス時の飛び出し位置指定を無効化
-     （タップでフォーカスが当たると transform がずれて
-     文字が画面外に押し出されてしまうため） */
-  .nav-dropdown:hover .dropdown-menu,
-  .nav-dropdown:focus-within .dropdown-menu {
+/* デスクトップ用のホバー/フォーカス時の飛び出し位置指定を無効化
+（タップでフォーカスが当たると transform がずれて
+文字が画面外に押し出されてしまうため） */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
     transform: none;
-  }
+}
 
-  .dropdown-menu li a {
+.dropdown-menu li a {
     justify-content: flex-start;
     padding: 12px 8px 12px 20px;
     font-size: 14px;
     border-radius: 0;
-  }
+}
 
-  .header-sns-link {
+.header-sns-link {
     flex: 0 0 auto;
     margin: 10px 8px 0 0;
-  }
+}
 }
 
 
 .hero {
-  min-height: 75vh;
-  padding: 130px 8% 20px;
-  background:
-    linear-gradient(to bottom, rgba(11, 47, 102, 0.32) 0%, rgba(11, 47, 102, 0.48) 55%, rgba(11, 47, 102, 0.72) 100%),
-    url("../images/index/index.jpg") center / cover;
-  color: white;
-  display: flex;
-  align-items: center;
+    min-height: 75vh;
+    padding: 130px 8% 20px;
+    background:
+        linear-gradient(to bottom, rgba(11, 47, 102, 0.32) 0%, rgba(11, 47, 102, 0.48) 55%, rgba(11, 47, 102, 0.72) 100%),
+        url("../images/index/index.jpg") center / cover;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 
 .hero-eyebrow {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 7px 18px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 20px;
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-content {
-  animation: fadeUp 1s ease forwards;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+    animation: fadeUp 1s ease forwards;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 
 .hero h1 {
-  font-size: clamp(32px, 4vw, 56px);
-  line-height: 1.25;
-  margin-bottom: 22px;
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.25;
+    margin-bottom: 22px;
 }
 
 .hero h1 span {
-  color: #ffe15d;
+    color: #ffe15d;
 }
 
 .hero p {
-  font-size: 20px;
-  margin-bottom: 35px;
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 
 .buttons a {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-right: 15px;
-  margin-bottom: 12px;
-  padding: 8px 8px 8px 26px;
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    padding: 8px 8px 8px 26px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .buttons a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  color: #1267d8;
-  font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1267d8;
+    font-size: 16px;
 }
 
 section {
-  padding: 80px 8%;
+    padding: 80px 8%;
 }
 
 .section-title {
-  margin-top: 5%;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 45px;
-  color: #1267d8;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+    color: #1267d8;
 }
 
 .fade {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
 }
 
 .fade.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about,
 .qa {
-  background: white;
+    background: white;
 }
 
 .icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
 .icon-card {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 28px;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
-  transition: 0.3s;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    transition: 0.3s;
 }
 
 .icon-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(18, 103, 216, 0.22);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(18, 103, 216, 0.22);
 }
 
 .icon {
-  font-size: 42px;
-  margin-bottom: 15px;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .news {
-  padding-top: 20px;
-  background: #eaf4ff;
+    padding-top: 20px;
+    background: #eaf4ff;
 }
 
 .news-box {
-  max-width: 850px;
-  margin: auto;
-  background: white;
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
 }
 
 .news-item {
-  padding: 18px 0;
-  border-bottom: 1px solid #d7e9ff;
+    padding: 18px 0;
+    border-bottom: 1px solid #d7e9ff;
 }
 
 .news-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .new {
-  background: #ffe15d;
-  color: #0b2f66;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  margin-right: 10px;
-  font-weight: bold;
+    background: #ffe15d;
+    color: #0b2f66;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    margin-right: 10px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
-  .news-box {
-    padding: 20px 16px;
-  }
+    .news-box {
+        padding: 20px 16px;
+    }
 
-  .news-item {
+.news-item {
     font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
 
-  .new {
+.new {
     font-size: 11px;
     padding: 3px 7px;
     margin-right: 8px;
-  }
+}
 }
 
 /*faq.htmlここから*/
 
 .qa-intro {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .qa-heading {
-  text-align: center;
-  margin: 40px 0 20px;
-  color: #1267d8;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #1267d8;
 }
 
 .qa-box {
-  max-width: 850px;
-  margin: 15px auto;
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    max-width: 850px;
+    margin: 15px auto;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
 }
 
 .qa-box summary {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
 }
 
 .qa-box summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 .q-label,
 .a-label {
-  width: 35px;
-  height: 35px;
-  flex-shrink: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-right: 15px;
-  font-weight: bold;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
 }
 
 .q-label {
-  background: #1267d8;
-  color: white;
+    background: #1267d8;
+    color: white;
 }
 
 .a-label {
-  background: #ffe15d;
-  color: #0b2f66;
+    background: #ffe15d;
+    color: #0b2f66;
 }
 
 .answer {
-  display: flex;
-  padding: 0 20px 20px;
-  line-height: 1.8;
+    display: flex;
+    padding: 0 20px 20px;
+    line-height: 1.8;
 }
 
 .answer p {
-  margin: 0;
+    margin: 0;
 }
 
 
 /*faq.htmlここまで*/
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
 
-  to {
+to {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 }
 
 @media (max-width: 768px) {
-  .hero {
-    min-height: 47vh;
-    padding-top: 110px;
-  }
+    .hero {
+        min-height: 47vh;
+        padding-top: 110px;
+    }
 
-  .hero h1 {
+.hero h1 {
     font-size: 32px;
-  }
+}
 }
 
 /* graduation.htmlここから */
 
 .research-tabs {
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0;
 }
 
 /* 年度切り替えボタン */
 .year-tabs {
-  display: flex;
-  width: 100%;
-  background-color: #eaf2f8;
-  border-radius: 6px 6px 0 0;
-  overflow: hidden;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 100%;
+    background-color: #eaf2f8;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .year-tab {
-  flex: 1;
-  padding: 20px 10px;
-  border: none;
-  background-color: #eaf2f8;
-  color: #444;
-  font-size: 18px;
-  line-height: 1.6;
-  cursor: pointer;
-  transition: 0.3s;
+    flex: 1;
+    padding: 20px 10px;
+    border: none;
+    background-color: #eaf2f8;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /* マウスを乗せたとき */
 .year-tab:hover {
-  background-color: #dcecf7;
+    background-color: #dcecf7;
 }
 
 /* 選択中の年度 */
 .year-tab.active {
-  background-color: #ffffff;
-  color: #333;
-  border-top: 5px solid #2496d1;
+    background-color: #ffffff;
+    color: #333;
+    border-top: 5px solid #2496d1;
 }
 
 /* 研究テーマを表示する白い部分 */
 .year-content {
-  display: none;
-  background-color: #ffffff;
-  padding: 45px 55px;
-  min-height: 400px;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+    display: none;
+    background-color: #ffffff;
+    padding: 45px 55px;
+    min-height: 400px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 
-  color: #333333;
-  font-size: 17px;
-  line-height: 2.2;
+    color: #333333;
+    font-size: 17px;
+    line-height: 2.2;
 }
 
 /* 選択された年度だけ表示 */
 .year-content.active {
-  display: block;
+    display: block;
 }
 
 /* 年度タイトル */
 .year-content h3 {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 8px;
-  font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
 .year-content .graduation {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 /* 研究テーマ */
 .year-content ul {
-  margin: 0 auto;
-  padding-left: 25px;
-  max-width: 850px;
+    margin: 0 auto;
+    padding-left: 25px;
+    max-width: 850px;
 }
 
 .year-content li {
-  font-size: 18px;
-  line-height: 2;
-  margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 5px;
 }
 
 #contents > p {
@@ -799,61 +799,61 @@ section {
 
 @media screen and (max-width: 768px) {
 
-  .research-tabs {
-    width: 94%;
-    margin-top: 25px;
-  }
+    .research-tabs {
+        width: 94%;
+        margin-top: 25px;
+    }
 
-  /* 年度ボタン */
-  .year-tab {
+/* 年度ボタン */
+.year-tab {
     padding: 14px 5px;
     font-size: 14px;
-  }
+}
 
-  .year-tab.active {
+.year-tab.active {
     border-top: 4px solid #2496d1;
-  }
+}
 
-  /* 内容 */
-  .year-content {
+/* 内容 */
+.year-content {
     padding: 30px 20px;
     min-height: 350px;
     font-size: 15px;
     line-height: 1.9;
-  }
+}
 
-  .year-content h3 {
+.year-content h3 {
     font-size: 18px;
-  }
+}
 
-  .year-content .graduation {
+.year-content .graduation {
     font-size: 17px;
     margin-bottom: 20px;
-  }
+}
 
-  .year-content li {
+.year-content li {
     font-size: 15px;
     line-height: 1.9;
-  }
+}
 }
 
 
 /* かなり小さいスマホ用 */
 @media screen and (max-width: 480px) {
 
-  .year-tab {
-    font-size: 12px;
-    padding: 12px 3px;
-  }
+    .year-tab {
+        font-size: 12px;
+        padding: 12px 3px;
+    }
 
-  .year-content {
+.year-content {
     padding: 25px 15px;
     font-size: 14px;
-  }
+}
 
-  .year-content li {
+.year-content li {
     font-size: 14px;
-  }
+}
 }
 /*graduation.htmlここまで*/
 
@@ -861,7 +861,7 @@ section {
 /*album.htmlここから*/
 
 /* =========================
-   アルバムページ
+アルバムページ
 ========================= */
 
 #contents {
@@ -950,7 +950,7 @@ section {
     }
 }
 /* =========================
-   スライダー本体
+スライダー本体
 ========================= */
 
 .slider-container {
@@ -1045,7 +1045,7 @@ section {
 
 
 /* =========================
-   左右の矢印
+左右の矢印
 ========================= */
 
 .slideshow-arrow {
@@ -1121,7 +1121,7 @@ section {
 
 
 /* =========================
-   下のドット
+下のドット
 ========================= */
 
 .slider-indicator {
@@ -1162,7 +1162,7 @@ section {
 }
 
 /* =========================
-   スマホ
+スマホ
 ========================= */
 
 @media screen and (max-width: 767px) {
@@ -1171,49 +1171,49 @@ section {
         padding: 90px 14px 35px;
     }
 
-    #contents h2 {
-        font-size: 27px;
-        margin-top: 35px;
-    }
+#contents h2 {
+    font-size: 27px;
+    margin-top: 35px;
+}
 
-    .title-header {
-        font-size: 17px;
-        letter-spacing: 5px;
-    }
+.title-header {
+    font-size: 17px;
+    letter-spacing: 5px;
+}
 
-    .slider-container {
-        padding:
-            10px
-            43px
-            20px;
-    }
+.slider-container {
+    padding:
+        10px
+        43px
+        20px;
+}
 
-    /* スマホは1枚表示 */
-    .slide {
-        flex: 0 0 100%;
-        padding: 0 5px;
-    }
+/* スマホは1枚表示 */
+.slide {
+    flex: 0 0 100%;
+    padding: 0 5px;
+}
 
-    .slide img {
-        height: 240px;
-    }
+.slide img {
+    height: 240px;
+}
 
-    .caption {
-        font-size: 14px;
-    }
+.caption {
+    font-size: 14px;
+}
 
-    .slideshow-arrow {
-        width: 36px;
-        height: 36px;
-        padding: 10px;
-    }
+.slideshow-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+}
 
 }
 /*album.htmlここまで*/
 
 /*activity.htmlここから*/
 /* ======================================
-   ゼミ活動ページ
+ゼミ活動ページ
 ====================================== */
 
 .activity-page {
@@ -1225,7 +1225,7 @@ section {
 
 
 /* ======================================
-   ページタイトル
+ページタイトル
 ====================================== */
 
 .activity-intro {
@@ -1254,7 +1254,7 @@ section {
 
 
 /* ======================================
-   吉田ゼミの活動について
+吉田ゼミの活動について
 ====================================== */
 
 .activity-main-card {
@@ -1359,7 +1359,7 @@ section {
 
 
 /* ======================================
-   年間予定表ボタン
+年間予定表ボタン
 ====================================== */
 
 .activity-button {
@@ -1408,7 +1408,7 @@ section {
 
 
 /* ======================================
-   活動内容 見出し
+活動内容 見出し
 ====================================== */
 
 .activity-detail {
@@ -1452,7 +1452,7 @@ section {
 
 
 /* ======================================
-   活動カード
+活動カード
 ====================================== */
 
 .activity-step {
@@ -1492,7 +1492,7 @@ section {
 
 
 /* ======================================
-   左側：学年・学期
+左側：学年・学期
 ====================================== */
 
 .activity-step-side {
@@ -1512,9 +1512,9 @@ section {
 
     background:
         linear-gradient(
-            160deg,
-            #1267d8 0%,
-            #4a91e2 100%
+        160deg,
+        #1267d8 0%,
+        #4a91e2 100%
         );
 
     color: white;
@@ -1575,7 +1575,7 @@ section {
 
 
 /* ======================================
-   右側：活動内容
+右側：活動内容
 ====================================== */
 
 .activity-step-content {
@@ -1586,23 +1586,6 @@ section {
 
 .activity-step-top {
     margin-bottom: 20px;
-}
-
-.activity-step-tag {
-    display: inline-block;
-
-    margin-bottom: 10px;
-
-    padding: 6px 13px;
-
-    background: #ffe15d;
-
-    color: #0b2f66;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    border-radius: 20px;
 }
 
 .activity-step-content h3 {
@@ -1625,7 +1608,7 @@ section {
 
 
 /* ======================================
-   キーワード
+キーワード
 ====================================== */
 
 .activity-keywords {
@@ -1664,7 +1647,7 @@ section {
 
 
 /* ======================================
-   カード間の矢印
+カード間の矢印
 ====================================== */
 
 .activity-flow-arrow {
@@ -1699,7 +1682,7 @@ section {
 
 
 /* ======================================
-   スクロールアニメーション
+スクロールアニメーション
 ====================================== */
 
 .activity-fade {
@@ -1720,7 +1703,7 @@ section {
 
 
 /* ======================================
-   スマホ
+スマホ
 ====================================== */
 
 @media screen and (max-width: 767px) {
@@ -1732,116 +1715,116 @@ section {
             40px 0 65px;
     }
 
-    .activity-intro {
-        padding: 0 16px;
-    }
+.activity-intro {
+    padding: 0 16px;
+}
 
-    .activity-title {
-        font-size: 32px;
-    }
+.activity-title {
+    font-size: 32px;
+}
 
-    .activity-subtitle {
-        font-size: 14px;
-    }
-
-
-    /* 上の紹介 */
-
-    .activity-main-card {
-        flex-direction: column;
-
-        gap: 25px;
-
-        padding: 20px;
-
-        margin: 0 16px 60px;
-    }
-
-    .activity-main-text > .activity-button {
-        display: flex;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .activity-main-text h2 {
-        font-size: 23px;
-    }
-
-    .activity-main-image {
-        width: 100%;
-    }
-
-    .activity-main-image img {
-        height: 230px;
-    }
+.activity-subtitle {
+    font-size: 14px;
+}
 
 
-    /* 活動内容 */
+/* 上の紹介 */
 
-    .activity-detail {
-        padding: 0;
-    }
+.activity-main-card {
+    flex-direction: column;
 
-    .activity-detail-heading {
-        padding: 0 16px;
-    }
+    gap: 25px;
 
-    .activity-detail-heading h2 {
-        font-size: 25px;
-    }
+    padding: 20px;
 
-    .activity-detail-heading p {
-        font-size: 13px;
-    }
+    margin: 0 16px 60px;
+}
+
+.activity-main-text > .activity-button {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-main-text h2 {
+    font-size: 23px;
+}
+
+.activity-main-image {
+    width: 100%;
+}
+
+.activity-main-image img {
+    height: 230px;
+}
 
 
-    /* カードを縦型に */
+/* 活動内容 */
 
-    .activity-step {
-        grid-template-columns: 1fr;
-    }
+.activity-detail {
+    padding: 0;
+}
 
-    .activity-step-side {
-        min-height: auto;
+.activity-detail-heading {
+    padding: 0 16px;
+}
 
-        padding: 25px 20px;
-    }
+.activity-detail-heading h2 {
+    font-size: 25px;
+}
 
-    .activity-step-number {
-        top: 12px;
-        left: 15px;
-    }
+.activity-detail-heading p {
+    font-size: 13px;
+}
 
-    .activity-step-grade {
-        font-size: 24px;
-    }
 
-    .activity-step-content {
-        padding: 24px 18px;
-    }
+/* カードを縦型に */
 
-    .activity-step-content h3 {
-        font-size: 20px;
-    }
+.activity-step {
+    grid-template-columns: 1fr;
+}
 
-    .activity-step-content p {
-        font-size: 14px;
-    }
+.activity-step-side {
+    min-height: auto;
 
-    .activity-flow-arrow {
-        width: 38px;
-        height: 38px;
+    padding: 25px 20px;
+}
 
-        font-size: 18px;
-    }
+.activity-step-number {
+    top: 12px;
+    left: 15px;
+}
+
+.activity-step-grade {
+    font-size: 24px;
+}
+
+.activity-step-content {
+    padding: 24px 18px;
+}
+
+.activity-step-content h3 {
+    font-size: 20px;
+}
+
+.activity-step-content p {
+    font-size: 14px;
+}
+
+.activity-flow-arrow {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+}
 
 }
 /*activity.htmlここまで*/
 
 /*yearly_schedule.htmlここから*/
 /* ======================================
-   年間予定表ページ
+年間予定表ページ
 ====================================== */
 
 .schedule-page {
@@ -1854,7 +1837,7 @@ section {
 
 
 /* ======================================
-   ページタイトル
+ページタイトル
 ====================================== */
 
 .schedule-intro {
@@ -1884,7 +1867,7 @@ section {
 
 
 /* ======================================
-   吉田ゼミの年間行事
+吉田ゼミの年間行事
 ====================================== */
 
 .schedule-main-card {
@@ -1942,7 +1925,7 @@ section {
 
 
 /* ======================================
-   紹介文
+紹介文
 ====================================== */
 
 .schedule-main-text {
@@ -1992,7 +1975,7 @@ section {
 
 
 /* ======================================
-   紹介写真
+紹介写真
 ====================================== */
 
 .schedule-main-image {
@@ -2028,7 +2011,7 @@ section {
 
 
 /* ======================================
-   年間予定表 見出し
+年間予定表 見出し
 ====================================== */
 
 .schedule-table-section {
@@ -2069,7 +2052,7 @@ section {
 
 
 /* ======================================
-   表を囲むカード
+表を囲むカード
 ====================================== */
 
 .schedule-table-wrap {
@@ -2090,7 +2073,7 @@ section {
 
 
 /* ======================================
-   年間予定表
+年間予定表
 ====================================== */
 
 .schedule-table {
@@ -2108,7 +2091,7 @@ section {
 
 
 /* ======================================
-   2年生・3年生・4年生
+2年生・3年生・4年生
 ====================================== */
 
 .schedule-table thead th {
@@ -2149,7 +2132,7 @@ section {
 
 
 /* ======================================
-   月
+月
 ====================================== */
 
 .schedule-table tbody th {
@@ -2182,7 +2165,7 @@ section {
 
 
 /* ======================================
-   各予定セル
+各予定セル
 ====================================== */
 
 .schedule-table tbody td {
@@ -2230,7 +2213,7 @@ section {
 
 
 /* ======================================
-   行を交互にほんのり変える
+行を交互にほんのり変える
 ====================================== */
 
 .schedule-table tbody tr:nth-child(even) td {
@@ -2239,8 +2222,8 @@ section {
 
 
 /* ======================================
-   予定が入っているセル
-   マウスを乗せた時
+予定が入っているセル
+マウスを乗せた時
 ====================================== */
 
 .schedule-table tbody td:not(:empty):hover {
@@ -2257,7 +2240,7 @@ section {
 
 
 /* ======================================
-   月にも少し動き
+月にも少し動き
 ====================================== */
 
 .schedule-table tbody th {
@@ -2275,7 +2258,7 @@ section {
 
 
 /* ======================================
-   行全体を見やすく
+行全体を見やすく
 ====================================== */
 
 .schedule-table tbody tr {
@@ -2290,7 +2273,7 @@ section {
 
 
 /* ======================================
-   予定があるセルに小さいアクセント
+予定があるセルに小さいアクセント
 ====================================== */
 
 .schedule-table tbody td:not(:empty)::before {
@@ -2326,7 +2309,7 @@ section {
 
 
 /* ======================================
-   スクロール表示用
+スクロール表示用
 ====================================== */
 
 .schedule-fade {
@@ -2348,7 +2331,7 @@ section {
 
 
 /* ======================================
-   スマホ
+スマホ
 ====================================== */
 
 @media screen and (max-width: 767px) {
@@ -2361,93 +2344,93 @@ section {
     }
 
 
-    .schedule-title {
-        font-size: 32px;
-    }
+.schedule-title {
+    font-size: 32px;
+}
 
 
-    .schedule-subtitle {
-        font-size: 14px;
-    }
+.schedule-subtitle {
+    font-size: 14px;
+}
 
 
-    /* 紹介カード */
+/* 紹介カード */
 
-    .schedule-main-card {
-        flex-direction: column;
+.schedule-main-card {
+    flex-direction: column;
 
-        gap: 25px;
+    gap: 25px;
 
-        padding: 25px;
+    padding: 25px;
 
-        margin-bottom: 60px;
-    }
-
-
-    .schedule-main-text h2 {
-        font-size: 23px;
-    }
+    margin-bottom: 60px;
+}
 
 
-    .schedule-main-image {
-        width: 100%;
-    }
+.schedule-main-text h2 {
+    font-size: 23px;
+}
 
 
-    .schedule-main-image img {
-        height: 230px;
-    }
+.schedule-main-image {
+    width: 100%;
+}
 
 
-    /* 年間予定表 */
-
-    .schedule-table-heading h2 {
-        font-size: 25px;
-    }
+.schedule-main-image img {
+    height: 230px;
+}
 
 
-    .schedule-table-wrap {
-        border-radius: 15px;
-    }
+/* 年間予定表 */
+
+.schedule-table-heading h2 {
+    font-size: 25px;
+}
 
 
-    .schedule-table {
-        min-width: 850px;
-    }
+.schedule-table-wrap {
+    border-radius: 15px;
+}
 
 
-    .schedule-table thead th {
-        padding: 16px 10px;
-
-        font-size: 15px;
-    }
-
-    .schedule-table thead th:first-child {
-        width: 75px;
-    }
+.schedule-table {
+    min-width: 850px;
+}
 
 
-    .schedule-table tbody th {
-        width: 75px;
+.schedule-table thead th {
+    padding: 16px 10px;
 
-        padding: 18px 8px;
+    font-size: 15px;
+}
 
-        font-size: 14px;
-    }
+.schedule-table thead th:first-child {
+    width: 75px;
+}
 
 
-    .schedule-table tbody td {
-        padding: 18px 12px;
+.schedule-table tbody th {
+    width: 75px;
 
-        font-size: 13px;
-    }
+    padding: 18px 8px;
+
+    font-size: 14px;
+}
+
+
+.schedule-table tbody td {
+    padding: 18px 12px;
+
+    font-size: 13px;
+}
 
 }
 /*yearly_schedule.htmlここまで*/
 
 /*career_path.htmlここから*/
 /* =========================================
-   卒業後の進路ページ
+卒業後の進路ページ
 ========================================= */
 
 .career-page {
@@ -2458,7 +2441,7 @@ section {
 
 
 /* =========================================
-   ページタイトル
+ページタイトル
 ========================================= */
 
 .career-intro {
@@ -2486,7 +2469,7 @@ section {
 
 
 /* =========================================
-   吉田ゼミの卒業後の進路
+吉田ゼミの卒業後の進路
 ========================================= */
 
 .career-main-card {
@@ -2597,7 +2580,7 @@ section {
 
 
 /* =========================================
-   卒業生の就職先
+卒業生の就職先
 ========================================= */
 
 .career-results {
@@ -2643,7 +2626,7 @@ section {
 
 
 /* =========================================
-   年度切り替えボタン
+年度切り替えボタン
 ========================================= */
 
 .career-year-tabs {
@@ -2718,7 +2701,7 @@ section {
 
 
 /* =========================================
-   年度別コンテンツ
+年度別コンテンツ
 ========================================= */
 
 .career-year-content {
@@ -2741,18 +2724,18 @@ section {
             translateY(15px);
     }
 
-    to {
-        opacity: 1;
+to {
+    opacity: 1;
 
-        transform:
-            translateY(0);
-    }
+    transform:
+        translateY(0);
+}
 
 }
 
 
 /* =========================================
-   年度見出し
+年度見出し
 ========================================= */
 
 .career-year-header {
@@ -2782,7 +2765,7 @@ section {
 
 
 /* =========================================
-   就職先＋業界別
+就職先＋業界別
 ========================================= */
 
 .career-result-grid {
@@ -2798,7 +2781,7 @@ section {
 
 
 /* =========================================
-   共通カード
+共通カード
 ========================================= */
 
 .career-company-card,
@@ -2846,7 +2829,7 @@ section {
 
 
 /* =========================================
-   就職先一覧
+就職先一覧
 ========================================= */
 
 .career-company-list {
@@ -2899,7 +2882,7 @@ section {
 
 
 /* =========================================
-   円グラフ部分
+円グラフ部分
 ========================================= */
 
 .career-chart-area {
@@ -2934,93 +2917,93 @@ section {
 
 
 /* =========================================
-   2024年度 円グラフ
-   40 / 20 / 13 / 13 / 7 / 7
+2024年度 円グラフ
+40 / 20 / 13 / 13 / 7 / 7
 ========================================= */
 
 .career-pie-2024 {
     background:
         conic-gradient(
-            #1267d8 0% 40%,
-            #ffb53d 40% 60%,
-            #6f7b87 60% 73%,
-            #ffe15d 73% 86%,
-            #63c6e8 86% 93%,
-            #55c94b 93% 100%
+        #1267d8 0% 40%,
+        #ffb53d 40% 60%,
+        #6f7b87 60% 73%,
+        #ffe15d 73% 86%,
+        #63c6e8 86% 93%,
+        #55c94b 93% 100%
         );
 }
 
 
 /* =========================================
-   2023年度
-   65 / 7 / 14 / 7 / 7
+2023年度
+65 / 7 / 14 / 7 / 7
 ========================================= */
 
 .career-pie-2023 {
     background:
         conic-gradient(
-            #1267d8 0% 65%,
-            #ffb53d 65% 72%,
-            #6f7b87 72% 86%,
-            #ffe15d 86% 93%,
-            #63c6e8 93% 100%
+        #1267d8 0% 65%,
+        #ffb53d 65% 72%,
+        #6f7b87 72% 86%,
+        #ffe15d 86% 93%,
+        #63c6e8 93% 100%
         );
 }
 
 
 /* =========================================
-   2022年度
-   23 / 12 / 29 / 18 / 6 / 12
+2022年度
+23 / 12 / 29 / 18 / 6 / 12
 ========================================= */
 
 .career-pie-2022 {
     background:
         conic-gradient(
-            #1267d8 0% 23%,
-            #ffb53d 23% 35%,
-            #6f7b87 35% 64%,
-            #ffe15d 64% 82%,
-            #63c6e8 82% 88%,
-            #55c94b 88% 100%
+        #1267d8 0% 23%,
+        #ffb53d 23% 35%,
+        #6f7b87 35% 64%,
+        #ffe15d 64% 82%,
+        #63c6e8 82% 88%,
+        #55c94b 88% 100%
         );
 }
 
 
 /* =========================================
-   2021年度
-   53 / 13 / 7 / 20 / 7
+2021年度
+53 / 13 / 7 / 20 / 7
 ========================================= */
 
 .career-pie-2021 {
     background:
         conic-gradient(
-            #1267d8 0% 53%,
-            #ffb53d 53% 66%,
-            #6f7b87 66% 73%,
-            #ffe15d 73% 93%,
-            #63c6e8 93% 100%
+        #1267d8 0% 53%,
+        #ffb53d 53% 66%,
+        #6f7b87 66% 73%,
+        #ffe15d 73% 93%,
+        #63c6e8 93% 100%
         );
 }
 
 
 /* =========================================
-   2020年度
-   53 / 29 / 12 / 6
+2020年度
+53 / 29 / 12 / 6
 ========================================= */
 
 .career-pie-2020 {
     background:
         conic-gradient(
-            #1267d8 0% 53%,
-            #ffb53d 53% 82%,
-            #6f7b87 82% 94%,
-            #ffe15d 94% 100%
+        #1267d8 0% 53%,
+        #ffb53d 53% 82%,
+        #6f7b87 82% 94%,
+        #ffe15d 94% 100%
         );
 }
 
 
 /* =========================================
-   円グラフ凡例
+円グラフ凡例
 ========================================= */
 
 .career-chart-legend {
@@ -3107,7 +3090,7 @@ section {
 
 
 /* =========================================
-   内定者インタビュー
+内定者インタビュー
 ========================================= */
 
 .interview-section {
@@ -3161,7 +3144,7 @@ section {
 
 
 /* =========================================
-   スクロール表示
+スクロール表示
 ========================================= */
 
 .career-fade {
@@ -3184,7 +3167,7 @@ section {
 
 
 /* =========================================
-   スマホ
+スマホ
 ========================================= */
 
 @media screen and (max-width: 900px) {
@@ -3195,85 +3178,85 @@ section {
     }
 
 
-    .career-title {
-        font-size: 32px;
-    }
+.career-title {
+    font-size: 32px;
+}
 
 
-    /* メイン */
+/* メイン */
 
-    .career-main-card {
-        grid-template-columns: 1fr;
+.career-main-card {
+    grid-template-columns: 1fr;
 
-        margin-bottom: 65px;
-    }
+    margin-bottom: 65px;
+}
 
-    .career-main-text {
-        padding:
-            30px 25px;
-    }
+.career-main-text {
+    padding:
+        30px 25px;
+}
 
-    .career-main-image {
-        min-height: 240px;
-    }
-
-
-    /* 年度ボタン */
-
-    .career-year-tabs {
-        justify-content: space-between;
-
-        gap: 6px;
-    }
-
-    .career-year-tab {
-        flex: 1 1 0;
-
-        min-width: 0;
-
-        padding: 12px 6px;
-
-        font-size: 13px;
-    }
+.career-main-image {
+    min-height: 240px;
+}
 
 
-    /* 就職先 */
+/* 年度ボタン */
 
-    .career-result-grid {
-        grid-template-columns: 1fr;
-    }
+.career-year-tabs {
+    justify-content: space-between;
 
-    .career-company-list {
-        grid-template-columns: 1fr;
+    gap: 6px;
+}
 
-        padding: 16px 18px 22px;
-    }
+.career-year-tab {
+    flex: 1 1 0;
 
-    .career-company-card h4,
-    .career-industry-card h4 {
-        padding: 16px 18px;
-    }
+    min-width: 0;
 
-    .career-chart-area {
-        padding: 22px 18px 28px;
-    }
+    padding: 12px 6px;
+
+    font-size: 13px;
+}
 
 
-    /* 円グラフ */
+/* 就職先 */
 
-    .career-pie {
-        width: 240px;
-        height: 240px;
-    }
+.career-result-grid {
+    grid-template-columns: 1fr;
+}
+
+.career-company-list {
+    grid-template-columns: 1fr;
+
+    padding: 16px 18px 22px;
+}
+
+.career-company-card h4,
+.career-industry-card h4 {
+    padding: 16px 18px;
+}
+
+.career-chart-area {
+    padding: 22px 18px 28px;
+}
 
 
-    /* インタビュー */
+/* 円グラフ */
 
-    .interview-section {
-        width: 92%;
+.career-pie {
+    width: 240px;
+    height: 240px;
+}
 
-        margin-top: 65px;
-    }
+
+/* インタビュー */
+
+.interview-section {
+    width: 92%;
+
+    margin-top: 65px;
+}
 
 }
 .career-results {
@@ -3291,9 +3274,9 @@ section {
 
 
 /* ================================
-   グループ研究ページ（導入文）
-   activity.html の .activity-subtitle と統一
-   ================================ */
+グループ研究ページ（導入文）
+activity.html の .activity-subtitle と統一
+================================ */
 
 #contents > .setsumei {
     max-width: 720px;
@@ -3320,8 +3303,8 @@ section {
 
 
 /* ================================
-   プロジェクト研究ページ
-   ================================ */
+プロジェクト研究ページ
+================================ */
 
 .intro-card {
     width: 90%;
@@ -3404,8 +3387,8 @@ section {
 
 
 /* ================================
-   スマホ
-   ================================ */
+スマホ
+================================ */
 
 @media screen and (max-width: 768px) {
 
@@ -3416,37 +3399,37 @@ section {
         display: block;
     }
 
-    .intro-card .text h1 {
-        font-size: 21px;
-        margin-bottom: 20px;
-    }
+.intro-card .text h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
 
-    .intro-card .text p {
-        font-size: 15px;
-        line-height: 1.9;
-    }
+.intro-card .text p {
+    font-size: 15px;
+    line-height: 1.9;
+}
 
-    .intro-card .image-r {
-        width: 100%;
-        margin-top: 25px;
-    }
+.intro-card .image-r {
+    width: 100%;
+    margin-top: 25px;
+}
 
-    .intro-card .image-r img {
-        width: 90%;
-        max-width: 350px;
-        height: 220px;
-    }
+.intro-card .image-r img {
+    width: 90%;
+    max-width: 350px;
+    height: 220px;
+}
 
-    .intro-card .btn1 {
-        padding: 10px 24px;
-        font-size: 14px;
-    }
+.intro-card .btn1 {
+    padding: 10px 24px;
+    font-size: 14px;
+}
 }
 
 
 /* ================================
-   かなり小さいスマホ
-   ================================ */
+かなり小さいスマホ
+================================ */
 
 @media screen and (max-width: 480px) {
 
@@ -3455,26 +3438,26 @@ section {
         padding: 20px 15px;
     }
 
-    .intro-card .text h1 {
-        font-size: 19px;
-    }
+.intro-card .text h1 {
+    font-size: 19px;
+}
 
-    .intro-card .text p {
-        font-size: 14px;
-    }
+.intro-card .text p {
+    font-size: 14px;
+}
 
-    .intro-card .image-r img {
-        width: 95%;
-        height: 190px;
-    }
+.intro-card .image-r img {
+    width: 95%;
+    height: 190px;
+}
 }
 
 
 
 /*message.htmlここから*/
 /* ==================================================
-   message.html
-   在校生・卒業生からのコメント
+message.html
+在校生・卒業生からのコメント
 ================================================== */
 
 .message-page {
@@ -3485,7 +3468,7 @@ section {
 
 
 /* ==============================
-   ページ上部
+ページ上部
 ============================== */
 
 .message-intro {
@@ -3511,7 +3494,7 @@ section {
 
 
 /* ==============================
-   コメントカード
+コメントカード
 ============================== */
 
 .message-card {
@@ -3545,7 +3528,7 @@ section {
 
 
 /* ==============================
-   名前部分
+名前部分
 ============================== */
 
 .message-card-header {
@@ -3555,9 +3538,9 @@ section {
 
     background:
         linear-gradient(
-            135deg,
-            #f4f9ff 0%,
-            #ffffff 100%
+        135deg,
+        #f4f9ff 0%,
+        #ffffff 100%
         );
 
     border-bottom: 1px solid #e2ecf8;
@@ -3625,7 +3608,7 @@ section {
 
 
 /* ==============================
-   本文
+本文
 ============================== */
 
 .message-card-body {
@@ -3649,7 +3632,7 @@ section {
 
 
 /* ==============================
-   カード表示アニメーション
+カード表示アニメーション
 ============================== */
 
 .message-card {
@@ -3675,16 +3658,16 @@ section {
         transform: translateY(25px);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 }
 
 
 /* ==============================
-   スマホ対応
+スマホ対応
 ============================== */
 
 @media screen and (max-width: 768px) {
@@ -3693,43 +3676,43 @@ section {
         padding: 90px 20px 70px;
     }
 
-    .message-intro {
-        margin-bottom: 40px;
-    }
+.message-intro {
+    margin-bottom: 40px;
+}
 
-    .message-title {
-        font-size: 30px;
-    }
+.message-title {
+    font-size: 30px;
+}
 
-    .message-subtitle {
-        font-size: 14px;
-    }
+.message-subtitle {
+    font-size: 14px;
+}
 
-    .message-card {
-        margin-bottom: 30px;
-        border-radius: 18px;
-    }
+.message-card {
+    margin-bottom: 30px;
+    border-radius: 18px;
+}
 
-    .message-card-header {
-        padding: 24px 25px 20px;
-    }
+.message-card-header {
+    padding: 24px 25px 20px;
+}
 
-    .message-card-header h2 {
-        font-size: 20px;
-    }
+.message-card-header h2 {
+    font-size: 20px;
+}
 
-    .message-profile {
-        font-size: 13px;
-    }
+.message-profile {
+    font-size: 13px;
+}
 
-    .message-card-body {
-        padding: 25px;
-    }
+.message-card-body {
+    padding: 25px;
+}
 
-    .message-card-body p {
-        font-size: 14px;
-        line-height: 1.9;
-    }
+.message-card-body p {
+    font-size: 14px;
+    line-height: 1.9;
+}
 
 }
 
@@ -4063,9 +4046,9 @@ section {
 
     background:
         linear-gradient(
-            135deg,
-            #eaf4ff,
-            #ffffff
+        135deg,
+        #eaf4ff,
+        #ffffff
         );
 
     border-radius: 20px;
@@ -4158,144 +4141,144 @@ section {
     }
 
 
-    /* 最初の説明 */
+/* 最初の説明 */
 
-    .company-page #contents > .kigyou-text:first-child {
-        margin: 15px auto 45px;
+.company-page #contents > .kigyou-text:first-child {
+    margin: 15px auto 45px;
 
-        padding: 35px 25px;
+    padding: 35px 25px;
 
-        border-radius: 18px;
-    }
+    border-radius: 18px;
+}
 
-    .company-page #contents > .kigyou-text:first-child h2 {
-        font-size: 28px;
+.company-page #contents > .kigyou-text:first-child h2 {
+    font-size: 28px;
 
-        margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+}
 
-    .company-page #contents > .kigyou-text:first-child p {
-        font-size: 14px;
+.company-page #contents > .kigyou-text:first-child p {
+    font-size: 14px;
 
-        line-height: 1.9;
-    }
-
-
-    /* メインカード */
-
-    .company-page #contents > .list {
-        padding: 35px 20px;
-
-        border-radius: 18px;
-    }
+    line-height: 1.9;
+}
 
 
-    .company-page #contents > .list > .kigyou-text > h1 {
-        font-size: 26px;
+/* メインカード */
 
-        margin-bottom: 35px;
+.company-page #contents > .list {
+    padding: 35px 20px;
 
-        letter-spacing: 1px;
-    }
-
-
-    /* 項目タイトル */
-
-    .company-page #contents .title-header {
-        margin-top: 30px;
-
-        padding: 13px 12px;
-
-        font-size: 18px;
-
-        letter-spacing: 1px;
-    }
+    border-radius: 18px;
+}
 
 
-    /* 本文 */
+.company-page #contents > .list > .kigyou-text > h1 {
+    font-size: 26px;
 
-    .company-page #contents .title-header + div {
-        padding: 18px 5px 5px;
-    }
+    margin-bottom: 35px;
 
-    .company-page #contents .title-header + div p {
-        font-size: 14px;
-
-        line-height: 1.9;
-    }
+    letter-spacing: 1px;
+}
 
 
-    /* 表 */
+/* 項目タイトル */
 
-    .company-page #contents table.ta4 {
-        margin: 20px 0;
-    }
+.company-page #contents .title-header {
+    margin-top: 30px;
 
-    .company-page #contents table.ta4 th,
-    .company-page #contents table.ta4 td {
-        padding: 11px 8px;
+    padding: 13px 12px;
 
-        font-size: 12px;
-    }
+    font-size: 18px;
 
-    .company-page #contents table.ta4 th {
-        width: 35%;
-    }
+    letter-spacing: 1px;
+}
 
 
-    /* 卒論・就職先 */
+/* 本文 */
 
-    .company-page .Graduation-thesis-theme,
-    .company-page .company_name {
-        padding: 15px 18px;
+.company-page #contents .title-header + div {
+    padding: 18px 5px 5px;
+}
 
-        margin: 15px 0;
-    }
+.company-page #contents .title-header + div p {
+    font-size: 14px;
 
-
-    /* 詳しくはこちら */
-
-    .company-page .right-text {
-        margin-top: 12px !important;
-    }
+    line-height: 1.9;
+}
 
 
-    /* お問い合わせ */
+/* 表 */
 
-    .company-page #contents .kigyou-text:last-of-type {
-        margin-top: 45px;
+.company-page #contents table.ta4 {
+    margin: 20px 0;
+}
 
-        padding: 30px 25px;
+.company-page #contents table.ta4 th,
+.company-page #contents table.ta4 td {
+    padding: 11px 8px;
 
-        border-radius: 18px;
-    }
+    font-size: 12px;
+}
 
-    .company-page #contents .kigyou-text:last-of-type h1 {
-        font-size: 25px;
-    }
-
-    .company-page #contents .kigyou-text:last-of-type p {
-        font-size: 14px;
-
-        line-height: 1.9;
-    }
+.company-page #contents table.ta4 th {
+    width: 35%;
+}
 
 
-    /* ボタン */
+/* 卒論・就職先 */
 
-    .company-page #contents .btn1 {
-        padding: 13px 25px;
+.company-page .Graduation-thesis-theme,
+.company-page .company_name {
+    padding: 15px 18px;
 
-        font-size: 14px;
-    }
+    margin: 15px 0;
+}
+
+
+/* 詳しくはこちら */
+
+.company-page .right-text {
+    margin-top: 12px !important;
+}
+
+
+/* お問い合わせ */
+
+.company-page #contents .kigyou-text:last-of-type {
+    margin-top: 45px;
+
+    padding: 30px 25px;
+
+    border-radius: 18px;
+}
+
+.company-page #contents .kigyou-text:last-of-type h1 {
+    font-size: 25px;
+}
+
+.company-page #contents .kigyou-text:last-of-type p {
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* ボタン */
+
+.company-page #contents .btn1 {
+    padding: 13px 25px;
+
+    font-size: 14px;
+}
 }
 
 
 
 /*qualification.htmlここから*/
 /* ==================================================
-   shikaku.html
-   資格・検定ページ
+shikaku.html
+資格・検定ページ
 ================================================== */
 
 .qualification-page {
@@ -4326,7 +4309,7 @@ section {
 
 
 /* ==============================
-   ページタイトル
+ページタイトル
 ============================== */
 
 .qualification-intro {
@@ -4356,7 +4339,7 @@ section {
 
 
 /* ==============================
-   資格一覧
+資格一覧
 ============================== */
 
 .qualification-grid {
@@ -4370,7 +4353,7 @@ section {
 
 
 /* ==============================
-   資格カード
+資格カード
 ============================== */
 
 .qualification-card {
@@ -4429,7 +4412,7 @@ section {
 
 
 /* ==============================
-   カード上部
+カード上部
 ============================== */
 
 .qualification-card-top {
@@ -4480,7 +4463,7 @@ section {
 
 
 /* ==============================
-   説明文
+説明文
 ============================== */
 
 .qualification-card > p {
@@ -4495,7 +4478,7 @@ section {
 
 
 /* ==============================
-   MOSの英語表記
+MOSの英語表記
 ============================== */
 
 .qualification-card-top
@@ -4510,8 +4493,8 @@ section {
 
 
 /* ==============================
-   最後のMOSカード
-   7個なので最後だけ中央
+最後のMOSカード
+7個なので最後だけ中央
 ============================== */
 
 .qualification-card:last-child {
@@ -4524,7 +4507,7 @@ section {
 
 
 /* ==============================
-   スクロール用
+スクロール用
 ============================== */
 
 .qualification-scroll {
@@ -4545,7 +4528,7 @@ section {
 
 
 /* ==============================
-   スマホ
+スマホ
 ============================== */
 
 @media screen and (max-width: 768px) {
@@ -4554,46 +4537,46 @@ section {
         padding: 90px 20px 70px;
     }
 
-    .qualification-intro {
-        margin-bottom: 40px;
-    }
+.qualification-intro {
+    margin-bottom: 40px;
+}
 
-    .qualification-title {
-        font-size: 30px;
-    }
+.qualification-title {
+    font-size: 30px;
+}
 
-    .qualification-lead {
-        font-size: 14px;
-    }
+.qualification-lead {
+    font-size: 14px;
+}
 
 
-    /* 1列にする */
+/* 1列にする */
 
-    .qualification-grid {
-        grid-template-columns: 1fr;
+.qualification-grid {
+    grid-template-columns: 1fr;
 
-        gap: 20px;
-    }
+    gap: 20px;
+}
 
-    .qualification-card {
-        min-height: auto;
+.qualification-card {
+    min-height: auto;
 
-        padding: 26px 25px;
-    }
+    padding: 26px 25px;
+}
 
-    .qualification-card:last-child {
-        grid-column: auto;
+.qualification-card:last-child {
+    grid-column: auto;
 
-        width: auto;
-    }
+    width: auto;
+}
 
-    .qualification-card h2 {
-        font-size: 19px;
-    }
+.qualification-card h2 {
+    font-size: 19px;
+}
 
-    .qualification-card > p {
-        font-size: 14px;
-    }
+.qualification-card > p {
+    font-size: 14px;
+}
 
 }
 /*qualification.htmlここまで*/
@@ -4604,7 +4587,7 @@ section {
 
 /*index.htmlここから*/
 /* =========================================
-   吉田ゼミって？ メインカード
+吉田ゼミって？ メインカード
 ========================================= */
 
 .home-main-card {
@@ -4803,48 +4786,7 @@ section {
 
 
 /* =========================================
-   セクション見出し（活動紹介など）
-========================================= */
-
-.home-detail-heading {
-    text-align: center;
-
-    margin-bottom: 15px;
-}
-
-.home-detail-en {
-    display: inline-block;
-
-    margin-bottom: 6px;
-
-    color: #1267d8;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    letter-spacing: 2px;
-}
-
-.home-detail-heading h2 {
-    margin: 0 0 12px;
-
-    font-size: 32px;
-
-    color: #1267d8;
-}
-
-.home-detail-heading p {
-    margin: 0;
-
-    color: #666;
-
-    font-size: 15px;
-}
-
-
-
-/* =========================================
-   スマホ
+スマホ
 ========================================= */
 
 @media screen and (max-width: 767px) {
@@ -4859,52 +4801,44 @@ section {
         margin-bottom: 40px;
     }
 
-    /* スマホでは reverse でも文章→写真の順に統一 */
-    .home-main-card.reverse .home-main-image {
-        order: 0;
-    }
+/* スマホでは reverse でも文章→写真の順に統一 */
+.home-main-card.reverse .home-main-image {
+    order: 0;
+}
 
-    .home-main-text h2 {
-        font-size: 23px;
-    }
+.home-main-text h2 {
+    font-size: 23px;
+}
 
-    .home-main-image {
-        width: 100%;
-    }
+.home-main-image {
+    width: 100%;
+}
 
-    .home-main-image img {
-        height: 230px;
-    }
+.home-main-image img {
+    height: 230px;
+}
 
-    .home-main-image.logo-fit {
-        height: 230px;
-    }
+.home-main-image.logo-fit {
+    height: 230px;
+}
 
-    .home-detail-heading h2 {
-        font-size: 25px;
-    }
+.home-button-group {
+    justify-content: center;
+}
 
-    .home-detail-heading p {
-        font-size: 13px;
-    }
-
-    .home-button-group {
-        justify-content: center;
-    }
-
-    .home-main-text > .home-button {
-        display: flex;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.home-main-text > .home-button {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 }
 /*index.htmlここまで*/
 
 
 /* =========================================
-   共通テーブル（教員紹介・メンバー紹介で使用）
+共通テーブル（教員紹介・メンバー紹介で使用）
 ========================================= */
 
 .ta1 {
@@ -4935,23 +4869,23 @@ section {
 }
 
 /* スマホでは見出し列を画面幅に対する比率にして
-   狭めすぎず・広すぎずバランスを取る
-   （メンバー紹介ページは member.css 側でさらに上書き） */
+狭めすぎず・広すぎずバランスを取る
+（メンバー紹介ページは member.css 側でさらに上書き） */
 @media screen and (max-width: 600px) {
     .ta1 {
         table-layout: fixed;
     }
 
-    .ta1 th {
-        width: 32%;
-        padding: 10px 6px;
-        font-size: 13px;
-    }
+.ta1 th {
+    width: 32%;
+    padding: 10px 6px;
+    font-size: 13px;
+}
 
-    .ta1 td {
-        padding: 10px;
-        font-size: 13px;
-    }
+.ta1 td {
+    padding: 10px;
+    font-size: 13px;
+}
 }
 
 
@@ -5098,32 +5032,32 @@ section {
         gap: 20px;
     }
 
-    .footer-about {
-        grid-column: 1 / -1;
-    }
+.footer-about {
+    grid-column: 1 / -1;
+}
 
-    .footer-pagetop {
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-    }
+.footer-pagetop {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
 
-    .site-footer {
-        position: relative;
-    }
+.site-footer {
+    position: relative;
+}
 
-    .footer-bottom {
-        padding: 12px 80px 15px 25px;
-        text-align: left;
-    }
+.footer-bottom {
+    padding: 12px 80px 15px 25px;
+    text-align: left;
+}
 }
 
 /*footerここまで*/
 
 .site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
