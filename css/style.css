@@ -2091,6 +2091,10 @@ section {
     width: 90px;
 
     background: #0b5fc8;
+
+    position: sticky;
+    left: 0;
+    z-index: 3;
 }
 
 
@@ -2116,6 +2120,11 @@ section {
 
     font-size: 16px;
     font-weight: bold;
+
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 2px 0 4px rgba(11, 47, 102, 0.06);
 
     text-align: center;
 
@@ -2360,7 +2369,7 @@ section {
 
 
     .schedule-table {
-        min-width: 750px;
+        min-width: 900px;
     }
 
 
@@ -2368,6 +2377,10 @@ section {
         padding: 16px 10px;
 
         font-size: 15px;
+    }
+
+    .schedule-table thead th:first-child {
+        width: 75px;
     }
 
 
