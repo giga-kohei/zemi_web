@@ -787,7 +787,7 @@ section {
 #contents {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 50px 25px;
+    padding: 100px 25px 50px;
 }
 
 #contents h2 {
@@ -1088,9 +1088,7 @@ section {
 @media screen and (max-width: 767px) {
 
     #contents {
-        padding:
-            35px
-            15px;
+        padding: 90px 15px 35px;
     }
 
     #contents h2 {
@@ -3536,7 +3534,7 @@ section {
 @media screen and (max-width: 768px) {
 
     .message-page {
-        padding: 55px 20px 70px;
+        padding: 90px 20px 70px;
     }
 
     .message-intro {
@@ -3592,7 +3590,7 @@ section {
 .company-page #contents {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 50px 25px 90px;
+    padding: 100px 25px 90px;
     box-sizing: border-box;
 }
 
@@ -4004,7 +4002,7 @@ section {
 @media screen and (max-width: 768px) {
 
     .company-page #contents {
-        padding: 35px 15px 70px;
+        padding: 90px 15px 70px;
     }
 
 
@@ -4383,7 +4381,7 @@ section {
 @media screen and (max-width: 768px) {
 
     .qualification-page {
-        padding: 55px 20px 70px;
+        padding: 90px 20px 70px;
     }
 
     .qualification-intro {
