@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const fadeElements = document.querySelectorAll(".fade");
 
-window.addEventListener("scroll", () => {
+function checkFadeElements() {
   fadeElements.forEach(el => {
     const rect = el.getBoundingClientRect();
 
@@ -68,7 +68,10 @@ window.addEventListener("scroll", () => {
       el.classList.add("show");
     }
   });
-});
+}
+
+window.addEventListener("scroll", checkFadeElements);
+checkFadeElements();
 
 const counters = document.querySelectorAll(".counter");
 let counted = false;
