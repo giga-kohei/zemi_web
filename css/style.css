@@ -4833,6 +4833,16 @@ section {
         font-size: 13px;
     }
 
+    .home-button-group {
+        justify-content: flex-end;
+    }
+
+    .home-main-text > .home-button {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+    }
+
 }
 /*index.htmlここまで*/
 
