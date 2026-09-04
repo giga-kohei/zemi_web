@@ -4852,6 +4852,26 @@ section {
     border: 1px solid #ddd;
 }
 
+/* スマホでは見出し列を画面幅に対する比率にして
+   狭めすぎず・広すぎずバランスを取る
+   （メンバー紹介ページは member.css 側でさらに上書き） */
+@media screen and (max-width: 600px) {
+    .ta1 {
+        table-layout: fixed;
+    }
+
+    .ta1 th {
+        width: 32%;
+        padding: 10px 6px;
+        font-size: 13px;
+    }
+
+    .ta1 td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
 
 /*footerここから*/
 
