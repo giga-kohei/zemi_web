@@ -4039,8 +4039,6 @@ section {
 
     border-radius: 12px;
 
-    border-left: 4px solid #2496d1;
-
     box-sizing: border-box;
 }
 
@@ -4304,6 +4302,26 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     padding: 80px 30px 100px;
+}
+
+.qualification-page .right-text {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.qualification-page .right-text a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #1267d8;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #1267d8;
+    transition: 0.25s;
+}
+
+.qualification-page .right-text a:hover {
+    color: #0b5fc8;
+    border-color: #0b5fc8;
 }
 
 
