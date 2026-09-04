@@ -14,18 +14,6 @@
     margin-bottom: 30px;
 }
 
-.department-chart {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.department-chart img {
-    margin-top: 40pt;
-    width: 80%;
-    max-width: 700px;
-    height: auto;
-}
-
 /* .ta1 の基本スタイルは style.css へ移動
    （teacher.htmlでも共通利用するため）。
    ここには「氏名」列を1行に収めるための

@@ -172,7 +172,7 @@ body {
     display: block;
 }
 
-.header-nav > a:not(.question-btn):not(.header-sns-link):hover,
+.header-nav > a:not(.header-sns-link):hover,
 .nav-dropdown:hover .nav-main {
     color: #1267d8;
     background: rgba(18,103,216,.05);
