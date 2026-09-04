@@ -1703,7 +1703,7 @@ section {
 @media screen and (max-width: 767px) {
 
     .activity-page {
-        width: 92%;
+        width: 96%;
 
         padding:
             40px 0 65px;
@@ -1725,7 +1725,7 @@ section {
 
         gap: 25px;
 
-        padding: 25px;
+        padding: 20px;
 
         margin-bottom: 60px;
     }
@@ -1776,7 +1776,7 @@ section {
     }
 
     .activity-step-content {
-        padding: 27px 23px;
+        padding: 24px 18px;
     }
 
     .activity-step-content h3 {
