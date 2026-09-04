@@ -1168,7 +1168,7 @@ section {
 @media screen and (max-width: 767px) {
 
     #contents {
-        padding: 90px 15px 35px;
+        padding: 90px 8px 35px;
     }
 
     #contents h2 {
@@ -1726,7 +1726,7 @@ section {
 @media screen and (max-width: 767px) {
 
     .activity-page {
-        width: 97%;
+        width: 100%;
 
         padding:
             40px 0 65px;
@@ -2341,7 +2341,7 @@ section {
 @media screen and (max-width: 767px) {
 
     .schedule-page {
-        width: 97%;
+        width: 100%;
 
         padding:
             40px 0 65px;
@@ -3176,7 +3176,7 @@ section {
 
     .career-page {
         padding:
-            45px 10px 70px;
+            45px 0 70px;
     }
 
 
