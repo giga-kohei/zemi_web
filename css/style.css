@@ -813,7 +813,7 @@ footer {
 }
 
 
-/* 写真 */
+/* 写真 *//*
 .slide img {
     display: block;
 
@@ -832,6 +832,22 @@ footer {
         transform 0.35s ease,
         box-shadow 0.35s ease,
         filter 0.35s ease;
+}*/
+
+.slide img {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(40, 80, 130, 0.14);
 }
 
 
