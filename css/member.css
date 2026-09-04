@@ -1,16 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Noto Sans JP",sans-serif;
-}
-
-body{
-    background:#f7faff;
-    color:#333;
-}
-
-
 .member-hero{
     text-align:center;
     padding:160px 20px 60px;
@@ -39,33 +26,10 @@ body{
     height:auto;
 }
 
-.ta1{
-    width:100%;
-    border-collapse:collapse;
-}
-
-.ta1 caption{
-    font-size:1.3rem;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.ta1 th{
-    width:180px;
-    text-align:center;
-    vertical-align:middle;
-}
-
-.ta1 td{
-    line-height:1.8;
-    padding:15px;
-}
-
-.ta1 th,
-.ta1 td{
-    border:1px solid #ddd;
-}
-
+/* .ta1 の基本スタイルは style.css へ移動
+   （teacher.htmlでも共通利用するため）。
+   ここには「氏名」列を1行に収めるための
+   メンバー紹介ページ専用の調整だけ残す */
 @media screen and (max-width: 600px){
     .ta1{
         table-layout:fixed;

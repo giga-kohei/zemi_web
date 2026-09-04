@@ -4807,6 +4807,38 @@ section {
 /*index.htmlここまで*/
 
 
+/* =========================================
+   共通テーブル（教員紹介・メンバー紹介で使用）
+========================================= */
+
+.ta1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ta1 caption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ta1 th {
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ta1 td {
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.ta1 th,
+.ta1 td {
+    border: 1px solid #ddd;
+}
+
+
 /*footerここから*/
 
 .site-footer {
