@@ -215,11 +215,30 @@ body {
   min-height: 100vh;
   padding: 130px 8% 80px;
   background:
-    linear-gradient(rgba(18, 103, 216, 0.65), rgba(18, 103, 216, 0.35)),
-    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center / cover;
+    linear-gradient(rgba(11, 47, 102, 0.78), rgba(18, 103, 216, 0.45)),
+    url("../images/4nenn.jpg") center / cover;
   color: white;
   display: flex;
   align-items: center;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffe15d;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-content {
@@ -4425,6 +4444,275 @@ footer {
 
 
 
+
+
+/*index.htmlここから*/
+/* =========================================
+   吉田ゼミって？ メインカード
+========================================= */
+
+.home-main-card {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    max-width: 1050px;
+    margin: 0 auto 55px;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(18, 103, 216, 0.12);
+
+    overflow: hidden;
+    position: relative;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.home-main-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -110px;
+    left: -110px;
+
+    border-radius: 50%;
+
+    background: rgba(18, 103, 216, 0.05);
+}
+
+.home-main-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 32px rgba(18, 103, 216, 0.18);
+}
+
+.home-main-card.reverse .home-main-image {
+    order: -1;
+}
+
+.home-main-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.home-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 6px 14px;
+
+    background: #eaf4ff;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 20px;
+}
+
+.home-main-text h2 {
+    margin: 0 0 20px;
+
+    font-size: 27px;
+
+    color: #1267d8;
+}
+
+.home-main-text p {
+    margin: 0 0 15px;
+
+    line-height: 1.9;
+
+    color: #444;
+}
+
+.home-main-image {
+    flex: 1;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.home-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.home-main-card:hover .home-main-image img {
+    transform: scale(1.05);
+    filter: brightness(1.04);
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 5px;
+    padding: 13px 25px;
+
+    background: #1267d8;
+
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 5px 14px rgba(18, 103, 216, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-3px);
+
+    background: #0e59bd;
+
+    box-shadow:
+        0 9px 20px rgba(18, 103, 216, 0.25);
+}
+
+.home-button span {
+    transition: transform 0.3s ease;
+}
+
+.home-button:hover span {
+    transform: translateX(5px);
+}
+
+.home-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 5px;
+}
+
+.home-button-group .home-button {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   セクション見出し（活動紹介など）
+========================================= */
+
+.home-detail-heading {
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.home-detail-en {
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    color: #1267d8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.home-detail-heading h2 {
+    margin: 0 0 12px;
+
+    font-size: 32px;
+
+    color: #1267d8;
+}
+
+.home-detail-heading p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* カードをリンクにしたときの見た目調整 */
+
+a.card {
+    display: block;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   スマホ
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+    .home-main-card {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 25px;
+
+        margin-bottom: 40px;
+    }
+
+    .home-main-text h2 {
+        font-size: 23px;
+    }
+
+    .home-main-image {
+        width: 100%;
+    }
+
+    .home-main-image img {
+        height: 230px;
+    }
+
+    .home-detail-heading h2 {
+        font-size: 25px;
+    }
+
+    .home-detail-heading p {
+        font-size: 13px;
+    }
+
+}
+/*index.htmlここまで*/
 
 
 /*footerここから*/
