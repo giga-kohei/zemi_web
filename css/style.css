@@ -3220,6 +3220,35 @@ section {
 
 
 /* ================================
+   グループ研究ページ（導入文）
+   activity.html の .activity-subtitle と統一
+   ================================ */
+
+#contents > .setsumei {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contents > .setsumei p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 0 12px;
+}
+
+#contents > .setsumei p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    #contents > .setsumei p {
+        font-size: 14px;
+    }
+}
+
+
+/* ================================
    プロジェクト研究ページ
    ================================ */
 
