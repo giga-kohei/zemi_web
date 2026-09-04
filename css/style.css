@@ -4418,6 +4418,28 @@ section {
     filter: brightness(1.04);
 }
 
+/* ロゴなど、切り抜かずに小さく見せたい画像用 */
+.home-main-image.logo-fit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    background: #ffffff;
+}
+
+.home-main-image.logo-fit img {
+    width: auto;
+    height: auto;
+    max-width: 55%;
+    max-height: 55%;
+    object-fit: contain;
+}
+
+.home-main-card:hover .home-main-image.logo-fit img {
+    transform: none;
+    filter: none;
+}
+
 .home-button {
     display: inline-flex;
     align-items: center;
@@ -4541,6 +4563,10 @@ section {
     }
 
     .home-main-image img {
+        height: 230px;
+    }
+
+    .home-main-image.logo-fit {
         height: 230px;
     }
 
