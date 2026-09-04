@@ -4863,12 +4863,11 @@ section {
 @media screen and (max-width: 768px) {
     .footer-inner {
         padding: 30px 25px 20px;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 
-    .footer-about,
-    .footer-sns {
+    .footer-about {
         grid-column: 1 / -1;
     }
 
