@@ -619,6 +619,7 @@ section {
 .a-label {
   width: 35px;
   height: 35px;
+  flex-shrink: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
