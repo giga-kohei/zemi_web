@@ -350,6 +350,14 @@ body {
     max-height: 400px;
   }
 
+  /* デスクトップ用のホバー/フォーカス時の飛び出し位置指定を無効化
+     （タップでフォーカスが当たると transform がずれて
+     文字が画面外に押し出されてしまうため） */
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
+    transform: none;
+  }
+
   .dropdown-menu li a {
     justify-content: flex-start;
     padding: 12px 8px 12px 20px;
@@ -4681,6 +4689,11 @@ section {
         padding: 25px;
 
         margin-bottom: 40px;
+    }
+
+    /* スマホでは reverse でも文章→写真の順に統一 */
+    .home-main-card.reverse .home-main-image {
+        order: 0;
     }
 
     .home-main-text h2 {
