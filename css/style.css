@@ -27,7 +27,9 @@ body {
     background: #fff;
     border-bottom: 1px solid #e8eef7;
     box-shadow: 0 3px 15px rgba(18,103,216,.07);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -5052,11 +5054,3 @@ to {
 }
 
 /*footerここまで*/
-
-.site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
