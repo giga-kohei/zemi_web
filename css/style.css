@@ -84,6 +84,43 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* 閉じた状態のヘッダーにも表示するSNSアイコン（スマホのみ） */
+.header-sns-mobile {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .header-sns-mobile {
+    display: flex;
+    margin-left: auto;
+    margin-right: 12px;
+  }
+}
+
+.header-sns-mobile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: .25s;
+}
+
+.header-sns-mobile a:hover {
+  background: rgba(18, 103, 216, .08);
+}
+
+.header-sns-mobile img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
 /* =========================================
    ナビゲーション
 ========================================= */
@@ -522,6 +559,25 @@ section {
   border-radius: 999px;
   margin-right: 10px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .news-box {
+    padding: 20px 16px;
+  }
+
+  .news-item {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .new {
+    font-size: 11px;
+    padding: 3px 7px;
+    margin-right: 8px;
+  }
 }
 
 /*faq.htmlここから*/
