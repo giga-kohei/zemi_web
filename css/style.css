@@ -3833,8 +3833,6 @@ section {
 
     border-radius: 12px;
 
-    border-left: 5px solid #1267d8;
-
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
@@ -4156,8 +4154,6 @@ section {
         font-size: 18px;
 
         letter-spacing: 1px;
-
-        border-left-width: 4px;
     }
 
 
