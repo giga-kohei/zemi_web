@@ -7,16 +7,18 @@ function showGrade(id) {
 
     document.getElementById(id).classList.add("active");
 
-    document.querySelectorAll(".grade-buttons button").forEach(function (btn) {
+    const gradeButtons = document.querySelectorAll(".grade-buttons button");
+
+    gradeButtons.forEach(function (btn) {
         btn.classList.remove("active");
     });
 
     if (id === "grade2") {
-        document.querySelectorAll(".grade-buttons button")[0].classList.add("active");
+        gradeButtons[0].classList.add("active");
     } else if (id === "grade3") {
-        document.querySelectorAll(".grade-buttons button")[1].classList.add("active");
+        gradeButtons[1].classList.add("active");
     } else {
-        document.querySelectorAll(".grade-buttons button")[2].classList.add("active");
+        gradeButtons[2].classList.add("active");
     }
 }
 

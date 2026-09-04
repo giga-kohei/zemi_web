@@ -64,20 +64,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const fadeElements = document.querySelectorAll(".fade");
 
-function checkFadeElements() {
-    fadeElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
+const fadeObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                fadeObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        rootMargin: "0px 0px -100px 0px"
+    }
+);
 
-        if (rect.top < window.innerHeight - 100) {
-            el.classList.add("show");
-        }
-    });
-}
+fadeElements.forEach(el => {
+    fadeObserver.observe(el);
+});
 
-window.addEventListener("scroll", checkFadeElements);
-checkFadeElements();
-
-/* graduation.htmlここから */
+/*graduation_thesis.htmlここから*/
 document.addEventListener("DOMContentLoaded", function () {
 
     const tabs = document.querySelectorAll(".year-tab");
@@ -115,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-/* graduation.htmlここまで */
+/*graduation_thesis.htmlここまで*/
 
 /*album.htmlここから*/
 /* ==============================
@@ -335,37 +340,31 @@ document.querySelectorAll(".album-section").forEach((section) => {
     updateSlider();
 
 });
-const albumLists =
-        document.querySelectorAll('.list');
+const albumLists = document.querySelectorAll('.list');
 
-const albumObserver =
-        new IntersectionObserver(
-                (entries) => {
+const albumObserver = new IntersectionObserver(
+    (entries) => {
 
-                        entries.forEach(entry => {
+        entries.forEach(entry => {
 
-                                if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
 
-                                        entry.target.classList.add(
-                                                'album-show'
-                                        );
+                entry.target.classList.add('album-show');
 
-                                        albumObserver.unobserve(
-                                                entry.target
-                                        );
+                albumObserver.unobserve(entry.target);
 
-                                }
+            }
 
-                        });
+        });
 
-                },
-                {
-                        threshold: 0.15
-                }
-        );
+    },
+    {
+        threshold: 0.15
+    }
+);
 
 albumLists.forEach(list => {
-        albumObserver.observe(list);
+    albumObserver.observe(list);
 });
 /*album.htmlここまで*/
 
