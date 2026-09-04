@@ -14,6 +14,8 @@ const counters = document.querySelectorAll(".counter");
 let counted = false;
 
 window.addEventListener("scroll", () => {
+  if (counters.length === 0) return;
+
   const countSection = counters[0].getBoundingClientRect().top;
 
   if (countSection < window.innerHeight && !counted) {
