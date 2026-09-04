@@ -3166,7 +3166,7 @@ section {
 
     .career-page {
         padding:
-            45px 18px 70px;
+            45px 10px 70px;
     }
 
 
@@ -3196,18 +3196,19 @@ section {
     /* 年度ボタン */
 
     .career-year-tabs {
-        justify-content: flex-start;
+        justify-content: space-between;
 
-        overflow-x: auto;
-
-        padding-bottom: 12px;
+        gap: 6px;
     }
 
     .career-year-tab {
-        flex:
-            0 0 115px;
+        flex: 1 1 0;
 
-        min-width: 115px;
+        min-width: 0;
+
+        padding: 12px 6px;
+
+        font-size: 13px;
     }
 
 
@@ -3219,14 +3220,25 @@ section {
 
     .career-company-list {
         grid-template-columns: 1fr;
+
+        padding: 16px 18px 22px;
+    }
+
+    .career-company-card h4,
+    .career-industry-card h4 {
+        padding: 16px 18px;
+    }
+
+    .career-chart-area {
+        padding: 22px 18px 28px;
     }
 
 
     /* 円グラフ */
 
     .career-pie {
-        width: 220px;
-        height: 220px;
+        width: 240px;
+        height: 240px;
     }
 
 
