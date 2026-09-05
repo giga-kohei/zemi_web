@@ -12,7 +12,6 @@ body {
     background: #f4f9ff;
 }
 
-
 /* =========================================
    ヘッダー
 ========================================= */
@@ -231,15 +230,12 @@ body {
     padding: 10px;
     box-sizing: border-box;
     list-style: none;
-
     background: rgba(255,255,255,.72);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border: 1px solid rgba(255,255,255,.7);
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(11,47,102,.12);
-
     opacity: 0;
     visibility: hidden;
     transform: translateX(-50%) translateY(-6px);
@@ -284,7 +280,6 @@ body {
     background: rgba(18,103,216,.10);
 }
 
-
 /* =========================================
    小さいPC・タブレット
 ========================================= */
@@ -305,7 +300,6 @@ body {
     font-size: 12px;
 }
 }
-
 
 /* =========================================
    スマホ ナビゲーション
@@ -410,18 +404,14 @@ body {
 }
 }
 
-
 .hero {
     min-height: 75vh;
     padding: 130px 8% 20px;
-    background:
-        linear-gradient(to bottom, rgba(11, 47, 102, 0.32) 0%, rgba(11, 47, 102, 0.48) 55%, rgba(11, 47, 102, 0.72) 100%),
-        url("../images/index/index.jpg") center / cover;
+    background: linear-gradient(to bottom, rgba(11, 47, 102, 0.32) 0%, rgba(11, 47, 102, 0.48) 55%, rgba(11, 47, 102, 0.72) 100%), url("../images/index/index.jpg") center / cover;
     color: white;
     display: flex;
     align-items: center;
 }
-
 
 .hero-eyebrow {
     display: inline-block;
@@ -669,7 +659,6 @@ section {
     margin: 0;
 }
 
-
 /*faq.htmlここまで*/
 
 @keyframes fadeUp {
@@ -678,10 +667,10 @@ section {
         transform: translateY(35px);
     }
 
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
@@ -744,7 +733,6 @@ to {
     padding: 45px 55px;
     min-height: 400px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
-
     color: #333333;
     font-size: 17px;
     line-height: 2.2;
@@ -790,12 +778,9 @@ to {
     line-height: 1.8;
 }
 
-
 #contents > p:last-of-type {
     margin-bottom: 60px;
 }
-
-
 
 /* ===== スマホ表示 ===== */
 
@@ -839,7 +824,6 @@ to {
 }
 }
 
-
 /* かなり小さいスマホ用 */
 @media screen and (max-width: 480px) {
 
@@ -858,7 +842,6 @@ to {
 }
 }
 /*graduation_thesis.htmlここまで*/
-
 
 /*album.htmlここから*/
 
@@ -880,7 +863,6 @@ to {
     color: #173f70;
 }
 
-
 /* 年度ごとのまとまり */
 .list {
     margin-bottom: 70px;
@@ -890,39 +872,27 @@ to {
     width: 100%;
 }
 
-
 /* アルバム 年度タイトル */
 
 .title-header {
     max-width: 1100px;
     margin: 40px auto 25px;
     padding: 15px 20px;
-
     text-align: center;
-
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 6px;
-
     color: #1267d8;
-
     background: white;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     transition: 0.3s;
 }
 
 .title-header:hover {
     transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 28px rgba(18, 103, 216, 0.18);
+    box-shadow: 0 12px 28px rgba(18, 103, 216, 0.18);
 }
-
 
 /* 年度ブロック全体 */
 
@@ -931,11 +901,7 @@ to {
     margin: 0 auto 65px;
 }
 
-
 /* アルバムページタイトル */
-
-
-
 
 /* スマホ */
 
@@ -944,10 +910,8 @@ to {
     .title-header {
         margin: 30px auto 20px;
         padding: 13px 15px;
-
         font-size: 18px;
         letter-spacing: 4px;
-
         border-radius: 16px;
     }
 }
@@ -957,94 +921,57 @@ to {
 
 .slider-container {
     position: relative;
-
     width: 100%;
-
     overflow: hidden;
-
-    padding:
-        10px
-        55px
-        25px;
+    padding: 10px 55px 25px;
 }
-
 
 /* 横に写真を並べる */
 .slider {
     display: flex;
-
     width: 100%;
-
-    transition:
-        transform 0.55s
-        cubic-bezier(0.22, 0.61, 0.36, 1);
-
+    transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
     will-change: transform;
 }
-
 
 /* 写真1枚分 */
 .slide {
     flex: 0 0 calc(100% / 3);
-
     box-sizing: border-box;
-
     padding: 0 10px;
-
     text-align: center;
 }
-
 
 /* 写真 */
 .slide img {
     display: block;
-
     width: 100%;
     aspect-ratio: 4 / 3;
     height: auto;
-
     object-fit: contain;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 7px 18px
-        rgba(40, 80, 130, 0.14);
+    box-shadow: 0 7px 18px rgba(40, 80, 130, 0.14);
 }
-
 
 /* 写真にカーソルを置いた時 */
 .slide:hover img {
-    transform:
-        translateY(-7px)
-        scale(1.025);
-
-    box-shadow:
-        0 15px 30px
-        rgba(35, 100, 175, 0.22);
-
+    transform: translateY(-7px) scale(1.025);
+    box-shadow: 0 15px 30px rgba(35, 100, 175, 0.22);
     filter: brightness(1.04);
 }
-
 
 /* 写真下の文字 */
 .caption {
     margin-top: 13px;
-
     font-size: 15px;
     color: #48515b;
-
     transition: 0.3s;
 }
 
-
 .slide:hover .caption {
     color: #247bd1;
-
-    transform:
-        translateY(2px);
+    transform: translateY(2px);
 }
-
 
 /* =========================================
    左右の矢印
@@ -1052,75 +979,43 @@ to {
 
 .slideshow-arrow {
     position: absolute;
-
     top: 43%;
-
     z-index: 10;
-
     width: 44px;
     height: 44px;
-
     padding: 12px;
-
     border-radius: 50%;
-
     background: white;
-
     fill: #2176c7;
-
     cursor: pointer;
-
-    box-shadow:
-        0 5px 15px
-        rgba(20, 75, 140, 0.18);
-
-    transition:
-        background 0.25s,
-        fill 0.25s,
-        transform 0.25s;
+    box-shadow: 0 5px 15px rgba(20, 75, 140, 0.18);
+    transition: background 0.25s, fill 0.25s, transform 0.25s;
 }
-
 
 /* 左 */
 .slideshow-arrow.prev {
     left: 3px;
-
-    transform:
-        translateY(-50%)
-        rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
-
 
 /* 右 */
 .slideshow-arrow.next {
     right: 3px;
-
-    transform:
-        translateY(-50%);
+    transform: translateY(-50%);
 }
-
 
 /* ホバー */
 .slideshow-arrow.next:hover {
     background: #247bd1;
     fill: white;
-
-    transform:
-        translateY(-50%)
-        scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
-
 
 .slideshow-arrow.prev:hover {
     background: #247bd1;
     fill: white;
-
-    transform:
-        translateY(-50%)
-        rotate(180deg)
-        scale(1.1);
+    transform: translateY(-50%) rotate(180deg) scale(1.1);
 }
-
 
 /* =========================================
    下のドット
@@ -1128,39 +1023,26 @@ to {
 
 .slider-indicator {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     flex-wrap: wrap;
-
     gap: 7px;
-
     margin-top: 20px;
 }
 
-
 .slider-indicator span {
     display: block;
-
     width: 9px;
     height: 9px;
-
     border-radius: 50%;
-
     background: #d2dae3;
-
-    transition:
-        0.3s ease;
+    transition: 0.3s ease;
 }
-
 
 /* 表示中の3枚 */
 .slider-indicator span.active {
     background: #247bd1;
-
-    transform:
-        scale(1.25);
+    transform: scale(1.25);
 }
 
 /* =========================================
@@ -1184,10 +1066,7 @@ to {
 }
 
 .slider-container {
-    padding:
-        10px
-        43px
-        20px;
+    padding: 10px 43px 20px;
 }
 
 /* スマホは1枚表示 */
@@ -1225,7 +1104,6 @@ to {
     padding: 60px 0 90px;
 }
 
-
 /* =========================================
    ページタイトル
 ========================================= */
@@ -1237,23 +1115,18 @@ to {
 
 .activity-title {
     margin: 0 0 18px;
-
     font-size: 40px;
     font-weight: bold;
-
     color: #1267d8;
 }
 
 .activity-subtitle {
     max-width: 720px;
     margin: 0 auto;
-
     font-size: 16px;
     line-height: 1.8;
-
     color: #555;
 }
-
 
 /* =========================================
    吉田ゼミの活動について
@@ -1263,34 +1136,23 @@ to {
     display: flex;
     align-items: center;
     gap: 45px;
-
     margin-bottom: 80px;
     padding: 40px;
-
     background: #ffffff;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     overflow: hidden;
     position: relative;
 }
 
 .activity-main-card::before {
     content: "";
-
     position: absolute;
-
     width: 220px;
     height: 220px;
-
     top: -110px;
     left: -110px;
-
     border-radius: 50%;
-
     background: rgba(18, 103, 216, 0.05);
 }
 
@@ -1302,63 +1164,46 @@ to {
 
 .activity-label {
     display: inline-block;
-
     margin-bottom: 12px;
     padding: 6px 14px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-
     border-radius: 20px;
 }
 
 .activity-main-text h2 {
     margin: 0 0 20px;
-
     font-size: 27px;
-
     color: #1267d8;
 }
 
 .activity-main-text p {
     margin: 0 0 15px;
-
     line-height: 1.9;
-
     color: #444;
 }
 
 .activity-main-image {
     flex: 1;
-
     overflow: hidden;
-
     border-radius: 18px;
 }
 
 .activity-main-image img {
     display: block;
-
     width: 100%;
     height: 330px;
-
     object-fit: cover;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .activity-main-card:hover .activity-main-image img {
     transform: scale(1.05);
     filter: brightness(1.04);
 }
-
 
 /* =========================================
    年間予定表ボタン
@@ -1367,37 +1212,22 @@ to {
 .activity-button {
     display: inline-flex;
     align-items: center;
-
     gap: 15px;
-
     margin-top: 15px;
     padding: 13px 25px;
-
     background: #1267d8;
-
     color: white;
-
     text-decoration: none;
     font-weight: bold;
-
     border-radius: 30px;
-
-    box-shadow:
-        0 5px 14px rgba(18, 103, 216, 0.18);
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 5px 14px rgba(18, 103, 216, 0.18);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .activity-button:hover {
     transform: translateY(-3px);
-
     background: #0e59bd;
-
-    box-shadow:
-        0 9px 20px rgba(18, 103, 216, 0.25);
+    box-shadow: 0 9px 20px rgba(18, 103, 216, 0.25);
 }
 
 .activity-button span {
@@ -1407,7 +1237,6 @@ to {
 .activity-button:hover span {
     transform: translateX(5px);
 }
-
 
 /* =========================================
    活動内容 見出し
@@ -1419,39 +1248,29 @@ to {
 
 .activity-detail-heading {
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .activity-detail-en {
     display: inline-block;
-
     margin-bottom: 6px;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
 .activity-detail-heading h2 {
     margin: 0 0 12px;
-
     font-size: 30px;
-
     color: #1267d8;
 }
 
 .activity-detail-heading p {
     margin: 0;
-
     color: #666;
-
     font-size: 15px;
 }
-
 
 /* =========================================
    活動カード
@@ -1459,39 +1278,22 @@ to {
 
 .activity-step {
     display: grid;
-
-    grid-template-columns:
-        180px 1fr;
-
+    grid-template-columns: 180px 1fr;
     gap: 0;
-
     max-width: 950px;
-
     margin: 0 auto;
-
     background: white;
-
     border-radius: 18px;
-
     overflow: hidden;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     position: relative;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .activity-step:hover {
     transform: translateY(-6px);
-
-    box-shadow:
-        0 14px 32px rgba(18, 103, 216, 0.18);
+    box-shadow: 0 14px 32px rgba(18, 103, 216, 0.18);
 }
-
 
 /* =========================================
    左側：学年・学期
@@ -1499,82 +1301,54 @@ to {
 
 .activity-step-side {
     position: relative;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     min-height: 300px;
-
     padding: 30px 20px;
-
     text-align: center;
-
-    background:
-        linear-gradient(
-        160deg,
-        #1267d8 0%,
-        #4a91e2 100%
-        );
-
+    background: linear-gradient( 160deg, #1267d8 0%, #4a91e2 100% );
     color: white;
 }
 
 .activity-step-number {
     position: absolute;
-
     top: 17px;
     left: 20px;
-
     font-size: 14px;
     font-weight: bold;
-
     letter-spacing: 1px;
-
     color: rgba(255, 255, 255, 0.6);
 }
 
 .activity-step-grade {
     margin-bottom: 5px;
-
     font-size: 27px;
     font-weight: bold;
 }
 
 .activity-step-term {
     padding: 5px 15px;
-
     background: white;
-
     color: #1267d8;
-
     font-size: 14px;
     font-weight: bold;
-
     border-radius: 20px;
 }
-
 
 /* 左側の薄い丸 */
 
 .activity-step-side::after {
     content: "";
-
     position: absolute;
-
     width: 130px;
     height: 130px;
-
     right: -55px;
     bottom: -55px;
-
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.08);
 }
-
 
 /* =========================================
    右側：活動内容
@@ -1582,7 +1356,6 @@ to {
 
 .activity-step-content {
     padding: 35px 40px;
-
     position: relative;
 }
 
@@ -1592,22 +1365,16 @@ to {
 
 .activity-step-content h3 {
     margin: 0;
-
     font-size: 23px;
-
     color: #1267d8;
 }
 
 .activity-step-content p {
     margin: 0 0 12px;
-
     color: #444;
-
     font-size: 15px;
-
     line-height: 1.85;
 }
-
 
 /* =========================================
    キーワード
@@ -1616,37 +1383,25 @@ to {
 .activity-keywords {
     display: flex;
     flex-wrap: wrap;
-
     gap: 9px;
-
     margin-top: 22px;
 }
 
 .activity-keywords span {
     display: inline-block;
-
     padding: 7px 14px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     border-radius: 20px;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
+    transition: transform 0.25s ease, background 0.25s ease;
 }
 
 .activity-keywords span:hover {
     transform: translateY(-2px);
-
     background: #dceeff;
 }
-
 
 /* =========================================
    カード間の矢印
@@ -1655,33 +1410,22 @@ to {
 .activity-flow-arrow {
     width: 45px;
     height: 45px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 16px auto;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 22px;
     font-weight: bold;
-
     border-radius: 50%;
-
-    box-shadow:
-        0 4px 12px rgba(18, 103, 216, 0.1);
-
-    transition:
-        transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(18, 103, 216, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .activity-flow-arrow:hover {
     transform: translateY(4px);
 }
-
 
 /* =========================================
    スクロールアニメーション
@@ -1689,20 +1433,14 @@ to {
 
 .activity-fade {
     opacity: 0;
-
     transform: translateY(35px);
-
-    transition:
-        opacity 0.75s ease,
-        transform 0.75s ease;
+    transition: opacity 0.75s ease, transform 0.75s ease;
 }
 
 .activity-fade.activity-show {
     opacity: 1;
-
     transform: translateY(0);
 }
-
 
 /* =========================================
    スマホ
@@ -1712,9 +1450,7 @@ to {
 
     .activity-page {
         width: 100%;
-
-        padding:
-            40px 0 65px;
+        padding: 40px 0 65px;
     }
 
 .activity-intro {
@@ -1729,16 +1465,12 @@ to {
     font-size: 14px;
 }
 
-
 /* 上の紹介 */
 
 .activity-main-card {
     flex-direction: column;
-
     gap: 25px;
-
     padding: 20px;
-
     margin: 0 16px 60px;
 }
 
@@ -1761,7 +1493,6 @@ to {
     height: 230px;
 }
 
-
 /* 活動内容 */
 
 .activity-detail {
@@ -1780,7 +1511,6 @@ to {
     font-size: 13px;
 }
 
-
 /* カードを縦型に */
 
 .activity-step {
@@ -1789,7 +1519,6 @@ to {
 
 .activity-step-side {
     min-height: auto;
-
     padding: 25px 20px;
 }
 
@@ -1817,7 +1546,6 @@ to {
 .activity-flow-arrow {
     width: 38px;
     height: 38px;
-
     font-size: 18px;
 }
 
@@ -1832,11 +1560,9 @@ to {
 .schedule-page {
     width: 90%;
     max-width: 1100px;
-
     margin: 0 auto;
     padding: 60px 0 90px;
 }
-
 
 /* =========================================
    ページタイトル
@@ -1849,24 +1575,18 @@ to {
 
 .schedule-title {
     margin: 0 0 18px;
-
     font-size: 40px;
     font-weight: bold;
-
     color: #1267d8;
 }
 
 .schedule-subtitle {
     max-width: 850px;
-
     margin: 0 auto;
-
     font-size: 15px;
     line-height: 1.9;
-
     color: #555;
 }
-
 
 /* =========================================
    吉田ゼミの年間行事
@@ -1875,56 +1595,34 @@ to {
 .schedule-main-card {
     display: flex;
     align-items: center;
-
     gap: 45px;
-
     margin-bottom: 80px;
     padding: 40px;
-
     background: #ffffff;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     overflow: hidden;
-
     position: relative;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-
 
 /* 左上の淡い飾り */
 
 .schedule-main-card::before {
     content: "";
-
     position: absolute;
-
     width: 220px;
     height: 220px;
-
     top: -110px;
     left: -110px;
-
-    background:
-        rgba(18, 103, 216, 0.05);
-
+    background: rgba(18, 103, 216, 0.05);
     border-radius: 50%;
 }
 
-
 .schedule-main-card:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 13px 30px rgba(18, 103, 216, 0.17);
+    box-shadow: 0 13px 30px rgba(18, 103, 216, 0.17);
 }
-
 
 /* =========================================
    紹介文
@@ -1932,49 +1630,34 @@ to {
 
 .schedule-main-text {
     flex: 1;
-
     position: relative;
     z-index: 2;
 }
 
-
 .schedule-label {
     display: inline-block;
-
     margin-bottom: 12px;
     padding: 6px 14px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 1px;
-
     border-radius: 20px;
 }
 
-
 .schedule-main-text h2 {
     margin: 0 0 20px;
-
     font-size: 27px;
-
     color: #1267d8;
 }
 
-
 .schedule-main-text p {
     margin: 0;
-
     color: #444;
-
     font-size: 15px;
     line-height: 1.9;
 }
-
 
 /* =========================================
    紹介写真
@@ -1982,35 +1665,23 @@ to {
 
 .schedule-main-image {
     flex: 1;
-
     overflow: hidden;
-
     border-radius: 18px;
 }
 
-
 .schedule-main-image img {
     display: block;
-
     width: 100%;
     height: 310px;
-
     object-fit: cover;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
-
 
 .schedule-main-card:hover
 .schedule-main-image img {
-
     transform: scale(1.05);
-
     filter: brightness(1.04);
 }
-
 
 /* =========================================
    年間予定表 見出し
@@ -2021,37 +1692,26 @@ to {
     padding: 0;
 }
 
-
 .schedule-table-heading {
     text-align: center;
-
     margin-bottom: 35px;
 }
 
-
 .schedule-table-en {
     display: inline-block;
-
     margin-bottom: 6px;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
-
 .schedule-table-heading h2 {
     margin: 0;
-
     color: #1267d8;
-
     font-size: 30px;
     font-weight: bold;
 }
-
 
 /* =========================================
    表を囲むカード
@@ -2059,20 +1719,12 @@ to {
 
 .schedule-table-wrap {
     width: 100%;
-
     overflow-x: auto;
-
     background: #ffffff;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
-    border:
-        1px solid rgba(18, 103, 216, 0.08);
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    border: 1px solid rgba(18, 103, 216, 0.08);
 }
-
 
 /* =========================================
    年間予定表
@@ -2080,17 +1732,12 @@ to {
 
 .schedule-table {
     width: 100%;
-
     min-width: 800px;
-
     border-collapse: separate;
     border-spacing: 0;
-
     background: #ffffff;
-
     table-layout: fixed;
 }
-
 
 /* =========================================
    2年生・3年生・4年生
@@ -2098,33 +1745,23 @@ to {
 
 .schedule-table thead th {
     padding: 20px 15px;
-
     background: #1267d8;
-
     color: #ffffff;
-
     font-size: 17px;
     font-weight: bold;
-
     text-align: center;
-
-    border-right:
-        1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 
 /* 左上 */
 
 .schedule-table thead th:first-child {
     width: 90px;
-
     background: #0b5fc8;
-
     position: sticky;
     left: 0;
     z-index: 3;
 }
-
 
 /* 最後だけ線なし */
 
@@ -2132,39 +1769,26 @@ to {
     border-right: none;
 }
 
-
 /* =========================================
    月
 ========================================= */
 
 .schedule-table tbody th {
     width: 90px;
-
     padding: 22px 10px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 16px;
     font-weight: bold;
-
     position: sticky;
     left: 0;
     z-index: 2;
     box-shadow: 2px 0 4px rgba(11, 47, 102, 0.06);
-
     text-align: center;
-
     vertical-align: middle;
-
-    border-right:
-        1px solid #d9e9fb;
-
-    border-bottom:
-        1px solid #e3edf7;
+    border-right: 1px solid #d9e9fb;
+    border-bottom: 1px solid #e3edf7;
 }
-
 
 /* =========================================
    各予定セル
@@ -2172,32 +1796,17 @@ to {
 
 .schedule-table tbody td {
     position: relative;
-
     padding: 22px 18px;
-
     color: #444;
-
     font-size: 14px;
     line-height: 1.8;
-
     text-align: center;
-
     vertical-align: middle;
-
     background: #ffffff;
-
-    border-right:
-        1px solid #e3edf7;
-
-    border-bottom:
-        1px solid #e3edf7;
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
+    border-right: 1px solid #e3edf7;
+    border-bottom: 1px solid #e3edf7;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
-
 
 /* 4年生列の右線を消す */
 
@@ -2205,14 +1814,12 @@ to {
     border-right: none;
 }
 
-
 /* 最終行の下線を消す */
 
 .schedule-table tbody tr:last-child th,
 .schedule-table tbody tr:last-child td {
     border-bottom: none;
 }
-
 
 /* =========================================
    行を交互にほんのり変える
@@ -2222,7 +1829,6 @@ to {
     background: #fbfdff;
 }
 
-
 /* =========================================
    予定が入っているセル
    マウスを乗せた時
@@ -2230,49 +1836,35 @@ to {
 
 .schedule-table tbody td:not(:empty):hover {
     background: #f0f7ff;
-
     color: #1267d8;
-
     font-weight: 500;
-
-    box-shadow:
-        inset 0 0 0 2px
-        rgba(18, 103, 216, 0.12);
+    box-shadow: inset 0 0 0 2px rgba(18, 103, 216, 0.12);
 }
-
 
 /* =========================================
    月にも少し動き
 ========================================= */
 
 .schedule-table tbody th {
-    transition:
-        background 0.25s ease,
-        color 0.25s ease;
+    transition: background 0.25s ease, color 0.25s ease;
 }
-
 
 .schedule-table tbody tr:hover th {
     background: #1267d8;
-
     color: #ffffff;
 }
-
 
 /* =========================================
    行全体を見やすく
 ========================================= */
 
 .schedule-table tbody tr {
-    transition:
-        background 0.25s ease;
+    transition: background 0.25s ease;
 }
-
 
 .schedule-table tbody tr:hover td {
     background: #f7fbff;
 }
-
 
 /* =========================================
    予定があるセルに小さいアクセント
@@ -2280,35 +1872,22 @@ to {
 
 .schedule-table tbody td:not(:empty)::before {
     content: "";
-
     position: absolute;
-
     top: 10px;
     left: 10px;
-
     width: 5px;
     height: 5px;
-
     background: #ffe15d;
-
     border-radius: 50%;
-
     opacity: 0;
-
     transform: scale(0);
-
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
-
 
 .schedule-table tbody td:not(:empty):hover::before {
     opacity: 1;
-
     transform: scale(1);
 }
-
 
 /* =========================================
    スクロール表示用
@@ -2316,21 +1895,14 @@ to {
 
 .schedule-fade {
     opacity: 0;
-
     transform: translateY(30px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
-
 
 .schedule-fade.schedule-show {
     opacity: 1;
-
     transform: translateY(0);
 }
-
 
 /* =========================================
    スマホ
@@ -2340,49 +1912,37 @@ to {
 
     .schedule-page {
         width: 100%;
-
-        padding:
-            40px 0 65px;
+        padding: 40px 0 65px;
     }
-
 
 .schedule-title {
     font-size: 32px;
 }
 
-
 .schedule-subtitle {
     font-size: 14px;
 }
-
 
 /* 紹介カード */
 
 .schedule-main-card {
     flex-direction: column;
-
     gap: 25px;
-
     padding: 25px;
-
     margin-bottom: 60px;
 }
-
 
 .schedule-main-text h2 {
     font-size: 23px;
 }
 
-
 .schedule-main-image {
     width: 100%;
 }
 
-
 .schedule-main-image img {
     height: 230px;
 }
-
 
 /* 年間予定表 */
 
@@ -2390,20 +1950,16 @@ to {
     font-size: 25px;
 }
 
-
 .schedule-table-wrap {
     border-radius: 15px;
 }
-
 
 .schedule-table {
     min-width: 850px;
 }
 
-
 .schedule-table thead th {
     padding: 16px 10px;
-
     font-size: 15px;
 }
 
@@ -2411,19 +1967,14 @@ to {
     width: 75px;
 }
 
-
 .schedule-table tbody th {
     width: 75px;
-
     padding: 18px 8px;
-
     font-size: 14px;
 }
 
-
 .schedule-table tbody td {
     padding: 18px 12px;
-
     font-size: 13px;
 }
 
@@ -2441,7 +1992,6 @@ to {
     padding: 70px 30px 35px;
 }
 
-
 /* =========================================
    ページタイトル
 ========================================= */
@@ -2453,22 +2003,17 @@ to {
 
 .career-title {
     margin: 0 0 15px;
-
     color: #1267d8;
-
     font-size: 40px;
     font-weight: bold;
 }
 
 .career-subtitle {
     margin: 0;
-
     color: #555;
-
     font-size: 15px;
     line-height: 1.8;
 }
-
 
 /* =========================================
    吉田ゼミの卒業後の進路
@@ -2476,37 +2021,21 @@ to {
 
 .career-main-card {
     display: grid;
-
-    grid-template-columns:
-        1.15fr 0.85fr;
-
+    grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
-
     max-width: 1050px;
-
     margin: 0 auto 90px;
-
     background: #ffffff;
-
     border-radius: 18px;
-
     overflow: hidden;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .career-main-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 14px 35px rgba(18, 103, 216, 0.17);
+    box-shadow: 0 14px 35px rgba(18, 103, 216, 0.17);
 }
-
 
 /* 左側文章 */
 
@@ -2516,70 +2045,50 @@ to {
 
 .career-label {
     display: inline-block;
-
     margin-bottom: 10px;
     padding: 6px 14px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 1px;
-
     border-radius: 20px;
 }
 
 .career-main-text h2 {
     margin: 0 0 22px;
-
     color: #1267d8;
-
     font-size: 27px;
 }
 
 .career-main-text p {
     margin: 0 0 14px;
-
     color: #444;
-
     font-size: 14px;
     line-height: 2;
 }
-
 
 /* 画像 */
 
 .career-main-image {
     height: 100%;
-
     min-height: 390px;
-
     overflow: hidden;
 }
 
 .career-main-image img {
     display: block;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .career-main-card:hover
 .career-main-image img {
     transform: scale(1.05);
-
     filter: brightness(1.04);
 }
-
 
 /* =========================================
    卒業生の就職先
@@ -2593,39 +2102,29 @@ to {
 
 .career-results-heading {
     text-align: center;
-
     margin-bottom: 35px;
 }
 
 .career-results-en {
     display: block;
-
     margin-bottom: 6px;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
 .career-results-heading h2 {
     margin: 0 0 12px;
-
     color: #1267d8;
-
     font-size: 30px;
 }
 
 .career-results-heading p {
     margin: 0;
-
     color: #666;
-
     font-size: 14px;
 }
-
 
 /* =========================================
    年度切り替えボタン
@@ -2633,74 +2132,45 @@ to {
 
 .career-year-tabs {
     display: flex;
-
     justify-content: center;
-
     gap: 10px;
-
     margin-bottom: 35px;
 }
 
 .career-year-tab {
     min-width: 125px;
-
     padding: 14px 20px;
-
-    border:
-        1px solid #dce8f8;
-
+    border: 1px solid #dce8f8;
     border-radius: 18px;
-
     background: #ffffff;
-
     color: #555;
-
     font-family: inherit;
-
     font-size: 15px;
     font-weight: bold;
-
     cursor: pointer;
-
-    box-shadow:
-        0 5px 15px rgba(18, 103, 216, 0.08);
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    box-shadow: 0 5px 15px rgba(18, 103, 216, 0.08);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .career-year-tab span {
     display: block;
-
     margin-top: 3px;
-
     font-size: 11px;
     font-weight: normal;
 }
 
 .career-year-tab:hover {
     color: #1267d8;
-
     transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(18, 103, 216, 0.14);
+    box-shadow: 0 8px 20px rgba(18, 103, 216, 0.14);
 }
 
 .career-year-tab.active {
     background: #1267d8;
-
     color: #ffffff;
-
     border-color: #1267d8;
-
-    box-shadow:
-        0 8px 20px rgba(18, 103, 216, 0.22);
+    box-shadow: 0 8px 20px rgba(18, 103, 216, 0.22);
 }
-
 
 /* =========================================
    年度別コンテンツ
@@ -2712,29 +2182,20 @@ to {
 
 .career-year-content.active {
     display: block;
-
-    animation:
-        careerChange 0.45s ease;
+    animation: careerChange 0.45s ease;
 }
 
 @keyframes careerChange {
-
     from {
         opacity: 0;
-
-        transform:
-            translateY(15px);
+        transform: translateY(15px);
     }
 
-to {
-    opacity: 1;
-
-    transform:
-        translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-}
-
 
 /* =========================================
    年度見出し
@@ -2746,25 +2207,18 @@ to {
 
 .career-year-header > span {
     display: block;
-
     margin-bottom: 4px;
-
     color: #1267d8;
-
     font-size: 11px;
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
 .career-year-header h3 {
     margin: 0;
-
     color: #1267d8;
-
     font-size: 25px;
 }
-
 
 /* =========================================
    就職先＋業界別
@@ -2772,15 +2226,10 @@ to {
 
 .career-result-grid {
     display: grid;
-
-    grid-template-columns:
-        1.1fr 0.9fr;
-
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 25px;
-
     align-items: start;
 }
-
 
 /* =========================================
    共通カード
@@ -2789,46 +2238,27 @@ to {
 .career-company-card,
 .career-industry-card {
     background: #ffffff;
-
     border-radius: 18px;
-
     overflow: hidden;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
-    border:
-        1px solid rgba(18, 103, 216, 0.06);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
+    border: 1px solid rgba(18, 103, 216, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .career-company-card:hover,
 .career-industry-card:hover {
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 13px 30px rgba(18, 103, 216, 0.17);
+    transform: translateY(-4px);
+    box-shadow: 0 13px 30px rgba(18, 103, 216, 0.17);
 }
 
 .career-company-card h4,
 .career-industry-card h4 {
     margin: 0;
-
-    padding:
-        20px 25px;
-
+    padding: 20px 25px;
     color: #1267d8;
-
     font-size: 19px;
-
-    border-bottom:
-        1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
 }
-
 
 /* =========================================
    就職先一覧
@@ -2836,87 +2266,57 @@ to {
 
 .career-company-list {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 25px;
-
-    padding:
-        20px 25px 28px;
+    padding: 20px 25px 28px;
 }
 
 .career-company-list p {
     position: relative;
-
     margin: 0;
-
-    padding:
-        11px 4px 11px 17px;
-
+    padding: 11px 4px 11px 17px;
     color: #444;
-
     font-size: 13px;
     line-height: 1.6;
-
-    border-bottom:
-        1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
 }
-
 
 /* 青い小さい丸 */
 
 .career-company-list p::before {
     content: "";
-
     position: absolute;
-
     left: 2px;
     top: 19px;
-
     width: 6px;
     height: 6px;
-
     background: #1267d8;
-
     border-radius: 50%;
 }
-
 
 /* =========================================
    円グラフ部分
 ========================================= */
 
 .career-chart-area {
-    padding:
-        30px 25px 35px;
+    padding: 30px 25px 35px;
 }
-
 
 /* 円グラフ共通 */
 
 .career-pie {
     width: 260px;
     height: 260px;
-
-    margin:
-        0 auto 35px;
-
+    margin: 0 auto 35px;
     border-radius: 50%;
-
-    box-shadow:
-        0 8px 22px rgba(18, 103, 216, 0.10);
-
-    transition:
-        transform 0.35s ease;
+    box-shadow: 0 8px 22px rgba(18, 103, 216, 0.10);
+    transition: transform 0.35s ease;
 }
 
 .career-industry-card:hover
 .career-pie {
-    transform:
-        scale(1.03);
+    transform: scale(1.03);
 }
-
 
 /* =========================================
    2024年度 円グラフ
@@ -2924,17 +2324,15 @@ to {
 ========================================= */
 
 .career-pie-2024 {
-    background:
-        conic-gradient(
+    background: conic-gradient(
         #1267d8 0% 40%,
         #ffb53d 40% 60%,
         #6f7b87 60% 73%,
         #ffe15d 73% 86%,
         #63c6e8 86% 93%,
         #55c94b 93% 100%
-        );
+    );
 }
-
 
 /* =========================================
    2023年度
@@ -2942,16 +2340,14 @@ to {
 ========================================= */
 
 .career-pie-2023 {
-    background:
-        conic-gradient(
+    background: conic-gradient(
         #1267d8 0% 65%,
         #ffb53d 65% 72%,
         #6f7b87 72% 86%,
         #ffe15d 86% 93%,
         #63c6e8 93% 100%
-        );
+    );
 }
-
 
 /* =========================================
    2022年度
@@ -2959,17 +2355,15 @@ to {
 ========================================= */
 
 .career-pie-2022 {
-    background:
-        conic-gradient(
+    background: conic-gradient(
         #1267d8 0% 23%,
         #ffb53d 23% 35%,
         #6f7b87 35% 64%,
         #ffe15d 64% 82%,
         #63c6e8 82% 88%,
         #55c94b 88% 100%
-        );
+    );
 }
-
 
 /* =========================================
    2021年度
@@ -2977,16 +2371,14 @@ to {
 ========================================= */
 
 .career-pie-2021 {
-    background:
-        conic-gradient(
+    background: conic-gradient(
         #1267d8 0% 53%,
         #ffb53d 53% 66%,
         #6f7b87 66% 73%,
         #ffe15d 73% 93%,
         #63c6e8 93% 100%
-        );
+    );
 }
-
 
 /* =========================================
    2020年度
@@ -2994,15 +2386,13 @@ to {
 ========================================= */
 
 .career-pie-2020 {
-    background:
-        conic-gradient(
+    background: conic-gradient(
         #1267d8 0% 53%,
         #ffb53d 53% 82%,
         #6f7b87 82% 94%,
         #ffe15d 94% 100%
-        );
+    );
 }
-
 
 /* =========================================
    円グラフ凡例
@@ -3010,41 +2400,29 @@ to {
 
 .career-chart-legend {
     max-width: 330px;
-
     margin: 0 auto;
 }
 
 .career-chart-legend > div {
     display: grid;
-
-    grid-template-columns:
-        15px 1fr auto;
-
+    grid-template-columns: 15px 1fr auto;
     align-items: center;
-
     gap: 10px;
-
-    padding:
-        9px 0;
-
-    border-bottom:
-        1px solid #edf2f7;
+    padding: 9px 0;
+    border-bottom: 1px solid #edf2f7;
 }
 
 .career-chart-legend > div:last-child {
     border-bottom: none;
 }
 
-
 /* 色の四角 */
 
 .legend-color {
     width: 13px;
     height: 13px;
-
     border-radius: 3px;
 }
-
 
 /* 円グラフと同じ色 */
 
@@ -3072,24 +2450,19 @@ to {
     background: #55c94b;
 }
 
-
 /* 業種名 */
 
 .legend-name {
     color: #444;
-
     font-size: 14px;
 }
-
 
 /* 割合 */
 
 .career-chart-legend strong {
     color: #1267d8;
-
     font-size: 15px;
 }
-
 
 /* =========================================
    内定者インタビュー
@@ -3098,10 +2471,7 @@ to {
 .interview-section {
     width: 90%;
     max-width: 1050px;
-
-    margin:
-        35px auto 0;
-
+    margin: 35px auto 0;
     clear: both;
     padding: 0;
 }
@@ -3110,40 +2480,27 @@ to {
 
 .interview-section .setsumei {
     width: 100%;
-
     max-width: 850px;
-
-    margin:
-        0 auto 35px;
-
+    margin: 0 auto 35px;
     padding: 0;
-
     text-align: center;
 }
 
 .interview-section .setsumei ul {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
 .interview-section .setsumei li {
     display: block;
-
     width: 100%;
-
     margin: 5px 0;
-
     padding: 0;
-
     text-align: center;
-
     color: #444;
-
     line-height: 1.8;
 }
-
 
 /* =========================================
    スクロール表示
@@ -3151,22 +2508,14 @@ to {
 
 .career-fade {
     opacity: 0;
-
-    transform:
-        translateY(25px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .career-fade.career-show {
     opacity: 1;
-
-    transform:
-        translateY(0);
+    transform: translateY(0);
 }
-
 
 /* =========================================
    スマホ
@@ -3175,52 +2524,41 @@ to {
 @media screen and (max-width: 900px) {
 
     .career-page {
-        padding:
-            45px 0 70px;
+        padding: 45px 0 70px;
     }
-
 
 .career-title {
     font-size: 32px;
 }
 
-
 /* メイン */
 
 .career-main-card {
     grid-template-columns: 1fr;
-
     margin-bottom: 65px;
 }
 
 .career-main-text {
-    padding:
-        30px 25px;
+    padding: 30px 25px;
 }
 
 .career-main-image {
     min-height: 240px;
 }
 
-
 /* 年度ボタン */
 
 .career-year-tabs {
     justify-content: space-between;
-
     gap: 6px;
 }
 
 .career-year-tab {
     flex: 1 1 0;
-
     min-width: 0;
-
     padding: 12px 6px;
-
     font-size: 13px;
 }
-
 
 /* 就職先 */
 
@@ -3230,7 +2568,6 @@ to {
 
 .career-company-list {
     grid-template-columns: 1fr;
-
     padding: 16px 18px 22px;
 }
 
@@ -3243,7 +2580,6 @@ to {
     padding: 22px 18px 28px;
 }
 
-
 /* 円グラフ */
 
 .career-pie {
@@ -3251,12 +2587,10 @@ to {
     height: 240px;
 }
 
-
 /* インタビュー */
 
 .interview-section {
     width: 92%;
-
     margin-top: 65px;
 }
 
@@ -3273,7 +2607,6 @@ to {
     margin-bottom: 0;
 }
 /*career_path.htmlここまで*/
-
 
 /* =========================================
    グループ研究ページ（導入文）
@@ -3303,7 +2636,6 @@ to {
     }
 }
 
-
 /* =========================================
    プロジェクト研究ページ
 ========================================= */
@@ -3316,7 +2648,6 @@ to {
     display: flex;
     align-items: center;
     gap: 50px;
-
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
@@ -3387,7 +2718,6 @@ to {
     background-color: #197bb0;
 }
 
-
 /* =========================================
    スマホ
 ========================================= */
@@ -3428,7 +2758,6 @@ to {
 }
 }
 
-
 /* =========================================
    かなり小さいスマホ
 ========================================= */
@@ -3454,8 +2783,6 @@ to {
 }
 }
 
-
-
 /*message.htmlここから*/
 /* =========================================
    message.html
@@ -3467,7 +2794,6 @@ to {
     margin: 0 auto;
     padding: 80px 30px 100px;
 }
-
 
 /* =========================================
    ページ上部
@@ -3494,7 +2820,6 @@ to {
     line-height: 1.8;
 }
 
-
 /* =========================================
    コメントカード
 ========================================= */
@@ -3504,30 +2829,19 @@ to {
     background: #fff;
     border: 1px solid #dce8f7;
     border-radius: 22px;
-
     margin-bottom: 45px;
     padding: 0;
-
     overflow: hidden;
-
-    box-shadow:
-        0 10px 30px rgba(0, 65, 140, 0.08);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 65, 140, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /* ホバーしたとき少し浮く */
 
 .message-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 16px 38px rgba(0, 65, 140, 0.14);
+    box-shadow: 0 16px 38px rgba(0, 65, 140, 0.14);
 }
-
 
 /* =========================================
    名前部分
@@ -3535,79 +2849,53 @@ to {
 
 .message-card-header {
     position: relative;
-
     padding: 30px 40px 25px;
-
-    background:
-        linear-gradient(
-        135deg,
-        #f4f9ff 0%,
-        #ffffff 100%
-        );
-
+    background: linear-gradient( 135deg, #f4f9ff 0%, #ffffff 100% );
     border-bottom: 1px solid #e2ecf8;
 }
-
 
 /* 左側の青ライン */
 
 .message-card-header::before {
     content: "";
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 6px;
     height: 100%;
-
     background: #0755b5;
 }
-
 
 /* CURRENT STUDENT / GRADUATE */
 
 .message-label {
     display: inline-block;
-
     margin-bottom: 10px;
-
     color: #0755b5;
-
     font-size: 12px;
     font-weight: 700;
-
     letter-spacing: 0.18em;
 }
-
 
 /* 名前 */
 
 .message-card-header h2 {
     margin: 0;
-
     color: #222;
-
     font-size: 24px;
     font-weight: 700;
-
     line-height: 1.5;
 }
-
 
 /* 卒業年度・勤務先 */
 
 .message-profile {
     margin: 7px 0 0;
-
     color: #666;
-
     font-size: 14px;
     font-weight: 500;
-
     line-height: 1.7;
 }
-
 
 /* =========================================
    本文
@@ -3619,19 +2907,15 @@ to {
 
 .message-card-body p {
     margin: 0 0 18px;
-
     color: #333;
-
     font-size: 16px;
     line-height: 2;
-
     letter-spacing: 0.02em;
 }
 
 .message-card-body p:last-child {
     margin-bottom: 0;
 }
-
 
 /* =========================================
    カード表示アニメーション
@@ -3654,19 +2938,16 @@ to {
 }
 
 @keyframes messageFadeUp {
-
     from {
         opacity: 0;
         transform: translateY(25px);
     }
 
-to {
-    opacity: 1;
-    transform: translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-}
-
 
 /* =========================================
    スマホ対応
@@ -3735,7 +3016,6 @@ to {
     box-sizing: border-box;
 }
 
-
 /* =========================================
    最初の「企業の皆様へ」
 ========================================= */
@@ -3744,18 +3024,11 @@ to {
     max-width: 900px;
     margin: 20px auto 65px;
     padding: 45px 55px;
-
     background: #ffffff;
-
     border-radius: 20px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     text-align: center;
-
     box-sizing: border-box;
-
     position: relative;
     overflow: hidden;
 }
@@ -3764,50 +3037,35 @@ to {
 
 .company-page #contents > .kigyou-text:first-child::before {
     content: "";
-
     position: absolute;
-
     width: 180px;
     height: 180px;
-
     top: -100px;
     left: -100px;
-
     border-radius: 50%;
-
     background: rgba(18, 103, 216, 0.06);
 }
-
 
 /* 見出し */
 
 .company-page #contents > .kigyou-text:first-child h2 {
     margin: 0 0 25px;
-
     font-size: 36px;
     font-weight: bold;
-
     color: #1267d8;
-
     position: relative;
 }
-
 
 /* 説明文 */
 
 .company-page #contents > .kigyou-text:first-child p {
     max-width: 780px;
-
     margin: 0 auto;
-
     color: #555;
-
     font-size: 16px;
     line-height: 2;
-
     text-align: left;
 }
-
 
 /* =========================================
    メインカード
@@ -3816,21 +3074,13 @@ to {
 .company-page #contents > .list {
     width: 100%;
     max-width: 1050px;
-
     margin: 0 auto;
-
     padding: 50px 60px;
-
     background: #ffffff;
-
     border-radius: 20px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     box-sizing: border-box;
 }
-
 
 /* =========================================
    「吉田ゼミナール紹介」
@@ -3838,16 +3088,11 @@ to {
 
 .company-page #contents > .list > .kigyou-text > h1 {
     margin: 0 0 45px;
-
     text-align: center;
-
     font-size: 32px;
-
     color: #1267d8;
-
     letter-spacing: 2px;
 }
-
 
 /* =========================================
    各項目タイトル
@@ -3855,38 +3100,23 @@ to {
 
 .company-page #contents .title-header {
     max-width: 850px;
-
     margin: 45px auto 0;
-
     padding: 14px 20px;
-
     box-sizing: border-box;
-
     text-align: center;
-
     font-size: 21px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     color: #1267d8;
-
     background: #eaf4ff;
-
     border-radius: 12px;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .company-page #contents .title-header:hover {
     transform: translateY(-2px);
-
-    box-shadow:
-        0 6px 15px rgba(18, 103, 216, 0.10);
+    box-shadow: 0 6px 15px rgba(18, 103, 216, 0.10);
 }
-
 
 /* =========================================
    各項目本文
@@ -3894,24 +3124,17 @@ to {
 
 .company-page #contents .title-header + div {
     max-width: 850px;
-
     margin: 0 auto;
-
     padding: 22px 10px 10px;
-
     box-sizing: border-box;
 }
 
 .company-page #contents .title-header + div p {
     margin: 0 0 18px;
-
     color: #555;
-
     font-size: 15px;
-
     line-height: 2;
 }
-
 
 /* =========================================
    詳しくはこちら
@@ -3919,32 +3142,23 @@ to {
 
 .company-page .right-text {
     text-align: right !important;
-
     margin-top: 15px !important;
 }
 
 .company-page .right-text a {
     display: inline-block;
-
     margin-left: 5px;
-
     color: #1267d8;
-
     font-weight: bold;
-
     text-decoration: none;
-
     border-bottom: 2px solid #1267d8;
-
     transition: 0.25s;
 }
 
 .company-page .right-text a:hover {
     color: #0b5fc8;
-
     border-color: #0b5fc8;
 }
-
 
 /* =========================================
    表
@@ -3952,55 +3166,35 @@ to {
 
 .company-page #contents table.ta4 {
     width: 100%;
-
     margin: 25px 0;
-
     border-collapse: separate;
     border-spacing: 0;
-
     overflow: hidden;
-
     border: 1px solid #dce9f5;
-
     border-radius: 12px;
-
-    box-shadow:
-        0 4px 12px rgba(18, 103, 216, 0.06);
+    box-shadow: 0 4px 12px rgba(18, 103, 216, 0.06);
 }
-
 
 /* 左側 */
 
 .company-page #contents table.ta4 th {
     width: 30%;
-
     padding: 15px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 14px;
-
     font-weight: bold;
-
     border-bottom: 1px solid #dce9f5;
 }
-
 
 /* 右側 */
 
 .company-page #contents table.ta4 td {
     padding: 15px;
-
     background: #ffffff;
-
     color: #555;
-
     font-size: 14px;
-
     line-height: 1.7;
-
     border-bottom: 1px solid #e8eef5;
 }
 
@@ -4009,7 +3203,6 @@ to {
     border-bottom: none;
 }
 
-
 /* =========================================
    卒業論文・就職先
 ========================================= */
@@ -4017,23 +3210,17 @@ to {
 .company-page .Graduation-thesis-theme,
 .company-page .company_name {
     margin: 20px 0;
-
     padding: 18px 25px;
-
     background: #f7fbff;
-
     border-radius: 12px;
-
     box-sizing: border-box;
 }
 
 .company-page .Graduation-thesis-theme p,
 .company-page .company_name p {
     margin: 0 !important;
-
     line-height: 2 !important;
 }
-
 
 /* =========================================
    お問い合わせ
@@ -4041,46 +3228,27 @@ to {
 
 .company-page #contents .kigyou-text:last-of-type {
     max-width: 850px;
-
     margin: 70px auto 25px;
-
     padding: 40px 45px;
-
-    background:
-        linear-gradient(
-        135deg,
-        #eaf4ff,
-        #ffffff
-        );
-
+    background: linear-gradient( 135deg, #eaf4ff, #ffffff );
     border-radius: 20px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.10);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.10);
     box-sizing: border-box;
 }
 
 .company-page #contents .kigyou-text:last-of-type h1 {
     margin: 0 0 25px;
-
     text-align: center;
-
     font-size: 30px;
-
     color: #1267d8;
 }
 
 .company-page #contents .kigyou-text:last-of-type p {
     margin: 0;
-
     color: #555;
-
     font-size: 15px;
-
     line-height: 2;
 }
-
 
 /* =========================================
    お問い合わせボタン
@@ -4088,49 +3256,29 @@ to {
 
 .company-page #contents .c {
     text-align: center;
-
     margin: 30px 0 10px;
 }
 
 .company-page #contents .btn1 {
     display: inline-flex;
-
     align-items: center;
-
     gap: 10px;
-
     padding: 14px 30px;
-
     background: #1267d8;
-
     color: #ffffff !important;
-
     border-radius: 30px;
-
     text-decoration: none;
-
     font-size: 15px;
-
     font-weight: bold;
-
-    box-shadow:
-        0 6px 15px rgba(18, 103, 216, 0.22);
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
+    box-shadow: 0 6px 15px rgba(18, 103, 216, 0.22);
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
 .company-page #contents .btn1:hover {
     background: #0e59bd;
-
     transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 22px rgba(18, 103, 216, 0.28);
+    box-shadow: 0 10px 22px rgba(18, 103, 216, 0.28);
 }
-
 
 /* =========================================
    スマホ
@@ -4142,60 +3290,45 @@ to {
         padding: 90px 15px 70px;
     }
 
-
 /* 最初の説明 */
 
 .company-page #contents > .kigyou-text:first-child {
     margin: 15px auto 45px;
-
     padding: 35px 25px;
-
     border-radius: 18px;
 }
 
 .company-page #contents > .kigyou-text:first-child h2 {
     font-size: 28px;
-
     margin-bottom: 20px;
 }
 
 .company-page #contents > .kigyou-text:first-child p {
     font-size: 14px;
-
     line-height: 1.9;
 }
-
 
 /* メインカード */
 
 .company-page #contents > .list {
     padding: 35px 20px;
-
     border-radius: 18px;
 }
 
-
 .company-page #contents > .list > .kigyou-text > h1 {
     font-size: 26px;
-
     margin-bottom: 35px;
-
     letter-spacing: 1px;
 }
-
 
 /* 項目タイトル */
 
 .company-page #contents .title-header {
     margin-top: 30px;
-
     padding: 13px 12px;
-
     font-size: 18px;
-
     letter-spacing: 1px;
 }
-
 
 /* 本文 */
 
@@ -4205,10 +3338,8 @@ to {
 
 .company-page #contents .title-header + div p {
     font-size: 14px;
-
     line-height: 1.9;
 }
-
 
 /* 表 */
 
@@ -4219,7 +3350,6 @@ to {
 .company-page #contents table.ta4 th,
 .company-page #contents table.ta4 td {
     padding: 11px 8px;
-
     font-size: 12px;
 }
 
@@ -4227,16 +3357,13 @@ to {
     width: 35%;
 }
 
-
 /* 卒論・就職先 */
 
 .company-page .Graduation-thesis-theme,
 .company-page .company_name {
     padding: 15px 18px;
-
     margin: 15px 0;
 }
-
 
 /* 詳しくはこちら */
 
@@ -4244,14 +3371,11 @@ to {
     margin-top: 12px !important;
 }
 
-
 /* お問い合わせ */
 
 .company-page #contents .kigyou-text:last-of-type {
     margin-top: 45px;
-
     padding: 30px 25px;
-
     border-radius: 18px;
 }
 
@@ -4261,16 +3385,13 @@ to {
 
 .company-page #contents .kigyou-text:last-of-type p {
     font-size: 14px;
-
     line-height: 1.9;
 }
-
 
 /* ボタン */
 
 .company-page #contents .btn1 {
     padding: 13px 25px;
-
     font-size: 14px;
 }
 }
@@ -4278,7 +3399,6 @@ to {
 
 /*qualification.htmlここから*/
 /* =========================================
-   shikaku.html
    資格・検定ページ
 ========================================= */
 
@@ -4308,7 +3428,6 @@ to {
     border-color: #0b5fc8;
 }
 
-
 /* =========================================
    ページタイトル
 ========================================= */
@@ -4320,24 +3439,18 @@ to {
 
 .qualification-title {
     margin: 0 0 18px;
-
     color: #0755b5;
-
     font-size: 38px;
     font-weight: 700;
-
     letter-spacing: 0.05em;
 }
 
 .qualification-lead {
     margin: 0;
-
     color: #555;
-
     font-size: 15px;
     line-height: 1.8;
 }
-
 
 /* =========================================
    資格一覧
@@ -4345,13 +3458,9 @@ to {
 
 .qualification-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
-
 
 /* =========================================
    資格カード
@@ -4359,58 +3468,35 @@ to {
 
 .qualification-card {
     position: relative;
-
     min-height: 210px;
-
     padding: 30px 32px;
-
     background: #ffffff;
-
-    border:
-        1px solid #dce8f7;
-
+    border: 1px solid #dce8f7;
     border-radius: 20px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.10);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.10);
     overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
 
 /* 上の青ライン */
 
 .qualification-card::before {
     content: "";
-
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 5px;
-
     background: #1267d8;
 }
-
 
 /* マウスを乗せたとき */
 
 .qualification-card:hover {
     transform: translateY(-5px);
-
     border-color: #bcd6f6;
-
-    box-shadow:
-        0 14px 32px rgba(18, 103, 216, 0.16);
+    box-shadow: 0 14px 32px rgba(18, 103, 216, 0.16);
 }
-
 
 /* =========================================
    カード上部
@@ -4420,48 +3506,33 @@ to {
     margin-bottom: 18px;
 }
 
-
 /* 01・02など */
 
 .qualification-number {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     min-width: 42px;
     height: 27px;
-
     margin-bottom: 13px;
-
     padding: 0 10px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     border-radius: 20px;
-
     font-size: 11px;
     font-weight: bold;
-
     letter-spacing: 0.08em;
 }
-
 
 /* 資格名 */
 
 .qualification-card h2 {
     margin: 0;
-
     color: #1267d8;
-
     font-size: 21px;
     font-weight: 700;
-
     line-height: 1.5;
 }
-
 
 /* =========================================
    説明文
@@ -4469,14 +3540,10 @@ to {
 
 .qualification-card > p {
     margin: 0;
-
     color: #444;
-
     font-size: 14px;
-
     line-height: 1.9;
 }
-
 
 /* =========================================
    MOSの英語表記
@@ -4485,13 +3552,10 @@ to {
 .qualification-card-top
 .qualification-subtitle {
     margin: 4px 0 0;
-
     color: #777;
-
     font-size: 12px;
     line-height: 1.5;
 }
-
 
 /* =========================================
    最後のMOSカード
@@ -4500,12 +3564,9 @@ to {
 
 .qualification-card:last-child {
     grid-column: 1 / -1;
-
     width: calc(50% - 13px);
-
     justify-self: center;
 }
-
 
 /* =========================================
    スクロール用
@@ -4513,20 +3574,14 @@ to {
 
 .qualification-scroll {
     opacity: 0;
-
     transform: translateY(25px);
-
-    transition:
-        opacity 0.65s ease,
-        transform 0.65s ease;
+    transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
 .qualification-scroll.qualification-show {
     opacity: 1;
-
     transform: translateY(0);
 }
-
 
 /* =========================================
    スマホ
@@ -4550,24 +3605,20 @@ to {
     font-size: 14px;
 }
 
-
 /* 1列にする */
 
 .qualification-grid {
     grid-template-columns: 1fr;
-
     gap: 20px;
 }
 
 .qualification-card {
     min-height: auto;
-
     padding: 26px 25px;
 }
 
 .qualification-card:last-child {
     grid-column: auto;
-
     width: auto;
 }
 
@@ -4582,10 +3633,6 @@ to {
 }
 /*qualification.htmlここまで*/
 
-
-
-
-
 /*index.htmlここから*/
 /* =========================================
    吉田ゼミって？ メインカード
@@ -4595,47 +3642,31 @@ to {
     display: flex;
     align-items: center;
     gap: 45px;
-
     max-width: 1050px;
     margin: 0 auto 55px;
     padding: 40px;
-
     background: #ffffff;
-
     border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(18, 103, 216, 0.12);
-
+    box-shadow: 0 8px 25px rgba(18, 103, 216, 0.12);
     overflow: hidden;
     position: relative;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .home-main-card::before {
     content: "";
-
     position: absolute;
-
     width: 220px;
     height: 220px;
-
     top: -110px;
     left: -110px;
-
     border-radius: 50%;
-
     background: rgba(18, 103, 216, 0.05);
 }
 
 .home-main-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 14px 32px rgba(18, 103, 216, 0.18);
+    box-shadow: 0 14px 32px rgba(18, 103, 216, 0.18);
 }
 
 .home-main-card.reverse .home-main-image {
@@ -4650,56 +3681,40 @@ to {
 
 .home-label {
     display: inline-block;
-
     margin-bottom: 12px;
     padding: 6px 14px;
-
     background: #eaf4ff;
-
     color: #1267d8;
-
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-
     border-radius: 20px;
 }
 
 .home-main-text h2 {
     margin: 0 0 20px;
-
     font-size: 27px;
-
     color: #1267d8;
 }
 
 .home-main-text p {
     margin: 0 0 15px;
-
     line-height: 1.9;
-
     color: #444;
 }
 
 .home-main-image {
     flex: 1;
-
     overflow: hidden;
-
     border-radius: 18px;
 }
 
 .home-main-image img {
     display: block;
-
     width: 100%;
     height: 330px;
-
     object-fit: cover;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .home-main-card:hover .home-main-image img {
@@ -4732,37 +3747,22 @@ to {
 .home-button {
     display: inline-flex;
     align-items: center;
-
     gap: 15px;
-
     margin-top: 5px;
     padding: 13px 25px;
-
     background: #1267d8;
-
     color: white;
-
     text-decoration: none;
     font-weight: bold;
-
     border-radius: 30px;
-
-    box-shadow:
-        0 5px 14px rgba(18, 103, 216, 0.18);
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: 0 5px 14px rgba(18, 103, 216, 0.18);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-button:hover {
     transform: translateY(-3px);
-
     background: #0e59bd;
-
-    box-shadow:
-        0 9px 20px rgba(18, 103, 216, 0.25);
+    box-shadow: 0 9px 20px rgba(18, 103, 216, 0.25);
 }
 
 .home-button span {
@@ -4777,14 +3777,12 @@ to {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-
     margin-top: 5px;
 }
 
 .home-button-group .home-button {
     margin-top: 0;
 }
-
 
 /* =========================================
    スマホ
@@ -4794,11 +3792,8 @@ to {
 
     .home-main-card {
         flex-direction: column;
-
         gap: 25px;
-
         padding: 25px;
-
         margin-bottom: 40px;
     }
 
@@ -4836,7 +3831,6 @@ to {
 
 }
 /*index.htmlここまで*/
-
 
 /* =========================================
    共通テーブル（教員紹介・メンバー紹介で使用）
@@ -4888,7 +3882,6 @@ to {
     font-size: 13px;
 }
 }
-
 
 /*footerここから*/
 
