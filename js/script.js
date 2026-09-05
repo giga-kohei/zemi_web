@@ -1,6 +1,4 @@
-﻿/* =========================================
-   スマホ用ハンバーガーメニュー
-========================================= */
+﻿/* スマホ用ハンバーガーメニュー */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -58,9 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* =========================================
-   スクロールでフェードイン表示
-========================================= */
+/* スクロールでフェードイン表示 */
 
 const fadeElements = document.querySelectorAll(".fade");
 
@@ -82,7 +78,10 @@ fadeElements.forEach(el => {
     fadeObserver.observe(el);
 });
 
-/*graduation_thesis.htmlここから*/
+/* =========================================
+   graduation_thesis.html(卒業論文)ここから
+========================================= */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const tabs = document.querySelectorAll(".year-tab");
@@ -120,13 +119,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-/*graduation_thesis.htmlここまで*/
+/* =========================================
+   graduation_thesis.html(卒業論文)ここまで
+========================================= */
 
-/*album.htmlここから*/
-/* ==============================
-    アルバムスライダー
-    3枚表示・1枚ずつ移動
-================================ */
+/* =========================================
+   album.html(アルバムページ)ここから
+========================================= */
+
+/* アルバムスライダー・3枚表示・1枚ずつ移動 */
 
 document.querySelectorAll(".album-section").forEach((section) => {
 
@@ -366,12 +367,13 @@ const albumObserver = new IntersectionObserver(
 albumLists.forEach(list => {
     albumObserver.observe(list);
 });
-/*album.htmlここまで*/
+/* =========================================
+   album.html(アルバムページ)ここまで
+========================================= */
 
-/*activity.htmlここから*/
-/* ======================================
-   ゼミ活動ページ
-====================================== */
+/* =========================================
+   activity.html(ゼミ活動ページ)ここから
+========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -549,12 +551,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-/*activity.htmlここまで*/
+/* =========================================
+   activity.html(ゼミ活動ページ)ここまで
+========================================= */
 
-/*yearly_schedule.htmlここから*/
-/* ======================================
-   年間予定表ページ
-====================================== */
+/* =========================================
+   yearly_schedule.html(年間予定表ページ)ここから
+========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -725,11 +728,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-/*yearly_schedule.htmlここまで*/
-
-/*career_path.htmlここから*/
 /* =========================================
-   卒業後の進路ページ
+   yearly_schedule.html(年間予定表ページ)ここまで
+========================================= */
+
+/* =========================================
+   career_path.html(卒業後の進路ページ)ここから
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -933,11 +937,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-/*career_path.htmlここまで*/
-
-/*qualification.htmlここから*/
 /* =========================================
-   資格・検定ページ
+   career_path.html(卒業後の進路ページ)ここまで
+========================================= */
+
+/* =========================================
+   qualification.html(資格・検定ページ)ここから
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -1003,12 +1008,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-/*qualification.htmlここまで*/
+/* =========================================
+   qualification.html(資格・検定ページ)ここまで
+========================================= */
 
 /* =========================================
-   共通フッター
-   ページ上部へ戻る
+   共通フッターここから
 ========================================= */
+
+/* ページ上部へ戻る */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -1034,3 +1042,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* =========================================
+   共通フッターここまで
+========================================= */
